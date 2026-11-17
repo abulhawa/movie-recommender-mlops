@@ -1,0 +1,5588 @@
+{
+  "runs": [
+    {
+      "data": {
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "key": "metric",
+            "value": "euclidean"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "n_movies",
+            "value": "27278"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "key": "normalization",
+            "value": "none"
+          }
+        ],
+        "tags": [
+          {
+            "key": "mlflow.user",
+            "value": "abulhawa"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "value": "LOCAL",
+            "key": "mlflow.source.type"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          },
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          }
+        ]
+      },
+      "inputs": {},
+      "info": {
+        "start_time": 1794919595146,
+        "end_time": 1794919605311,
+        "user_id": "abulhawa",
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/1fb94ad82dfb4ba880d9f0d57524fe19/artifacts",
+        "lifecycle_stage": "active",
+        "run_id": "1fb94ad82dfb4ba880d9f0d57524fe19",
+        "run_uuid": "1fb94ad82dfb4ba880d9f0d57524fe19",
+        "run_name": "knn-genre-neighbors",
+        "status": "FINISHED",
+        "experiment_id": "0"
+      }
+    },
+    {
+      "info": {
+        "run_id": "729b76f532a640db9cf4a945fe014fca",
+        "run_uuid": "729b76f532a640db9cf4a945fe014fca",
+        "run_name": "knn-genre-neighbors",
+        "end_time": 1794916195938,
+        "lifecycle_stage": "active",
+        "user_id": "abulhawa",
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/729b76f532a640db9cf4a945fe014fca/artifacts",
+        "experiment_id": "0",
+        "status": "FINISHED",
+        "start_time": 1794916186809
+      },
+      "data": {
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "key": "metric",
+            "value": "euclidean"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "n_movies",
+            "value": "27278"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "key": "normalization",
+            "value": "none"
+          }
+        ],
+        "tags": [
+          {
+            "key": "mlflow.user",
+            "value": "abulhawa"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "value": "LOCAL",
+            "key": "mlflow.source.type"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          },
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "value": "false",
+            "key": "uses_ratings"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          }
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "info": {
+        "user_id": "abulhawa",
+        "run_name": "knn-genre-neighbors",
+        "status": "FINISHED",
+        "lifecycle_stage": "active",
+        "run_uuid": "eb3c9857cfb74a2eb8cd45bb98abc122",
+        "start_time": 1794916044146,
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/eb3c9857cfb74a2eb8cd45bb98abc122/artifacts",
+        "run_id": "eb3c9857cfb74a2eb8cd45bb98abc122",
+        "experiment_id": "0",
+        "end_time": 1794916066994
+      },
+      "data": {
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "key": "metric",
+            "value": "euclidean"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "n_movies",
+            "value": "27278"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "key": "normalization",
+            "value": "none"
+          }
+        ],
+        "tags": [
+          {
+            "value": "genre_nearest_neighbor_retrieval",
+            "key": "task"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          },
+          {
+            "key": "mlflow.user",
+            "value": "abulhawa"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          }
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "info": {
+        "run_id": "e951f5b7985b4238b7a179a4f9239e5b",
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/e951f5b7985b4238b7a179a4f9239e5b/artifacts",
+        "run_uuid": "e951f5b7985b4238b7a179a4f9239e5b",
+        "experiment_id": "0",
+        "status": "FINISHED",
+        "start_time": 1794915980999,
+        "end_time": 1794915990076,
+        "run_name": "knn-genre-neighbors",
+        "user_id": "abulhawa",
+        "lifecycle_stage": "active"
+      },
+      "data": {
+        "params": [
+          {
+            "value": "20",
+            "key": "n_neighbors"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "key": "metric",
+            "value": "euclidean"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "value": "27278",
+            "key": "n_movies"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "key": "normalization",
+            "value": "none"
+          }
+        ],
+        "tags": [
+          {
+            "key": "mlflow.user",
+            "value": "abulhawa"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          },
+          {
+            "value": "genre_nearest_neighbor_retrieval",
+            "key": "task"
+          },
+          {
+            "value": "knn",
+            "key": "model_type"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "value": "not_performed",
+            "key": "evaluation"
+          }
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "info": {
+        "run_name": "knn-genre-neighbors",
+        "end_time": 1794907120327,
+        "status": "FINISHED",
+        "experiment_id": "0",
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/a1024a7ff940472786c9553c1b4badbd/artifacts",
+        "run_id": "a1024a7ff940472786c9553c1b4badbd",
+        "user_id": "abulhawa",
+        "start_time": 1794907103191,
+        "lifecycle_stage": "active",
+        "run_uuid": "a1024a7ff940472786c9553c1b4badbd"
+      },
+      "data": {
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "key": "metric",
+            "value": "euclidean"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "n_movies",
+            "value": "27278"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "value": "none",
+            "key": "normalization"
+          }
+        ],
+        "tags": [
+          {
+            "value": "abulhawa",
+            "key": "mlflow.user"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "value": "knn-genre-neighbors",
+            "key": "mlflow.runName"
+          },
+          {
+            "value": "genre_nearest_neighbor_retrieval",
+            "key": "task"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "value": "not_performed",
+            "key": "evaluation"
+          }
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "info": {
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/4fa80d96aa19460ba44d675dc5cf5a83/artifacts",
+        "run_id": "4fa80d96aa19460ba44d675dc5cf5a83",
+        "run_uuid": "4fa80d96aa19460ba44d675dc5cf5a83",
+        "start_time": 1794837049240,
+        "end_time": 1794837057906,
+        "lifecycle_stage": "active",
+        "status": "FINISHED",
+        "experiment_id": "0",
+        "run_name": "knn-genre-neighbors",
+        "user_id": "abulhawa"
+      },
+      "data": {
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "key": "metric",
+            "value": "euclidean"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "n_movies",
+            "value": "27278"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "key": "normalization",
+            "value": "none"
+          }
+        ],
+        "tags": [
+          {
+            "value": "abulhawa",
+            "key": "mlflow.user"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "value": "LOCAL",
+            "key": "mlflow.source.type"
+          },
+          {
+            "value": "knn-genre-neighbors",
+            "key": "mlflow.runName"
+          },
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          }
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "info": {
+        "lifecycle_stage": "active",
+        "run_name": "knn-genre-neighbors",
+        "status": "FINISHED",
+        "end_time": 1794836224617,
+        "run_id": "c667bc436ccf4afca4f52a5bb4f6a3f8",
+        "user_id": "abulhawa",
+        "start_time": 1794836215688,
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/c667bc436ccf4afca4f52a5bb4f6a3f8/artifacts",
+        "run_uuid": "c667bc436ccf4afca4f52a5bb4f6a3f8",
+        "experiment_id": "0"
+      },
+      "data": {
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "key": "metric",
+            "value": "euclidean"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "value": "27278",
+            "key": "n_movies"
+          },
+          {
+            "value": "20",
+            "key": "n_features"
+          },
+          {
+            "key": "normalization",
+            "value": "none"
+          }
+        ],
+        "tags": [
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          },
+          {
+            "value": "abulhawa",
+            "key": "mlflow.user"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          }
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "data": {
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "value": "ball_tree",
+            "key": "algorithm"
+          },
+          {
+            "key": "metric",
+            "value": "euclidean"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "n_movies",
+            "value": "27278"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "key": "normalization",
+            "value": "none"
+          }
+        ],
+        "tags": [
+          {
+            "key": "mlflow.user",
+            "value": "abulhawa"
+          },
+          {
+            "value": "/app/src/train_service/train_model.py",
+            "key": "mlflow.source.name"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          },
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          }
+        ]
+      },
+      "inputs": {},
+      "info": {
+        "run_name": "knn-genre-neighbors",
+        "lifecycle_stage": "active",
+        "run_id": "051d5f146dbe441fb49ff6f6ac11314f",
+        "experiment_id": "0",
+        "user_id": "abulhawa",
+        "status": "FINISHED",
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/051d5f146dbe441fb49ff6f6ac11314f/artifacts",
+        "run_uuid": "051d5f146dbe441fb49ff6f6ac11314f",
+        "start_time": 1794836071348,
+        "end_time": 1794836079983
+      }
+    },
+    {
+      "inputs": {},
+      "info": {
+        "run_uuid": "617a5664a3db439d8bd078756e398a37",
+        "run_name": "knn-genre-neighbors",
+        "lifecycle_stage": "active",
+        "status": "FINISHED",
+        "start_time": 1794835865715,
+        "run_id": "617a5664a3db439d8bd078756e398a37",
+        "experiment_id": "0",
+        "user_id": "abulhawa",
+        "end_time": 1794835875286,
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/617a5664a3db439d8bd078756e398a37/artifacts"
+      },
+      "data": {
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "value": "ball_tree",
+            "key": "algorithm"
+          },
+          {
+            "key": "metric",
+            "value": "euclidean"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "value": "27278",
+            "key": "n_movies"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "key": "normalization",
+            "value": "none"
+          }
+        ],
+        "tags": [
+          {
+            "key": "mlflow.user",
+            "value": "abulhawa"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "value": "LOCAL",
+            "key": "mlflow.source.type"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          },
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          }
+        ]
+      }
+    },
+    {
+      "info": {
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/c441e9035cbb44bfbaeb9a41e797e59c/artifacts",
+        "run_uuid": "c441e9035cbb44bfbaeb9a41e797e59c",
+        "user_id": "abulhawa",
+        "status": "FINISHED",
+        "lifecycle_stage": "active",
+        "run_id": "c441e9035cbb44bfbaeb9a41e797e59c",
+        "experiment_id": "0",
+        "run_name": "knn-genre-neighbors",
+        "start_time": 1794577464885,
+        "end_time": 1794577474052
+      },
+      "data": {
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "key": "metric",
+            "value": "euclidean"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "n_movies",
+            "value": "27278"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "key": "normalization",
+            "value": "none"
+          }
+        ],
+        "tags": [
+          {
+            "key": "mlflow.user",
+            "value": "abulhawa"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          },
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "value": "knn",
+            "key": "model_type"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          }
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "info": {
+        "run_id": "f32ecbc096434e6b9704c3a244a7be46",
+        "run_name": "knn-genre-neighbors",
+        "user_id": "abulhawa",
+        "status": "FINISHED",
+        "start_time": 1794577178479,
+        "run_uuid": "f32ecbc096434e6b9704c3a244a7be46",
+        "experiment_id": "0",
+        "end_time": 1794577188466,
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/f32ecbc096434e6b9704c3a244a7be46/artifacts",
+        "lifecycle_stage": "active"
+      },
+      "data": {
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "key": "metric",
+            "value": "euclidean"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "n_movies",
+            "value": "27278"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "key": "normalization",
+            "value": "none"
+          }
+        ],
+        "tags": [
+          {
+            "value": "genre_nearest_neighbor_retrieval",
+            "key": "task"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "value": "false",
+            "key": "uses_ratings"
+          },
+          {
+            "value": "not_performed",
+            "key": "evaluation"
+          },
+          {
+            "key": "mlflow.user",
+            "value": "abulhawa"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          }
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "data": {
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "key": "metric",
+            "value": "euclidean"
+          },
+          {
+            "value": "knn",
+            "key": "model_type"
+          },
+          {
+            "key": "n_movies",
+            "value": "27278"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "value": "none",
+            "key": "normalization"
+          }
+        ],
+        "tags": [
+          {
+            "key": "mlflow.user",
+            "value": "abulhawa"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          },
+          {
+            "value": "genre_nearest_neighbor_retrieval",
+            "key": "task"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          }
+        ]
+      },
+      "inputs": {},
+      "info": {
+        "run_uuid": "5beafbb76f244a39b0865e2313993531",
+        "status": "FINISHED",
+        "user_id": "abulhawa",
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/5beafbb76f244a39b0865e2313993531/artifacts",
+        "lifecycle_stage": "active",
+        "run_name": "knn-genre-neighbors",
+        "end_time": 1794574719000,
+        "run_id": "5beafbb76f244a39b0865e2313993531",
+        "experiment_id": "0",
+        "start_time": 1794574708803
+      }
+    },
+    {
+      "info": {
+        "end_time": 1794560288870,
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/26c64341fd5443b49be297d8238414f9/artifacts",
+        "run_id": "26c64341fd5443b49be297d8238414f9",
+        "run_uuid": "26c64341fd5443b49be297d8238414f9",
+        "status": "FINISHED",
+        "experiment_id": "0",
+        "run_name": "knn-genre-neighbors",
+        "user_id": "abulhawa",
+        "start_time": 1794560280214,
+        "lifecycle_stage": "active"
+      },
+      "data": {
+        "tags": [
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          },
+          {
+            "key": "mlflow.user",
+            "value": "abulhawa"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          }
+        ],
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "value": "euclidean",
+            "key": "metric"
+          },
+          {
+            "value": "knn",
+            "key": "model_type"
+          },
+          {
+            "key": "n_movies",
+            "value": "27278"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "value": "none",
+            "key": "normalization"
+          }
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "info": {
+        "run_uuid": "b08ab3485078448b83deebed7855e119",
+        "experiment_id": "0",
+        "run_name": "knn-genre-neighbors",
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/b08ab3485078448b83deebed7855e119/artifacts",
+        "run_id": "b08ab3485078448b83deebed7855e119",
+        "status": "FINISHED",
+        "end_time": 1794559448420,
+        "user_id": "abulhawa",
+        "start_time": 1794559401825,
+        "lifecycle_stage": "active"
+      },
+      "data": {
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "key": "metric",
+            "value": "euclidean"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "n_movies",
+            "value": "27278"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "key": "normalization",
+            "value": "none"
+          }
+        ],
+        "tags": [
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          },
+          {
+            "key": "mlflow.user",
+            "value": "abulhawa"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          }
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "info": {
+        "experiment_id": "0",
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/f13a38fc55e84d40a46011e7705c1ba8/artifacts",
+        "lifecycle_stage": "active",
+        "run_id": "f13a38fc55e84d40a46011e7705c1ba8",
+        "run_name": "knn-genre-neighbors",
+        "start_time": 1794559253530,
+        "end_time": 1794559278901,
+        "run_uuid": "f13a38fc55e84d40a46011e7705c1ba8",
+        "user_id": "abulhawa",
+        "status": "FINISHED"
+      },
+      "data": {
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "key": "metric",
+            "value": "euclidean"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "n_movies",
+            "value": "27278"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "key": "normalization",
+            "value": "none"
+          }
+        ],
+        "tags": [
+          {
+            "key": "mlflow.user",
+            "value": "abulhawa"
+          },
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "value": "false",
+            "key": "uses_ratings"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          }
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "inputs": {},
+      "info": {
+        "status": "RUNNING",
+        "run_name": "knn-genre-neighbors",
+        "user_id": "abulhawa",
+        "experiment_id": "0",
+        "start_time": 1794556092130,
+        "lifecycle_stage": "active",
+        "run_id": "1dd6d638b5434b9a991a780e20b25176",
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/1dd6d638b5434b9a991a780e20b25176/artifacts",
+        "run_uuid": "1dd6d638b5434b9a991a780e20b25176"
+      },
+      "data": {
+        "tags": [
+          {
+            "value": "abulhawa",
+            "key": "mlflow.user"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          }
+        ]
+      }
+    },
+    {
+      "info": {
+        "run_uuid": "4b3593df419346619cc1c098f8c77e44",
+        "experiment_id": "0",
+        "user_id": "abulhawa",
+        "status": "RUNNING",
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/4b3593df419346619cc1c098f8c77e44/artifacts",
+        "lifecycle_stage": "active",
+        "run_name": "knn-genre-neighbors",
+        "start_time": 1794556092130,
+        "run_id": "4b3593df419346619cc1c098f8c77e44"
+      },
+      "data": {
+        "tags": [
+          {
+            "key": "mlflow.user",
+            "value": "abulhawa"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "value": "LOCAL",
+            "key": "mlflow.source.type"
+          },
+          {
+            "value": "knn-genre-neighbors",
+            "key": "mlflow.runName"
+          }
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "data": {
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "value": "ball_tree",
+            "key": "algorithm"
+          },
+          {
+            "key": "metric",
+            "value": "euclidean"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "n_movies",
+            "value": "27278"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "key": "normalization",
+            "value": "none"
+          }
+        ],
+        "tags": [
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          },
+          {
+            "key": "mlflow.user",
+            "value": "abulhawa"
+          },
+          {
+            "value": "/app/src/train_service/train_model.py",
+            "key": "mlflow.source.name"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          }
+        ]
+      },
+      "inputs": {},
+      "info": {
+        "user_id": "abulhawa",
+        "end_time": 1794556527784,
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/5c11054ade1f42be8de10bc03f1a1494/artifacts",
+        "run_uuid": "5c11054ade1f42be8de10bc03f1a1494",
+        "lifecycle_stage": "active",
+        "run_id": "5c11054ade1f42be8de10bc03f1a1494",
+        "status": "FINISHED",
+        "start_time": 1794556092130,
+        "experiment_id": "0",
+        "run_name": "knn-genre-neighbors"
+      }
+    },
+    {
+      "info": {
+        "user_id": "abulhawa",
+        "status": "RUNNING",
+        "run_id": "9e569d4700764829b3ec9c4149b89b63",
+        "start_time": 1794556092130,
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/9e569d4700764829b3ec9c4149b89b63/artifacts",
+        "lifecycle_stage": "active",
+        "run_uuid": "9e569d4700764829b3ec9c4149b89b63",
+        "experiment_id": "0",
+        "run_name": "knn-genre-neighbors"
+      },
+      "data": {
+        "tags": [
+          {
+            "key": "mlflow.user",
+            "value": "abulhawa"
+          },
+          {
+            "value": "/app/src/train_service/train_model.py",
+            "key": "mlflow.source.name"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "value": "knn-genre-neighbors",
+            "key": "mlflow.runName"
+          }
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "inputs": {},
+      "info": {
+        "start_time": 1794556092130,
+        "lifecycle_stage": "active",
+        "run_uuid": "ec94b42c86e4404583baf2685161925d",
+        "user_id": "abulhawa",
+        "status": "RUNNING",
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/ec94b42c86e4404583baf2685161925d/artifacts",
+        "run_id": "ec94b42c86e4404583baf2685161925d",
+        "experiment_id": "0",
+        "run_name": "knn-genre-neighbors"
+      },
+      "data": {
+        "tags": [
+          {
+            "key": "mlflow.user",
+            "value": "abulhawa"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "value": "LOCAL",
+            "key": "mlflow.source.type"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          }
+        ]
+      }
+    },
+    {
+      "info": {
+        "run_id": "823d93725c3a493c9afb6839e00acf6d",
+        "start_time": 1794555952011,
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/823d93725c3a493c9afb6839e00acf6d/artifacts",
+        "lifecycle_stage": "active",
+        "experiment_id": "0",
+        "status": "RUNNING",
+        "run_name": "knn-genre-neighbors",
+        "user_id": "abulhawa",
+        "run_uuid": "823d93725c3a493c9afb6839e00acf6d"
+      },
+      "data": {
+        "tags": [
+          {
+            "value": "abulhawa",
+            "key": "mlflow.user"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "value": "LOCAL",
+            "key": "mlflow.source.type"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          }
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "inputs": {},
+      "info": {
+        "run_name": "knn-genre-neighbors",
+        "status": "RUNNING",
+        "lifecycle_stage": "active",
+        "start_time": 1794555870854,
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/435e2b1eab904fd18c531bee1d1df452/artifacts",
+        "run_id": "435e2b1eab904fd18c531bee1d1df452",
+        "experiment_id": "0",
+        "user_id": "abulhawa",
+        "run_uuid": "435e2b1eab904fd18c531bee1d1df452"
+      },
+      "data": {
+        "tags": [
+          {
+            "key": "mlflow.user",
+            "value": "abulhawa"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          }
+        ]
+      }
+    },
+    {
+      "info": {
+        "experiment_id": "0",
+        "run_name": "knn-genre-neighbors",
+        "user_id": "abulhawa",
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/f25c17acaee64df79458dc03b2de9374/artifacts",
+        "lifecycle_stage": "active",
+        "start_time": 1794555870854,
+        "run_id": "f25c17acaee64df79458dc03b2de9374",
+        "status": "RUNNING",
+        "run_uuid": "f25c17acaee64df79458dc03b2de9374"
+      },
+      "data": {
+        "tags": [
+          {
+            "key": "mlflow.user",
+            "value": "abulhawa"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "value": "knn-genre-neighbors",
+            "key": "mlflow.runName"
+          }
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "info": {
+        "run_uuid": "f4ab729e306e4f1aad187f07b2bbb302",
+        "lifecycle_stage": "active",
+        "experiment_id": "0",
+        "run_id": "f4ab729e306e4f1aad187f07b2bbb302",
+        "run_name": "knn-genre-neighbors",
+        "user_id": "meinetaetigkeit",
+        "start_time": 1794391217574,
+        "end_time": 1794391233292,
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/f4ab729e306e4f1aad187f07b2bbb302/artifacts",
+        "status": "FINISHED"
+      },
+      "data": {
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "key": "metric",
+            "value": "euclidean"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "value": "27278",
+            "key": "n_movies"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "key": "normalization",
+            "value": "none"
+          }
+        ],
+        "tags": [
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "value": "knn",
+            "key": "model_type"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "value": "not_performed",
+            "key": "evaluation"
+          },
+          {
+            "key": "mlflow.user",
+            "value": "meinetaetigkeit"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "value": "knn-genre-neighbors",
+            "key": "mlflow.runName"
+          }
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "inputs": {},
+      "info": {
+        "lifecycle_stage": "active",
+        "experiment_id": "0",
+        "start_time": 1794301831941,
+        "end_time": 1794301841667,
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/79d820b532ff4973b4c06511a5e5590c/artifacts",
+        "user_id": "rosneru",
+        "status": "FINISHED",
+        "run_id": "79d820b532ff4973b4c06511a5e5590c",
+        "run_uuid": "79d820b532ff4973b4c06511a5e5590c",
+        "run_name": "knn-genre-neighbors"
+      },
+      "data": {
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "key": "metric",
+            "value": "euclidean"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "n_movies",
+            "value": "27278"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "key": "normalization",
+            "value": "none"
+          }
+        ],
+        "tags": [
+          {
+            "key": "mlflow.user",
+            "value": "rosneru"
+          },
+          {
+            "value": "/app/src/train_service/train_model.py",
+            "key": "mlflow.source.name"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          },
+          {
+            "value": "genre_nearest_neighbor_retrieval",
+            "key": "task"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          }
+        ]
+      }
+    },
+    {
+      "info": {
+        "end_time": 1794300764104,
+        "run_name": "knn-genre-neighbors",
+        "status": "FINISHED",
+        "run_id": "56840ab379984cbc85f92ac7d854fdd1",
+        "user_id": "meinetaetigkeit",
+        "start_time": 1794300753419,
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/56840ab379984cbc85f92ac7d854fdd1/artifacts",
+        "run_uuid": "56840ab379984cbc85f92ac7d854fdd1",
+        "experiment_id": "0",
+        "lifecycle_stage": "active"
+      },
+      "data": {
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "key": "metric",
+            "value": "euclidean"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "n_movies",
+            "value": "27278"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "key": "normalization",
+            "value": "none"
+          }
+        ],
+        "tags": [
+          {
+            "key": "mlflow.user",
+            "value": "meinetaetigkeit"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "value": "LOCAL",
+            "key": "mlflow.source.type"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          },
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          }
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "data": {
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "key": "metric",
+            "value": "euclidean"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "n_movies",
+            "value": "27278"
+          },
+          {
+            "value": "20",
+            "key": "n_features"
+          },
+          {
+            "key": "normalization",
+            "value": "none"
+          }
+        ],
+        "tags": [
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          },
+          {
+            "key": "mlflow.user",
+            "value": "meinetaetigkeit"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          }
+        ]
+      },
+      "inputs": {},
+      "info": {
+        "experiment_id": "0",
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/117759be2f134b07a7ad6ab78c53dde5/artifacts",
+        "run_name": "knn-genre-neighbors",
+        "run_uuid": "117759be2f134b07a7ad6ab78c53dde5",
+        "start_time": 1794300102434,
+        "run_id": "117759be2f134b07a7ad6ab78c53dde5",
+        "user_id": "meinetaetigkeit",
+        "status": "FINISHED",
+        "end_time": 1794300155220,
+        "lifecycle_stage": "active"
+      }
+    },
+    {
+      "data": {
+        "params": [
+          {
+            "value": "20",
+            "key": "n_neighbors"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "value": "euclidean",
+            "key": "metric"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "n_movies",
+            "value": "27278"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "key": "normalization",
+            "value": "none"
+          }
+        ],
+        "tags": [
+          {
+            "key": "mlflow.user",
+            "value": "meinetaetigkeit"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "value": "LOCAL",
+            "key": "mlflow.source.type"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          },
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          }
+        ]
+      },
+      "inputs": {},
+      "info": {
+        "status": "FINISHED",
+        "end_time": 1794294583961,
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/aacc074c526a492b885fb0e13eed3875/artifacts",
+        "lifecycle_stage": "active",
+        "run_name": "knn-genre-neighbors",
+        "start_time": 1794294573097,
+        "run_uuid": "aacc074c526a492b885fb0e13eed3875",
+        "experiment_id": "0",
+        "user_id": "meinetaetigkeit",
+        "run_id": "aacc074c526a492b885fb0e13eed3875"
+      }
+    },
+    {
+      "inputs": {},
+      "info": {
+        "status": "FINISHED",
+        "start_time": 1794233354902,
+        "end_time": 1794233381497,
+        "lifecycle_stage": "active",
+        "run_uuid": "402dbd9987134f3a894f36423b996bb4",
+        "run_id": "402dbd9987134f3a894f36423b996bb4",
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/402dbd9987134f3a894f36423b996bb4/artifacts",
+        "run_name": "knn-genre-neighbors",
+        "experiment_id": "0",
+        "user_id": "abulhawa"
+      },
+      "data": {
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "value": "euclidean",
+            "key": "metric"
+          },
+          {
+            "value": "knn",
+            "key": "model_type"
+          },
+          {
+            "value": "27278",
+            "key": "n_movies"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "value": "none",
+            "key": "normalization"
+          }
+        ],
+        "tags": [
+          {
+            "key": "mlflow.user",
+            "value": "abulhawa"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "value": "LOCAL",
+            "key": "mlflow.source.type"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          },
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          }
+        ]
+      }
+    },
+    {
+      "info": {
+        "run_uuid": "ea5aa3a9c0bb4a1f9664b0012e779773",
+        "experiment_id": "0",
+        "lifecycle_stage": "active",
+        "run_id": "ea5aa3a9c0bb4a1f9664b0012e779773",
+        "user_id": "abulhawa",
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/ea5aa3a9c0bb4a1f9664b0012e779773/artifacts",
+        "run_name": "knn-genre-neighbors",
+        "status": "FINISHED",
+        "start_time": 1794229010978,
+        "end_time": 1794229034767
+      },
+      "data": {
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "key": "metric",
+            "value": "euclidean"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "value": "27278",
+            "key": "n_movies"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "key": "normalization",
+            "value": "none"
+          }
+        ],
+        "tags": [
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "value": "knn",
+            "key": "model_type"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          },
+          {
+            "key": "mlflow.user",
+            "value": "abulhawa"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "value": "knn-genre-neighbors",
+            "key": "mlflow.runName"
+          }
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "inputs": {},
+      "info": {
+        "status": "FINISHED",
+        "run_id": "897e5cf86fcc4a298cfae2a7e3e35a8f",
+        "start_time": 1794225279135,
+        "end_time": 1794225298575,
+        "run_uuid": "897e5cf86fcc4a298cfae2a7e3e35a8f",
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/897e5cf86fcc4a298cfae2a7e3e35a8f/artifacts",
+        "lifecycle_stage": "active",
+        "experiment_id": "0",
+        "run_name": "knn-genre-neighbors",
+        "user_id": "abulhawa"
+      },
+      "data": {
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "key": "metric",
+            "value": "euclidean"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "n_movies",
+            "value": "27278"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "key": "normalization",
+            "value": "none"
+          }
+        ],
+        "tags": [
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          },
+          {
+            "key": "mlflow.user",
+            "value": "abulhawa"
+          },
+          {
+            "value": "/app/src/train_service/train_model.py",
+            "key": "mlflow.source.name"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          }
+        ]
+      }
+    },
+    {
+      "info": {
+        "end_time": 1794222950452,
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/3abd7df2ecc24bad930ef7c4065e12da/artifacts",
+        "experiment_id": "0",
+        "run_name": "knn-genre-neighbors",
+        "user_id": "rosneru",
+        "start_time": 1794222936655,
+        "status": "FINISHED",
+        "lifecycle_stage": "active",
+        "run_id": "3abd7df2ecc24bad930ef7c4065e12da",
+        "run_uuid": "3abd7df2ecc24bad930ef7c4065e12da"
+      },
+      "data": {
+        "tags": [
+          {
+            "key": "mlflow.user",
+            "value": "rosneru"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          },
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          }
+        ],
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "key": "metric",
+            "value": "euclidean"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "n_movies",
+            "value": "27278"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "key": "normalization",
+            "value": "none"
+          }
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "info": {
+        "start_time": 1794222921390,
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/0fe35509966d49b183054b6b1e6c4c0a/artifacts",
+        "run_name": "knn-genre-neighbors",
+        "user_id": "abulhawa",
+        "status": "FINISHED",
+        "end_time": 1794222936265,
+        "lifecycle_stage": "active",
+        "run_id": "0fe35509966d49b183054b6b1e6c4c0a",
+        "run_uuid": "0fe35509966d49b183054b6b1e6c4c0a",
+        "experiment_id": "0"
+      },
+      "data": {
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "key": "metric",
+            "value": "euclidean"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "n_movies",
+            "value": "27278"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "key": "normalization",
+            "value": "none"
+          }
+        ],
+        "tags": [
+          {
+            "key": "mlflow.user",
+            "value": "abulhawa"
+          },
+          {
+            "value": "/app/src/train_service/train_model.py",
+            "key": "mlflow.source.name"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          },
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "value": "knn",
+            "key": "model_type"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          }
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "data": {
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "value": "ball_tree",
+            "key": "algorithm"
+          },
+          {
+            "value": "euclidean",
+            "key": "metric"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "n_movies",
+            "value": "27278"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "key": "normalization",
+            "value": "none"
+          }
+        ],
+        "tags": [
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          },
+          {
+            "key": "mlflow.user",
+            "value": "abulhawa"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          }
+        ]
+      },
+      "inputs": {},
+      "info": {
+        "lifecycle_stage": "active",
+        "run_uuid": "f13b8a868be84898bdedc132af8511b8",
+        "start_time": 1794222865882,
+        "run_id": "f13b8a868be84898bdedc132af8511b8",
+        "user_id": "abulhawa",
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/f13b8a868be84898bdedc132af8511b8/artifacts",
+        "end_time": 1794222883762,
+        "experiment_id": "0",
+        "run_name": "knn-genre-neighbors",
+        "status": "FINISHED"
+      }
+    },
+    {
+      "data": {
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "value": "ball_tree",
+            "key": "algorithm"
+          },
+          {
+            "key": "metric",
+            "value": "euclidean"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "n_movies",
+            "value": "27278"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "key": "normalization",
+            "value": "none"
+          }
+        ],
+        "tags": [
+          {
+            "key": "mlflow.user",
+            "value": "rosneru"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          },
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "value": "knn",
+            "key": "model_type"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          }
+        ]
+      },
+      "inputs": {},
+      "info": {
+        "lifecycle_stage": "active",
+        "user_id": "rosneru",
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/2bf526c59a9d46a8b4c20fb9eba88a4f/artifacts",
+        "start_time": 1794222765253,
+        "end_time": 1794222793394,
+        "run_id": "2bf526c59a9d46a8b4c20fb9eba88a4f",
+        "run_uuid": "2bf526c59a9d46a8b4c20fb9eba88a4f",
+        "experiment_id": "0",
+        "run_name": "knn-genre-neighbors",
+        "status": "FINISHED"
+      }
+    },
+    {
+      "data": {
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "key": "metric",
+            "value": "euclidean"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "n_movies",
+            "value": "27278"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "value": "none",
+            "key": "normalization"
+          }
+        ],
+        "tags": [
+          {
+            "key": "mlflow.user",
+            "value": "abulhawa"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "value": "LOCAL",
+            "key": "mlflow.source.type"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          },
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "value": "false",
+            "key": "uses_ratings"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          }
+        ]
+      },
+      "inputs": {},
+      "info": {
+        "experiment_id": "0",
+        "lifecycle_stage": "active",
+        "end_time": 1794222550142,
+        "run_id": "769ad66bee9a4446b6a43b52f4dfbc38",
+        "run_name": "knn-genre-neighbors",
+        "user_id": "abulhawa",
+        "status": "FINISHED",
+        "start_time": 1794222532043,
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/769ad66bee9a4446b6a43b52f4dfbc38/artifacts",
+        "run_uuid": "769ad66bee9a4446b6a43b52f4dfbc38"
+      }
+    },
+    {
+      "info": {
+        "user_id": "rosneru",
+        "start_time": 1794218705300,
+        "end_time": 1794218743448,
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/c987416e27d046aeaceaa4a3702ba62b/artifacts",
+        "lifecycle_stage": "active",
+        "run_id": "c987416e27d046aeaceaa4a3702ba62b",
+        "experiment_id": "0",
+        "run_name": "knn-genre-neighbors",
+        "run_uuid": "c987416e27d046aeaceaa4a3702ba62b",
+        "status": "FINISHED"
+      },
+      "data": {
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "key": "metric",
+            "value": "euclidean"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "n_movies",
+            "value": "27278"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "key": "normalization",
+            "value": "none"
+          }
+        ],
+        "tags": [
+          {
+            "key": "mlflow.user",
+            "value": "rosneru"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          },
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "value": "knn",
+            "key": "model_type"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          }
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "info": {
+        "end_time": 1794213642060,
+        "lifecycle_stage": "active",
+        "run_id": "973ecfe9605048508b1f8ce1a6acf3ea",
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/973ecfe9605048508b1f8ce1a6acf3ea/artifacts",
+        "experiment_id": "0",
+        "status": "FINISHED",
+        "start_time": 1794213613864,
+        "run_uuid": "973ecfe9605048508b1f8ce1a6acf3ea",
+        "user_id": "meinetaetigkeit",
+        "run_name": "knn-genre-neighbors"
+      },
+      "data": {
+        "tags": [
+          {
+            "key": "mlflow.user",
+            "value": "meinetaetigkeit"
+          },
+          {
+            "value": "/app/src/train_service/train_model.py",
+            "key": "mlflow.source.name"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          },
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          }
+        ],
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "value": "euclidean",
+            "key": "metric"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "n_movies",
+            "value": "27278"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "key": "normalization",
+            "value": "none"
+          }
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "info": {
+        "run_id": "2f6b8e8c1dc0469aa546cf14252c328b",
+        "run_uuid": "2f6b8e8c1dc0469aa546cf14252c328b",
+        "status": "FINISHED",
+        "start_time": 1794127215900,
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/2f6b8e8c1dc0469aa546cf14252c328b/artifacts",
+        "lifecycle_stage": "active",
+        "user_id": "meinetaetigkeit",
+        "end_time": 1794127241056,
+        "experiment_id": "0",
+        "run_name": "knn-genre-neighbors"
+      },
+      "data": {
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "key": "metric",
+            "value": "euclidean"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "n_movies",
+            "value": "27278"
+          },
+          {
+            "value": "20",
+            "key": "n_features"
+          },
+          {
+            "key": "normalization",
+            "value": "none"
+          }
+        ],
+        "tags": [
+          {
+            "key": "mlflow.user",
+            "value": "meinetaetigkeit"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          },
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          }
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "info": {
+        "run_uuid": "abdaecf086ac483f9f6849e6c19d3bca",
+        "run_name": "knn-genre-neighbors",
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/abdaecf086ac483f9f6849e6c19d3bca/artifacts",
+        "experiment_id": "0",
+        "user_id": "meinetaetigkeit",
+        "status": "FINISHED",
+        "start_time": 1794040809947,
+        "end_time": 1794040829646,
+        "lifecycle_stage": "active",
+        "run_id": "abdaecf086ac483f9f6849e6c19d3bca"
+      },
+      "data": {
+        "params": [
+          {
+            "value": "20",
+            "key": "n_neighbors"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "key": "metric",
+            "value": "euclidean"
+          },
+          {
+            "value": "knn",
+            "key": "model_type"
+          },
+          {
+            "key": "n_movies",
+            "value": "27278"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "key": "normalization",
+            "value": "none"
+          }
+        ],
+        "tags": [
+          {
+            "key": "mlflow.user",
+            "value": "meinetaetigkeit"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          },
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          }
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "info": {
+        "lifecycle_stage": "active",
+        "run_uuid": "d52ba287ccde43509a3268c2f81b13cc",
+        "run_id": "d52ba287ccde43509a3268c2f81b13cc",
+        "status": "FINISHED",
+        "user_id": "meinetaetigkeit",
+        "start_time": 1794040634586,
+        "end_time": 1794040658760,
+        "experiment_id": "0",
+        "run_name": "knn-genre-neighbors",
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/d52ba287ccde43509a3268c2f81b13cc/artifacts"
+      },
+      "data": {
+        "tags": [
+          {
+            "key": "mlflow.user",
+            "value": "meinetaetigkeit"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          },
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "value": "knn",
+            "key": "model_type"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "value": "not_performed",
+            "key": "evaluation"
+          }
+        ],
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "key": "metric",
+            "value": "euclidean"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "value": "27278",
+            "key": "n_movies"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "key": "normalization",
+            "value": "none"
+          }
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "info": {
+        "status": "FINISHED",
+        "run_uuid": "bd1491e2da9b4489a5afb43a534867ed",
+        "experiment_id": "0",
+        "run_name": "knn-genre-neighbors",
+        "start_time": 1794040362954,
+        "end_time": 1794040393357,
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/bd1491e2da9b4489a5afb43a534867ed/artifacts",
+        "lifecycle_stage": "active",
+        "run_id": "bd1491e2da9b4489a5afb43a534867ed",
+        "user_id": "meinetaetigkeit"
+      },
+      "data": {
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "key": "metric",
+            "value": "euclidean"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "n_movies",
+            "value": "27278"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "key": "normalization",
+            "value": "none"
+          }
+        ],
+        "tags": [
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          },
+          {
+            "key": "mlflow.user",
+            "value": "meinetaetigkeit"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          }
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "inputs": {},
+      "info": {
+        "run_name": "knn-genre-neighbors",
+        "user_id": "meinetaetigkeit",
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/3bf3a6e09e3847efb52d02ef42e3dc84/artifacts",
+        "lifecycle_stage": "active",
+        "run_id": "3bf3a6e09e3847efb52d02ef42e3dc84",
+        "run_uuid": "3bf3a6e09e3847efb52d02ef42e3dc84",
+        "start_time": 1794037692942,
+        "end_time": 1794037720324,
+        "experiment_id": "0",
+        "status": "FINISHED"
+      },
+      "data": {
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "key": "metric",
+            "value": "euclidean"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "n_movies",
+            "value": "27278"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "key": "normalization",
+            "value": "none"
+          }
+        ],
+        "tags": [
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          },
+          {
+            "key": "mlflow.user",
+            "value": "meinetaetigkeit"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "value": "knn-genre-neighbors",
+            "key": "mlflow.runName"
+          }
+        ]
+      }
+    },
+    {
+      "info": {
+        "end_time": 1794037652084,
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/42cd4ae8654c4b819d84c5d4876ad0ce/artifacts",
+        "lifecycle_stage": "active",
+        "run_uuid": "42cd4ae8654c4b819d84c5d4876ad0ce",
+        "run_id": "42cd4ae8654c4b819d84c5d4876ad0ce",
+        "experiment_id": "0",
+        "run_name": "knn-genre-neighbors",
+        "status": "FINISHED",
+        "start_time": 1794037631459,
+        "user_id": "meinetaetigkeit"
+      },
+      "data": {
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "value": "ball_tree",
+            "key": "algorithm"
+          },
+          {
+            "key": "metric",
+            "value": "euclidean"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "n_movies",
+            "value": "27278"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "key": "normalization",
+            "value": "none"
+          }
+        ],
+        "tags": [
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          },
+          {
+            "key": "mlflow.user",
+            "value": "meinetaetigkeit"
+          },
+          {
+            "value": "/app/src/train_service/train_model.py",
+            "key": "mlflow.source.name"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          }
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "data": {
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "key": "metric",
+            "value": "euclidean"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "value": "27278",
+            "key": "n_movies"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "value": "none",
+            "key": "normalization"
+          }
+        ],
+        "tags": [
+          {
+            "value": "genre_nearest_neighbor_retrieval",
+            "key": "task"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          },
+          {
+            "key": "mlflow.user",
+            "value": "meinetaetigkeit"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          }
+        ]
+      },
+      "inputs": {},
+      "info": {
+        "status": "FINISHED",
+        "start_time": 1794037486771,
+        "run_name": "knn-genre-neighbors",
+        "user_id": "meinetaetigkeit",
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/445c6b011f474c4e90a9705ac579d7cd/artifacts",
+        "run_uuid": "445c6b011f474c4e90a9705ac579d7cd",
+        "experiment_id": "0",
+        "end_time": 1794037514234,
+        "lifecycle_stage": "active",
+        "run_id": "445c6b011f474c4e90a9705ac579d7cd"
+      }
+    },
+    {
+      "info": {
+        "status": "FINISHED",
+        "start_time": 1793983762123,
+        "end_time": 1793983771951,
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/64436691b29e45de9fc03f3b8c6963e5/artifacts",
+        "run_uuid": "64436691b29e45de9fc03f3b8c6963e5",
+        "experiment_id": "0",
+        "run_id": "64436691b29e45de9fc03f3b8c6963e5",
+        "run_name": "knn-genre-neighbors",
+        "user_id": "abulhawa",
+        "lifecycle_stage": "active"
+      },
+      "data": {
+        "params": [
+          {
+            "value": "20",
+            "key": "n_neighbors"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "key": "metric",
+            "value": "euclidean"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "value": "27278",
+            "key": "n_movies"
+          },
+          {
+            "value": "20",
+            "key": "n_features"
+          },
+          {
+            "key": "normalization",
+            "value": "none"
+          }
+        ],
+        "tags": [
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          },
+          {
+            "key": "mlflow.user",
+            "value": "abulhawa"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "value": "knn-genre-neighbors",
+            "key": "mlflow.runName"
+          }
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "info": {
+        "run_name": "knn-genre-neighbors",
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/3e47ec37e051439eb025f41ea73c4a97/artifacts",
+        "run_uuid": "3e47ec37e051439eb025f41ea73c4a97",
+        "experiment_id": "0",
+        "status": "FINISHED",
+        "lifecycle_stage": "active",
+        "end_time": 1793982932583,
+        "run_id": "3e47ec37e051439eb025f41ea73c4a97",
+        "user_id": "abulhawa",
+        "start_time": 1793982923808
+      },
+      "data": {
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "key": "metric",
+            "value": "euclidean"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "n_movies",
+            "value": "27278"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "key": "normalization",
+            "value": "none"
+          }
+        ],
+        "tags": [
+          {
+            "key": "mlflow.user",
+            "value": "abulhawa"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          },
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          }
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "info": {
+        "lifecycle_stage": "active",
+        "run_uuid": "e1bb476abc0b41f9971d196a2c65a1a5",
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/e1bb476abc0b41f9971d196a2c65a1a5/artifacts",
+        "run_name": "knn-genre-neighbors",
+        "start_time": 1793982147629,
+        "run_id": "e1bb476abc0b41f9971d196a2c65a1a5",
+        "experiment_id": "0",
+        "user_id": "abulhawa",
+        "status": "FINISHED",
+        "end_time": 1793982156516
+      },
+      "data": {
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "value": "ball_tree",
+            "key": "algorithm"
+          },
+          {
+            "key": "metric",
+            "value": "euclidean"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "n_movies",
+            "value": "27278"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "key": "normalization",
+            "value": "none"
+          }
+        ],
+        "tags": [
+          {
+            "key": "mlflow.user",
+            "value": "abulhawa"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          },
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "value": "false",
+            "key": "uses_ratings"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          }
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "info": {
+        "end_time": 1793981665071,
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/56e6cabc65a64109a3cd45bf5b38cb10/artifacts",
+        "lifecycle_stage": "active",
+        "experiment_id": "0",
+        "run_uuid": "56e6cabc65a64109a3cd45bf5b38cb10",
+        "user_id": "abulhawa",
+        "status": "FINISHED",
+        "start_time": 1793981655521,
+        "run_id": "56e6cabc65a64109a3cd45bf5b38cb10",
+        "run_name": "knn-genre-neighbors"
+      },
+      "data": {
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "key": "metric",
+            "value": "euclidean"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "value": "27278",
+            "key": "n_movies"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "value": "none",
+            "key": "normalization"
+          }
+        ],
+        "tags": [
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          },
+          {
+            "key": "mlflow.user",
+            "value": "abulhawa"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          }
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "inputs": {},
+      "info": {
+        "start_time": 1793977664287,
+        "run_id": "a4cd491bc8b641a2aac394fe6140cbba",
+        "experiment_id": "0",
+        "run_name": "knn-genre-neighbors",
+        "user_id": "berfinaktas",
+        "status": "FINISHED",
+        "lifecycle_stage": "active",
+        "end_time": 1793977672251,
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/a4cd491bc8b641a2aac394fe6140cbba/artifacts",
+        "run_uuid": "a4cd491bc8b641a2aac394fe6140cbba"
+      },
+      "data": {
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "key": "metric",
+            "value": "euclidean"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "n_movies",
+            "value": "27278"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "key": "normalization",
+            "value": "none"
+          }
+        ],
+        "tags": [
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          },
+          {
+            "key": "mlflow.user",
+            "value": "berfinaktas"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          }
+        ]
+      }
+    },
+    {
+      "info": {
+        "run_name": "knn-genre-neighbors",
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/80775916791845f183ba5437fe69e541/artifacts",
+        "run_uuid": "80775916791845f183ba5437fe69e541",
+        "start_time": 1793976678289,
+        "end_time": 1793976688538,
+        "lifecycle_stage": "active",
+        "run_id": "80775916791845f183ba5437fe69e541",
+        "user_id": "abulhawa",
+        "status": "FINISHED",
+        "experiment_id": "0"
+      },
+      "data": {
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "value": "ball_tree",
+            "key": "algorithm"
+          },
+          {
+            "key": "metric",
+            "value": "euclidean"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "n_movies",
+            "value": "27278"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "value": "none",
+            "key": "normalization"
+          }
+        ],
+        "tags": [
+          {
+            "key": "mlflow.user",
+            "value": "abulhawa"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          },
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          }
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "info": {
+        "end_time": 1793975655629,
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/282d2feb64fb4f63882b670c1202cb77/artifacts",
+        "user_id": "abulhawa",
+        "start_time": 1793975646153,
+        "status": "FINISHED",
+        "lifecycle_stage": "active",
+        "run_id": "282d2feb64fb4f63882b670c1202cb77",
+        "run_uuid": "282d2feb64fb4f63882b670c1202cb77",
+        "experiment_id": "0",
+        "run_name": "knn-genre-neighbors"
+      },
+      "data": {
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "key": "metric",
+            "value": "euclidean"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "n_movies",
+            "value": "27278"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "key": "normalization",
+            "value": "none"
+          }
+        ],
+        "tags": [
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          },
+          {
+            "key": "mlflow.user",
+            "value": "abulhawa"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          }
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "info": {
+        "start_time": 1793973773482,
+        "end_time": 1793973787449,
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/7a054ebd34a5488ca37fc171fc077f62/artifacts",
+        "run_id": "7a054ebd34a5488ca37fc171fc077f62",
+        "run_uuid": "7a054ebd34a5488ca37fc171fc077f62",
+        "experiment_id": "0",
+        "run_name": "knn-genre-neighbors",
+        "status": "FINISHED",
+        "lifecycle_stage": "active",
+        "user_id": "meinetaetigkeit"
+      },
+      "data": {
+        "params": [
+          {
+            "value": "20",
+            "key": "n_neighbors"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "key": "metric",
+            "value": "euclidean"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "value": "27278",
+            "key": "n_movies"
+          },
+          {
+            "value": "20",
+            "key": "n_features"
+          },
+          {
+            "key": "normalization",
+            "value": "none"
+          }
+        ],
+        "tags": [
+          {
+            "key": "mlflow.user",
+            "value": "meinetaetigkeit"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          },
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          }
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "info": {
+        "run_uuid": "99102b353ea74f98b1764fbd63ee3840",
+        "end_time": 1793967752578,
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/99102b353ea74f98b1764fbd63ee3840/artifacts",
+        "run_id": "99102b353ea74f98b1764fbd63ee3840",
+        "experiment_id": "0",
+        "lifecycle_stage": "active",
+        "run_name": "knn-genre-neighbors",
+        "status": "FINISHED",
+        "start_time": 1793967735238,
+        "user_id": "meinetaetigkeit"
+      },
+      "data": {
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "key": "metric",
+            "value": "euclidean"
+          },
+          {
+            "value": "knn",
+            "key": "model_type"
+          },
+          {
+            "key": "n_movies",
+            "value": "27278"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "value": "none",
+            "key": "normalization"
+          }
+        ],
+        "tags": [
+          {
+            "key": "mlflow.user",
+            "value": "meinetaetigkeit"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          },
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          }
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "data": {
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "key": "metric",
+            "value": "euclidean"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "n_movies",
+            "value": "27278"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "key": "normalization",
+            "value": "none"
+          }
+        ],
+        "tags": [
+          {
+            "key": "mlflow.user",
+            "value": "meinetaetigkeit"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          },
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "value": "knn",
+            "key": "model_type"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          }
+        ]
+      },
+      "inputs": {},
+      "info": {
+        "status": "FINISHED",
+        "run_name": "knn-genre-neighbors",
+        "end_time": 1793958447938,
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/02d7aca05f394ac2887f92d0177793fa/artifacts",
+        "run_uuid": "02d7aca05f394ac2887f92d0177793fa",
+        "run_id": "02d7aca05f394ac2887f92d0177793fa",
+        "experiment_id": "0",
+        "user_id": "meinetaetigkeit",
+        "start_time": 1793958423271,
+        "lifecycle_stage": "active"
+      }
+    },
+    {
+      "inputs": {},
+      "info": {
+        "run_name": "knn-genre-neighbors",
+        "status": "FINISHED",
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/4a0920ca582345618b2735bbb43eaebe/artifacts",
+        "run_id": "4a0920ca582345618b2735bbb43eaebe",
+        "lifecycle_stage": "active",
+        "experiment_id": "0",
+        "user_id": "meinetaetigkeit",
+        "start_time": 1793950247458,
+        "run_uuid": "4a0920ca582345618b2735bbb43eaebe",
+        "end_time": 1793950277044
+      },
+      "data": {
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "value": "euclidean",
+            "key": "metric"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "n_movies",
+            "value": "27278"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "key": "normalization",
+            "value": "none"
+          }
+        ],
+        "tags": [
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "value": "knn",
+            "key": "model_type"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "value": "not_performed",
+            "key": "evaluation"
+          },
+          {
+            "key": "mlflow.user",
+            "value": "meinetaetigkeit"
+          },
+          {
+            "value": "/app/src/train_service/train_model.py",
+            "key": "mlflow.source.name"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "key": "metric",
+            "value": "euclidean"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "n_movies",
+            "value": "27278"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "key": "normalization",
+            "value": "none"
+          }
+        ],
+        "tags": [
+          {
+            "key": "mlflow.user",
+            "value": "abulhawa"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          },
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "value": "knn",
+            "key": "model_type"
+          },
+          {
+            "value": "false",
+            "key": "uses_ratings"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          }
+        ]
+      },
+      "inputs": {},
+      "info": {
+        "run_uuid": "88a89c23943842849b2e667c599a470b",
+        "run_name": "knn-genre-neighbors",
+        "status": "FINISHED",
+        "start_time": 1793880797870,
+        "end_time": 1793880823321,
+        "lifecycle_stage": "active",
+        "run_id": "88a89c23943842849b2e667c599a470b",
+        "experiment_id": "0",
+        "user_id": "abulhawa",
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/88a89c23943842849b2e667c599a470b/artifacts"
+      }
+    },
+    {
+      "inputs": {},
+      "info": {
+        "run_uuid": "2d0c52e82d8b4ba5abc14511e78091a0",
+        "end_time": 1793880085464,
+        "lifecycle_stage": "active",
+        "run_id": "2d0c52e82d8b4ba5abc14511e78091a0",
+        "status": "FINISHED",
+        "experiment_id": "0",
+        "run_name": "knn-genre-neighbors",
+        "user_id": "abulhawa",
+        "start_time": 1793880070000,
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/2d0c52e82d8b4ba5abc14511e78091a0/artifacts"
+      },
+      "data": {
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "key": "metric",
+            "value": "euclidean"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "n_movies",
+            "value": "27278"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "key": "normalization",
+            "value": "none"
+          }
+        ],
+        "tags": [
+          {
+            "key": "mlflow.user",
+            "value": "abulhawa"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          },
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          }
+        ]
+      }
+    },
+    {
+      "inputs": {},
+      "info": {
+        "start_time": 1793879204200,
+        "run_id": "ee3f5796bd044576bcc580cde305c753",
+        "experiment_id": "0",
+        "status": "FINISHED",
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/ee3f5796bd044576bcc580cde305c753/artifacts",
+        "run_name": "knn-genre-neighbors",
+        "user_id": "meinetaetigkeit",
+        "run_uuid": "ee3f5796bd044576bcc580cde305c753",
+        "end_time": 1793879233363,
+        "lifecycle_stage": "active"
+      },
+      "data": {
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "key": "metric",
+            "value": "euclidean"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "n_movies",
+            "value": "27278"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "key": "normalization",
+            "value": "none"
+          }
+        ],
+        "tags": [
+          {
+            "key": "mlflow.user",
+            "value": "meinetaetigkeit"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          },
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "value": "not_performed",
+            "key": "evaluation"
+          }
+        ]
+      }
+    },
+    {
+      "info": {
+        "experiment_id": "0",
+        "status": "FINISHED",
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/83078ffbedc14fa69e6ba61d1435fbb0/artifacts",
+        "end_time": 1793878174205,
+        "run_name": "knn-genre-neighbors",
+        "user_id": "meinetaetigkeit",
+        "run_id": "83078ffbedc14fa69e6ba61d1435fbb0",
+        "run_uuid": "83078ffbedc14fa69e6ba61d1435fbb0",
+        "start_time": 1793878151453,
+        "lifecycle_stage": "active"
+      },
+      "data": {
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "key": "metric",
+            "value": "euclidean"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "n_movies",
+            "value": "27278"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "key": "normalization",
+            "value": "none"
+          }
+        ],
+        "tags": [
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          },
+          {
+            "key": "mlflow.user",
+            "value": "meinetaetigkeit"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "value": "knn-genre-neighbors",
+            "key": "mlflow.runName"
+          }
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "info": {
+        "run_name": "knn-genre-neighbors",
+        "status": "FINISHED",
+        "start_time": 1793827916646,
+        "lifecycle_stage": "active",
+        "run_uuid": "149abf892544466bb7e9c5b941168d17",
+        "user_id": "meinetaetigkeit",
+        "experiment_id": "0",
+        "end_time": 1793827959511,
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/149abf892544466bb7e9c5b941168d17/artifacts",
+        "run_id": "149abf892544466bb7e9c5b941168d17"
+      },
+      "data": {
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "key": "metric",
+            "value": "euclidean"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "n_movies",
+            "value": "27278"
+          },
+          {
+            "value": "20",
+            "key": "n_features"
+          },
+          {
+            "key": "normalization",
+            "value": "none"
+          }
+        ],
+        "tags": [
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "value": "false",
+            "key": "uses_ratings"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          },
+          {
+            "key": "mlflow.user",
+            "value": "meinetaetigkeit"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "value": "LOCAL",
+            "key": "mlflow.source.type"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          }
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "info": {
+        "end_time": 1793825639990,
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/76e6fb672c1a4c7ea519b0cad5dde585/artifacts",
+        "run_name": "knn-genre-neighbors",
+        "user_id": "meinetaetigkeit",
+        "lifecycle_stage": "active",
+        "run_id": "76e6fb672c1a4c7ea519b0cad5dde585",
+        "run_uuid": "76e6fb672c1a4c7ea519b0cad5dde585",
+        "experiment_id": "0",
+        "status": "FINISHED",
+        "start_time": 1793825605484
+      },
+      "data": {
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "key": "metric",
+            "value": "euclidean"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "n_movies",
+            "value": "27278"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "value": "none",
+            "key": "normalization"
+          }
+        ],
+        "tags": [
+          {
+            "value": "meinetaetigkeit",
+            "key": "mlflow.user"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          },
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "value": "not_performed",
+            "key": "evaluation"
+          }
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "info": {
+        "run_id": "53665d3584494b8e9619759030058bed",
+        "run_uuid": "53665d3584494b8e9619759030058bed",
+        "experiment_id": "0",
+        "end_time": 1793808153087,
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/53665d3584494b8e9619759030058bed/artifacts",
+        "user_id": "meinetaetigkeit",
+        "status": "FINISHED",
+        "start_time": 1793808115655,
+        "lifecycle_stage": "active",
+        "run_name": "knn-genre-neighbors"
+      },
+      "data": {
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "key": "metric",
+            "value": "euclidean"
+          },
+          {
+            "value": "knn",
+            "key": "model_type"
+          },
+          {
+            "key": "n_movies",
+            "value": "27278"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "key": "normalization",
+            "value": "none"
+          }
+        ],
+        "tags": [
+          {
+            "value": "meinetaetigkeit",
+            "key": "mlflow.user"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "value": "LOCAL",
+            "key": "mlflow.source.type"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          },
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          }
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "inputs": {},
+      "info": {
+        "user_id": "meinetaetigkeit",
+        "status": "FINISHED",
+        "end_time": 1793807307140,
+        "run_id": "1d154625d636466689d649fa74aa7436",
+        "lifecycle_stage": "active",
+        "run_uuid": "1d154625d636466689d649fa74aa7436",
+        "run_name": "knn-genre-neighbors",
+        "start_time": 1793807282084,
+        "experiment_id": "0",
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/1d154625d636466689d649fa74aa7436/artifacts"
+      },
+      "data": {
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "key": "metric",
+            "value": "euclidean"
+          },
+          {
+            "value": "knn",
+            "key": "model_type"
+          },
+          {
+            "value": "27278",
+            "key": "n_movies"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "value": "none",
+            "key": "normalization"
+          }
+        ],
+        "tags": [
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "value": "knn",
+            "key": "model_type"
+          },
+          {
+            "value": "false",
+            "key": "uses_ratings"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          },
+          {
+            "key": "mlflow.user",
+            "value": "meinetaetigkeit"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          }
+        ]
+      }
+    },
+    {
+      "inputs": {},
+      "info": {
+        "start_time": 1793706694363,
+        "end_time": 1793706704484,
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/831897e136f24441a34f3b43705bb042/artifacts",
+        "user_id": "meinetaetigkeit",
+        "status": "FINISHED",
+        "lifecycle_stage": "active",
+        "run_name": "knn-genre-neighbors",
+        "run_id": "831897e136f24441a34f3b43705bb042",
+        "run_uuid": "831897e136f24441a34f3b43705bb042",
+        "experiment_id": "0"
+      },
+      "data": {
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "value": "euclidean",
+            "key": "metric"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "n_movies",
+            "value": "27278"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "key": "normalization",
+            "value": "none"
+          }
+        ],
+        "tags": [
+          {
+            "key": "mlflow.user",
+            "value": "meinetaetigkeit"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "value": "LOCAL",
+            "key": "mlflow.source.type"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          },
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          }
+        ]
+      }
+    },
+    {
+      "inputs": {},
+      "info": {
+        "run_name": "knn-genre-neighbors",
+        "status": "FINISHED",
+        "start_time": 1793704121610,
+        "lifecycle_stage": "active",
+        "experiment_id": "0",
+        "user_id": "meinetaetigkeit",
+        "end_time": 1793704136794,
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/28baac0e467a4605bcc28df1f6f4e3a5/artifacts",
+        "run_uuid": "28baac0e467a4605bcc28df1f6f4e3a5",
+        "run_id": "28baac0e467a4605bcc28df1f6f4e3a5"
+      },
+      "data": {
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "key": "metric",
+            "value": "euclidean"
+          },
+          {
+            "value": "knn",
+            "key": "model_type"
+          },
+          {
+            "key": "n_movies",
+            "value": "27278"
+          },
+          {
+            "value": "20",
+            "key": "n_features"
+          },
+          {
+            "key": "normalization",
+            "value": "none"
+          }
+        ],
+        "tags": [
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          },
+          {
+            "key": "mlflow.user",
+            "value": "meinetaetigkeit"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          }
+        ]
+      }
+    },
+    {
+      "inputs": {},
+      "info": {
+        "run_name": "knn-genre-neighbors",
+        "status": "FINISHED",
+        "run_id": "d99daaf3191e41d291c8bc2ca62ade49",
+        "start_time": 1793703175738,
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/d99daaf3191e41d291c8bc2ca62ade49/artifacts",
+        "experiment_id": "0",
+        "user_id": "abulhawa",
+        "lifecycle_stage": "active",
+        "run_uuid": "d99daaf3191e41d291c8bc2ca62ade49",
+        "end_time": 1793703193413
+      },
+      "data": {
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "key": "metric",
+            "value": "euclidean"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "n_movies",
+            "value": "27278"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "value": "none",
+            "key": "normalization"
+          }
+        ],
+        "tags": [
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          },
+          {
+            "value": "abulhawa",
+            "key": "mlflow.user"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "value": "knn-genre-neighbors",
+            "key": "mlflow.runName"
+          }
+        ]
+      }
+    },
+    {
+      "inputs": {},
+      "info": {
+        "user_id": "abulhawa",
+        "run_uuid": "6d1bf5aca9a840e1b94811cb42c1b44c",
+        "status": "FINISHED",
+        "end_time": 1793702692077,
+        "experiment_id": "0",
+        "run_name": "knn-genre-neighbors",
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/6d1bf5aca9a840e1b94811cb42c1b44c/artifacts",
+        "start_time": 1793702670303,
+        "lifecycle_stage": "active",
+        "run_id": "6d1bf5aca9a840e1b94811cb42c1b44c"
+      },
+      "data": {
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "key": "metric",
+            "value": "euclidean"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "n_movies",
+            "value": "27278"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "key": "normalization",
+            "value": "none"
+          }
+        ],
+        "tags": [
+          {
+            "key": "mlflow.user",
+            "value": "abulhawa"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "value": "knn-genre-neighbors",
+            "key": "mlflow.runName"
+          },
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          }
+        ]
+      }
+    },
+    {
+      "info": {
+        "user_id": "abulhawa",
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/c1b3be99d22c498691ba830f6f905bf1/artifacts",
+        "lifecycle_stage": "active",
+        "end_time": 1793702392296,
+        "run_id": "c1b3be99d22c498691ba830f6f905bf1",
+        "run_name": "knn-genre-neighbors",
+        "start_time": 1793702371467,
+        "run_uuid": "c1b3be99d22c498691ba830f6f905bf1",
+        "experiment_id": "0",
+        "status": "FINISHED"
+      },
+      "data": {
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "value": "euclidean",
+            "key": "metric"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "n_movies",
+            "value": "27278"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "key": "normalization",
+            "value": "none"
+          }
+        ],
+        "tags": [
+          {
+            "key": "mlflow.user",
+            "value": "abulhawa"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "value": "LOCAL",
+            "key": "mlflow.source.type"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          },
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          }
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "data": {
+        "params": [
+          {
+            "value": "20",
+            "key": "n_neighbors"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "key": "metric",
+            "value": "euclidean"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "n_movies",
+            "value": "27278"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "key": "normalization",
+            "value": "none"
+          }
+        ],
+        "tags": [
+          {
+            "value": "genre_nearest_neighbor_retrieval",
+            "key": "task"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          },
+          {
+            "key": "mlflow.user",
+            "value": "abulhawa"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "value": "knn-genre-neighbors",
+            "key": "mlflow.runName"
+          }
+        ]
+      },
+      "inputs": {},
+      "info": {
+        "experiment_id": "0",
+        "start_time": 1793701993589,
+        "run_uuid": "952382f3d1a84ca3ba05f23b2bffaace",
+        "run_name": "knn-genre-neighbors",
+        "run_id": "952382f3d1a84ca3ba05f23b2bffaace",
+        "status": "FINISHED",
+        "end_time": 1793702007850,
+        "lifecycle_stage": "active",
+        "user_id": "abulhawa",
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/952382f3d1a84ca3ba05f23b2bffaace/artifacts"
+      }
+    },
+    {
+      "info": {
+        "lifecycle_stage": "active",
+        "experiment_id": "0",
+        "user_id": "abulhawa",
+        "run_id": "450c68febaa3420a9d02615d7338a32c",
+        "run_uuid": "450c68febaa3420a9d02615d7338a32c",
+        "status": "FINISHED",
+        "start_time": 1793616409099,
+        "end_time": 1793616418287,
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/450c68febaa3420a9d02615d7338a32c/artifacts",
+        "run_name": "knn-genre-neighbors"
+      },
+      "data": {
+        "params": [
+          {
+            "value": "20",
+            "key": "n_neighbors"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "key": "metric",
+            "value": "euclidean"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "n_movies",
+            "value": "27278"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "key": "normalization",
+            "value": "none"
+          }
+        ],
+        "tags": [
+          {
+            "key": "mlflow.user",
+            "value": "abulhawa"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "value": "knn-genre-neighbors",
+            "key": "mlflow.runName"
+          },
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          }
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "info": {
+        "run_uuid": "7d9f26c983964cfdac9a7e2e7001a1f7",
+        "experiment_id": "0",
+        "end_time": 1793616355982,
+        "lifecycle_stage": "active",
+        "user_id": "abulhawa",
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/7d9f26c983964cfdac9a7e2e7001a1f7/artifacts",
+        "run_name": "knn-genre-neighbors",
+        "status": "FINISHED",
+        "start_time": 1793616341444,
+        "run_id": "7d9f26c983964cfdac9a7e2e7001a1f7"
+      },
+      "data": {
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "value": "euclidean",
+            "key": "metric"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "n_movies",
+            "value": "27278"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "key": "normalization",
+            "value": "none"
+          }
+        ],
+        "tags": [
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          },
+          {
+            "key": "mlflow.user",
+            "value": "abulhawa"
+          },
+          {
+            "value": "/app/src/train_service/train_model.py",
+            "key": "mlflow.source.name"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          }
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "info": {
+        "user_id": "abulhawa",
+        "experiment_id": "0",
+        "status": "FINISHED",
+        "start_time": 1793614368440,
+        "run_id": "f9e369774b754f51a9e6ae383226fe89",
+        "run_name": "knn-genre-neighbors",
+        "end_time": 1793614377929,
+        "artifact_uri": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/f9e369774b754f51a9e6ae383226fe89/artifacts",
+        "lifecycle_stage": "active",
+        "run_uuid": "f9e369774b754f51a9e6ae383226fe89"
+      },
+      "data": {
+        "params": [
+          {
+            "key": "n_neighbors",
+            "value": "20"
+          },
+          {
+            "key": "algorithm",
+            "value": "ball_tree"
+          },
+          {
+            "key": "metric",
+            "value": "euclidean"
+          },
+          {
+            "value": "knn",
+            "key": "model_type"
+          },
+          {
+            "key": "n_movies",
+            "value": "27278"
+          },
+          {
+            "key": "n_features",
+            "value": "20"
+          },
+          {
+            "key": "normalization",
+            "value": "none"
+          }
+        ],
+        "tags": [
+          {
+            "key": "mlflow.user",
+            "value": "abulhawa"
+          },
+          {
+            "key": "mlflow.source.name",
+            "value": "/app/src/train_service/train_model.py"
+          },
+          {
+            "key": "mlflow.source.type",
+            "value": "LOCAL"
+          },
+          {
+            "key": "mlflow.runName",
+            "value": "knn-genre-neighbors"
+          },
+          {
+            "key": "task",
+            "value": "genre_nearest_neighbor_retrieval"
+          },
+          {
+            "key": "model_type",
+            "value": "knn"
+          },
+          {
+            "key": "uses_ratings",
+            "value": "false"
+          },
+          {
+            "key": "evaluation",
+            "value": "not_performed"
+          }
+        ]
+      },
+      "inputs": {}
+    }
+  ]
+}

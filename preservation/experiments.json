@@ -1,0 +1,18 @@
+{
+  "experiments": [
+    {
+      "lifecycle_stage": "active",
+      "last_update_time": 1793614366875,
+      "creation_time": 1793614366875,
+      "tags": [
+        {
+          "key": "mlflow.experimentKind",
+          "value": "custom_model_development"
+        }
+      ],
+      "experiment_id": "0",
+      "name": "movie-genre-knn",
+      "artifact_location": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817"
+    }
+  ]
+}

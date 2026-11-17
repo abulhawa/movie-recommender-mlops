@@ -1,0 +1,65 @@
+[
+  {
+    "Key": "movies.csv",
+    "LastModified": "2026-10-26 07:38:14+00:00",
+    "ETag": "\"0x8DF333418494366\"",
+    "Size": 1397542,
+    "StorageClass": "STANDARD"
+  },
+  {
+    "Key": "ratings_parts/ratings_01.csv",
+    "LastModified": "2026-10-26 07:38:34+00:00",
+    "ETag": "\"0x8DF33342440FBFF\"",
+    "Size": 60501696,
+    "StorageClass": "STANDARD"
+  },
+  {
+    "Key": "ratings_parts/ratings_02.csv",
+    "LastModified": "2026-10-26 07:39:53+00:00",
+    "ETag": "\"0x8DF333453274CF0\"",
+    "Size": 62192906,
+    "StorageClass": "STANDARD"
+  },
+  {
+    "Key": "ratings_parts/ratings_03.csv",
+    "LastModified": "2026-11-10 07:16:37+00:00",
+    "ETag": "\"0x8DF3EFA8F554920\"",
+    "Size": 65747552,
+    "StorageClass": "STANDARD"
+  },
+  {
+    "Key": "ratings_parts/ratings_04.csv",
+    "LastModified": "2026-11-10 07:19:09+00:00",
+    "ETag": "\"0x8DF3EFAE9E241C2\"",
+    "Size": 67460417,
+    "StorageClass": "STANDARD"
+  },
+  {
+    "Key": "ratings_parts/ratings_05.csv",
+    "LastModified": "2026-11-10 08:00:41+00:00",
+    "ETag": "\"0x8DF3F00B70040FB\"",
+    "Size": 67542296,
+    "StorageClass": "STANDARD"
+  },
+  {
+    "Key": "ratings_parts/ratings_06.csv",
+    "LastModified": "2026-11-10 08:39:43+00:00",
+    "ETag": "\"0x8DF3F062B3680D9\"",
+    "Size": 65421183,
+    "StorageClass": "STANDARD"
+  },
+  {
+    "Key": "ratings_parts/ratings_07.csv",
+    "LastModified": "2026-11-10 08:40:36+00:00",
+    "ETag": "\"0x8DF3F064AD816C9\"",
+    "Size": 68353730,
+    "StorageClass": "STANDARD"
+  },
+  {
+    "Key": "ratings_parts/ratings_08.csv",
+    "LastModified": "2026-11-10 08:51:30+00:00",
+    "ETag": "\"0x8DF3F07D049ADF8\"",
+    "Size": 68724761,
+    "StorageClass": "STANDARD"
+  }
+]

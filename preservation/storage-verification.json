@@ -1,0 +1,12 @@
+{
+  "dvc": {
+    "objects": 14,
+    "bytes": 1060744879,
+    "size_and_downloaded_md5_checks": "passed"
+  },
+  "bucket": {
+    "objects": 9,
+    "bytes": 527342083,
+    "size_and_downloaded_md5_checks": "passed"
+  }
+}

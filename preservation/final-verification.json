@@ -1,0 +1,28 @@
+{
+  "source_git_commits": 176,
+  "source_branches": 8,
+  "mlflow_runs": 73,
+  "model_versions": 66,
+  "aliases": {
+    "ali-rollout-test": "41",
+    "live": "66",
+    "mani-testing": "48",
+    "uro-local": "49"
+  },
+  "run_params_tags_status_start_and_originally_present_end_times": "verified",
+  "historical_running_runs_without_original_end_time": 7,
+  "sample_model_artifact_sha256": "verified",
+  "storage": {
+    "dvc": {
+      "objects": 14,
+      "bytes": 1060744879,
+      "size_and_downloaded_md5_checks": "passed"
+    },
+    "bucket": {
+      "objects": 9,
+      "bytes": 527342083,
+      "size_and_downloaded_md5_checks": "passed"
+    }
+  },
+  "original_working_tree_clean": true
+}

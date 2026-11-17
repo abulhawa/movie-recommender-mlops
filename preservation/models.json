@@ -1,0 +1,63 @@
+{
+  "registered_models": [
+    {
+      "last_updated_timestamp": 1794919603185,
+      "latest_versions": [
+        {
+          "current_stage": "None",
+          "status": "READY",
+          "run_link": "",
+          "name": "movie-genre-knn",
+          "version": "67",
+          "description": "",
+          "tags": [
+            {
+              "key": "genres",
+              "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+            },
+            {
+              "key": "input_normalization",
+              "value": "none"
+            },
+            {
+              "key": "model_type",
+              "value": "knn"
+            },
+            {
+              "key": "schema_file",
+              "value": "training_schema.json"
+            },
+            {
+              "key": "source_training_run_id",
+              "value": "1fb94ad82dfb4ba880d9f0d57524fe19"
+            }
+          ],
+          "creation_timestamp": 1794919603185,
+          "last_updated_timestamp": 1794919603185,
+          "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/1fb94ad82dfb4ba880d9f0d57524fe19/artifacts/model",
+          "run_id": "1fb94ad82dfb4ba880d9f0d57524fe19"
+        }
+      ],
+      "aliases": [
+        {
+          "alias": "ali-rollout-test",
+          "version": "42"
+        },
+        {
+          "alias": "mani-testing",
+          "version": "49"
+        },
+        {
+          "alias": "uro-local",
+          "version": "50"
+        },
+        {
+          "alias": "live",
+          "version": "67"
+        }
+      ],
+      "name": "movie-genre-knn",
+      "creation_timestamp": 1793614373672
+    }
+  ]
+}

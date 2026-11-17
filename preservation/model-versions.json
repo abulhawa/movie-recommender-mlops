@@ -1,0 +1,2248 @@
+{
+  "model_versions": [
+    {
+      "run_id": "1fb94ad82dfb4ba880d9f0d57524fe19",
+      "status": "READY",
+      "name": "movie-genre-knn",
+      "creation_timestamp": 1794919603185,
+      "run_link": "",
+      "description": "",
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "key": "model_type",
+          "value": "knn"
+        },
+        {
+          "value": "training_schema.json",
+          "key": "schema_file"
+        },
+        {
+          "value": "1fb94ad82dfb4ba880d9f0d57524fe19",
+          "key": "source_training_run_id"
+        }
+      ],
+      "last_updated_timestamp": 1794919603185,
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/1fb94ad82dfb4ba880d9f0d57524fe19/artifacts/model",
+      "version": "67",
+      "current_stage": "None"
+    },
+    {
+      "description": "",
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "key": "model_type",
+          "value": "knn"
+        },
+        {
+          "key": "schema_file",
+          "value": "training_schema.json"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "729b76f532a640db9cf4a945fe014fca"
+        }
+      ],
+      "run_link": "",
+      "creation_timestamp": 1794916194122,
+      "current_stage": "None",
+      "status": "READY",
+      "name": "movie-genre-knn",
+      "run_id": "729b76f532a640db9cf4a945fe014fca",
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/729b76f532a640db9cf4a945fe014fca/artifacts/model",
+      "version": "66",
+      "last_updated_timestamp": 1794916194122
+    },
+    {
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "key": "model_type",
+          "value": "knn"
+        },
+        {
+          "key": "schema_file",
+          "value": "training_schema.json"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "eb3c9857cfb74a2eb8cd45bb98abc122"
+        }
+      ],
+      "name": "movie-genre-knn",
+      "last_updated_timestamp": 1794916063236,
+      "current_stage": "None",
+      "run_id": "eb3c9857cfb74a2eb8cd45bb98abc122",
+      "version": "65",
+      "status": "READY",
+      "run_link": "",
+      "description": "",
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/eb3c9857cfb74a2eb8cd45bb98abc122/artifacts/model",
+      "creation_timestamp": 1794916063236
+    },
+    {
+      "creation_timestamp": 1794915988119,
+      "current_stage": "None",
+      "description": "",
+      "run_id": "e951f5b7985b4238b7a179a4f9239e5b",
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "key": "model_type",
+          "value": "knn"
+        },
+        {
+          "value": "training_schema.json",
+          "key": "schema_file"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "e951f5b7985b4238b7a179a4f9239e5b"
+        }
+      ],
+      "name": "movie-genre-knn",
+      "version": "64",
+      "run_link": "",
+      "last_updated_timestamp": 1794915988119,
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/e951f5b7985b4238b7a179a4f9239e5b/artifacts/model",
+      "status": "READY"
+    },
+    {
+      "current_stage": "None",
+      "description": "",
+      "status": "READY",
+      "run_link": "",
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/a1024a7ff940472786c9553c1b4badbd/artifacts/model",
+      "run_id": "a1024a7ff940472786c9553c1b4badbd",
+      "version": "63",
+      "creation_timestamp": 1794907118506,
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "key": "model_type",
+          "value": "knn"
+        },
+        {
+          "key": "schema_file",
+          "value": "training_schema.json"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "a1024a7ff940472786c9553c1b4badbd"
+        }
+      ],
+      "name": "movie-genre-knn",
+      "last_updated_timestamp": 1794907118506
+    },
+    {
+      "description": "",
+      "run_id": "4fa80d96aa19460ba44d675dc5cf5a83",
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "value": "knn",
+          "key": "model_type"
+        },
+        {
+          "key": "schema_file",
+          "value": "training_schema.json"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "4fa80d96aa19460ba44d675dc5cf5a83"
+        }
+      ],
+      "name": "movie-genre-knn",
+      "status": "READY",
+      "run_link": "",
+      "last_updated_timestamp": 1794837055139,
+      "version": "62",
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/4fa80d96aa19460ba44d675dc5cf5a83/artifacts/model",
+      "creation_timestamp": 1794837055139,
+      "current_stage": "None"
+    },
+    {
+      "description": "",
+      "current_stage": "None",
+      "run_id": "c667bc436ccf4afca4f52a5bb4f6a3f8",
+      "creation_timestamp": 1794836221876,
+      "status": "READY",
+      "name": "movie-genre-knn",
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/c667bc436ccf4afca4f52a5bb4f6a3f8/artifacts/model",
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "key": "model_type",
+          "value": "knn"
+        },
+        {
+          "key": "schema_file",
+          "value": "training_schema.json"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "c667bc436ccf4afca4f52a5bb4f6a3f8"
+        }
+      ],
+      "run_link": "",
+      "version": "61",
+      "last_updated_timestamp": 1794836221876
+    },
+    {
+      "version": "60",
+      "current_stage": "None",
+      "description": "",
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/051d5f146dbe441fb49ff6f6ac11314f/artifacts/model",
+      "run_id": "051d5f146dbe441fb49ff6f6ac11314f",
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "key": "model_type",
+          "value": "knn"
+        },
+        {
+          "key": "schema_file",
+          "value": "training_schema.json"
+        },
+        {
+          "value": "051d5f146dbe441fb49ff6f6ac11314f",
+          "key": "source_training_run_id"
+        }
+      ],
+      "status": "READY",
+      "run_link": "",
+      "name": "movie-genre-knn",
+      "creation_timestamp": 1794836077295,
+      "last_updated_timestamp": 1794836077295
+    },
+    {
+      "description": "",
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "key": "model_type",
+          "value": "knn"
+        },
+        {
+          "key": "schema_file",
+          "value": "training_schema.json"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "617a5664a3db439d8bd078756e398a37"
+        }
+      ],
+      "name": "movie-genre-knn",
+      "creation_timestamp": 1794835872548,
+      "current_stage": "None",
+      "run_id": "617a5664a3db439d8bd078756e398a37",
+      "version": "59",
+      "last_updated_timestamp": 1794835872548,
+      "status": "READY",
+      "run_link": "",
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/617a5664a3db439d8bd078756e398a37/artifacts/model"
+    },
+    {
+      "last_updated_timestamp": 1794577472101,
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/c441e9035cbb44bfbaeb9a41e797e59c/artifacts/model",
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "value": "knn",
+          "key": "model_type"
+        },
+        {
+          "key": "schema_file",
+          "value": "training_schema.json"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "c441e9035cbb44bfbaeb9a41e797e59c"
+        }
+      ],
+      "version": "58",
+      "current_stage": "None",
+      "run_id": "c441e9035cbb44bfbaeb9a41e797e59c",
+      "run_link": "",
+      "creation_timestamp": 1794577472101,
+      "description": "",
+      "status": "READY",
+      "name": "movie-genre-knn"
+    },
+    {
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "key": "model_type",
+          "value": "knn"
+        },
+        {
+          "key": "schema_file",
+          "value": "training_schema.json"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "f32ecbc096434e6b9704c3a244a7be46"
+        }
+      ],
+      "name": "movie-genre-knn",
+      "run_id": "f32ecbc096434e6b9704c3a244a7be46",
+      "version": "57",
+      "creation_timestamp": 1794577186028,
+      "last_updated_timestamp": 1794577186028,
+      "current_stage": "None",
+      "description": "",
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/f32ecbc096434e6b9704c3a244a7be46/artifacts/model",
+      "run_link": "",
+      "status": "READY"
+    },
+    {
+      "run_link": "",
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/5beafbb76f244a39b0865e2313993531/artifacts/model",
+      "name": "movie-genre-knn",
+      "run_id": "5beafbb76f244a39b0865e2313993531",
+      "creation_timestamp": 1794574717090,
+      "last_updated_timestamp": 1794574717090,
+      "current_stage": "None",
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "key": "model_type",
+          "value": "knn"
+        },
+        {
+          "key": "schema_file",
+          "value": "training_schema.json"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "5beafbb76f244a39b0865e2313993531"
+        }
+      ],
+      "version": "56",
+      "description": "",
+      "status": "READY"
+    },
+    {
+      "last_updated_timestamp": 1794560287159,
+      "current_stage": "None",
+      "status": "READY",
+      "run_id": "26c64341fd5443b49be297d8238414f9",
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "key": "model_type",
+          "value": "knn"
+        },
+        {
+          "key": "schema_file",
+          "value": "training_schema.json"
+        },
+        {
+          "value": "26c64341fd5443b49be297d8238414f9",
+          "key": "source_training_run_id"
+        }
+      ],
+      "version": "55",
+      "creation_timestamp": 1794560287159,
+      "description": "",
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/26c64341fd5443b49be297d8238414f9/artifacts/model",
+      "run_link": "",
+      "name": "movie-genre-knn"
+    },
+    {
+      "version": "54",
+      "current_stage": "None",
+      "name": "movie-genre-knn",
+      "creation_timestamp": 1794559446640,
+      "description": "",
+      "status": "READY",
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/b08ab3485078448b83deebed7855e119/artifacts/model",
+      "run_id": "b08ab3485078448b83deebed7855e119",
+      "last_updated_timestamp": 1794559446640,
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "value": "knn",
+          "key": "model_type"
+        },
+        {
+          "key": "schema_file",
+          "value": "training_schema.json"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "b08ab3485078448b83deebed7855e119"
+        }
+      ],
+      "run_link": ""
+    },
+    {
+      "run_link": "",
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "key": "model_type",
+          "value": "knn"
+        },
+        {
+          "key": "schema_file",
+          "value": "training_schema.json"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "f13a38fc55e84d40a46011e7705c1ba8"
+        }
+      ],
+      "name": "movie-genre-knn",
+      "version": "53",
+      "creation_timestamp": 1794559276782,
+      "current_stage": "None",
+      "description": "",
+      "status": "READY",
+      "last_updated_timestamp": 1794559276782,
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/f13a38fc55e84d40a46011e7705c1ba8/artifacts/model",
+      "run_id": "f13a38fc55e84d40a46011e7705c1ba8"
+    },
+    {
+      "run_id": "5c11054ade1f42be8de10bc03f1a1494",
+      "run_link": "",
+      "name": "movie-genre-knn",
+      "last_updated_timestamp": 1794556526179,
+      "status": "READY",
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "key": "model_type",
+          "value": "knn"
+        },
+        {
+          "value": "training_schema.json",
+          "key": "schema_file"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "5c11054ade1f42be8de10bc03f1a1494"
+        }
+      ],
+      "version": "52",
+      "creation_timestamp": 1794556526179,
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/5c11054ade1f42be8de10bc03f1a1494/artifacts/model",
+      "current_stage": "None",
+      "description": ""
+    },
+    {
+      "run_link": "",
+      "description": "",
+      "version": "51",
+      "current_stage": "None",
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/f4ab729e306e4f1aad187f07b2bbb302/artifacts/model",
+      "status": "READY",
+      "creation_timestamp": 1794391237356,
+      "run_id": "f4ab729e306e4f1aad187f07b2bbb302",
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "key": "model_type",
+          "value": "knn"
+        },
+        {
+          "key": "schema_file",
+          "value": "training_schema.json"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "f4ab729e306e4f1aad187f07b2bbb302"
+        }
+      ],
+      "name": "movie-genre-knn",
+      "last_updated_timestamp": 1794391237356
+    },
+    {
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/79d820b532ff4973b4c06511a5e5590c/artifacts/model",
+      "status": "READY",
+      "run_link": "",
+      "name": "movie-genre-knn",
+      "creation_timestamp": 1794301839563,
+      "run_id": "79d820b532ff4973b4c06511a5e5590c",
+      "version": "50",
+      "last_updated_timestamp": 1794301839563,
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "key": "model_type",
+          "value": "knn"
+        },
+        {
+          "key": "schema_file",
+          "value": "training_schema.json"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "79d820b532ff4973b4c06511a5e5590c"
+        }
+      ],
+      "current_stage": "None",
+      "description": ""
+    },
+    {
+      "creation_timestamp": 1794300774755,
+      "run_id": "56840ab379984cbc85f92ac7d854fdd1",
+      "name": "movie-genre-knn",
+      "description": "",
+      "version": "49",
+      "status": "READY",
+      "last_updated_timestamp": 1794300774755,
+      "current_stage": "None",
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/56840ab379984cbc85f92ac7d854fdd1/artifacts/model",
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "key": "model_type",
+          "value": "knn"
+        },
+        {
+          "key": "schema_file",
+          "value": "training_schema.json"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "56840ab379984cbc85f92ac7d854fdd1"
+        }
+      ],
+      "run_link": ""
+    },
+    {
+      "version": "48",
+      "run_link": "",
+      "current_stage": "None",
+      "description": "",
+      "last_updated_timestamp": 1794300166145,
+      "creation_timestamp": 1794300166145,
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/117759be2f134b07a7ad6ab78c53dde5/artifacts/model",
+      "run_id": "117759be2f134b07a7ad6ab78c53dde5",
+      "status": "READY",
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "key": "model_type",
+          "value": "knn"
+        },
+        {
+          "key": "schema_file",
+          "value": "training_schema.json"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "117759be2f134b07a7ad6ab78c53dde5"
+        }
+      ],
+      "name": "movie-genre-knn"
+    },
+    {
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/aacc074c526a492b885fb0e13eed3875/artifacts/model",
+      "last_updated_timestamp": 1794294594845,
+      "run_id": "aacc074c526a492b885fb0e13eed3875",
+      "status": "READY",
+      "run_link": "",
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "key": "model_type",
+          "value": "knn"
+        },
+        {
+          "value": "training_schema.json",
+          "key": "schema_file"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "aacc074c526a492b885fb0e13eed3875"
+        }
+      ],
+      "name": "movie-genre-knn",
+      "version": "47",
+      "creation_timestamp": 1794294594845,
+      "current_stage": "None",
+      "description": ""
+    },
+    {
+      "last_updated_timestamp": 1794233379820,
+      "name": "movie-genre-knn",
+      "creation_timestamp": 1794233379820,
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/402dbd9987134f3a894f36423b996bb4/artifacts/model",
+      "description": "",
+      "status": "READY",
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "key": "model_type",
+          "value": "knn"
+        },
+        {
+          "key": "schema_file",
+          "value": "training_schema.json"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "402dbd9987134f3a894f36423b996bb4"
+        }
+      ],
+      "version": "46",
+      "current_stage": "None",
+      "run_id": "402dbd9987134f3a894f36423b996bb4",
+      "run_link": ""
+    },
+    {
+      "description": "",
+      "status": "READY",
+      "name": "movie-genre-knn",
+      "run_id": "ea5aa3a9c0bb4a1f9664b0012e779773",
+      "run_link": "",
+      "creation_timestamp": 1794229033425,
+      "current_stage": "None",
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "key": "model_type",
+          "value": "knn"
+        },
+        {
+          "key": "schema_file",
+          "value": "training_schema.json"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "ea5aa3a9c0bb4a1f9664b0012e779773"
+        }
+      ],
+      "version": "45",
+      "last_updated_timestamp": 1794229033425,
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/ea5aa3a9c0bb4a1f9664b0012e779773/artifacts/model"
+    },
+    {
+      "description": "",
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/897e5cf86fcc4a298cfae2a7e3e35a8f/artifacts/model",
+      "run_link": "",
+      "version": "44",
+      "creation_timestamp": 1794225297304,
+      "last_updated_timestamp": 1794225297304,
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "value": "knn",
+          "key": "model_type"
+        },
+        {
+          "key": "schema_file",
+          "value": "training_schema.json"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "897e5cf86fcc4a298cfae2a7e3e35a8f"
+        }
+      ],
+      "name": "movie-genre-knn",
+      "run_id": "897e5cf86fcc4a298cfae2a7e3e35a8f",
+      "status": "READY",
+      "current_stage": "None"
+    },
+    {
+      "creation_timestamp": 1794222948848,
+      "current_stage": "None",
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "key": "model_type",
+          "value": "knn"
+        },
+        {
+          "key": "schema_file",
+          "value": "training_schema.json"
+        },
+        {
+          "value": "3abd7df2ecc24bad930ef7c4065e12da",
+          "key": "source_training_run_id"
+        }
+      ],
+      "run_link": "",
+      "run_id": "3abd7df2ecc24bad930ef7c4065e12da",
+      "description": "",
+      "last_updated_timestamp": 1794222948848,
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/3abd7df2ecc24bad930ef7c4065e12da/artifacts/model",
+      "status": "READY",
+      "name": "movie-genre-knn",
+      "version": "43"
+    },
+    {
+      "status": "READY",
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "value": "knn",
+          "key": "model_type"
+        },
+        {
+          "value": "training_schema.json",
+          "key": "schema_file"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "0fe35509966d49b183054b6b1e6c4c0a"
+        }
+      ],
+      "creation_timestamp": 1794222935051,
+      "description": "",
+      "run_link": "",
+      "name": "movie-genre-knn",
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/0fe35509966d49b183054b6b1e6c4c0a/artifacts/model",
+      "run_id": "0fe35509966d49b183054b6b1e6c4c0a",
+      "version": "42",
+      "current_stage": "None",
+      "last_updated_timestamp": 1794222935051
+    },
+    {
+      "status": "READY",
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "key": "model_type",
+          "value": "knn"
+        },
+        {
+          "key": "schema_file",
+          "value": "training_schema.json"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "f13b8a868be84898bdedc132af8511b8"
+        }
+      ],
+      "run_link": "",
+      "version": "41",
+      "creation_timestamp": 1794222882439,
+      "last_updated_timestamp": 1794222882439,
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/f13b8a868be84898bdedc132af8511b8/artifacts/model",
+      "run_id": "f13b8a868be84898bdedc132af8511b8",
+      "name": "movie-genre-knn",
+      "current_stage": "None",
+      "description": ""
+    },
+    {
+      "description": "",
+      "status": "READY",
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "key": "model_type",
+          "value": "knn"
+        },
+        {
+          "key": "schema_file",
+          "value": "training_schema.json"
+        },
+        {
+          "value": "2bf526c59a9d46a8b4c20fb9eba88a4f",
+          "key": "source_training_run_id"
+        }
+      ],
+      "name": "movie-genre-knn",
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/2bf526c59a9d46a8b4c20fb9eba88a4f/artifacts/model",
+      "run_id": "2bf526c59a9d46a8b4c20fb9eba88a4f",
+      "version": "40",
+      "last_updated_timestamp": 1794222791682,
+      "run_link": "",
+      "creation_timestamp": 1794222791682,
+      "current_stage": "None"
+    },
+    {
+      "tags": [
+        {
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]",
+          "key": "genres"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "key": "model_type",
+          "value": "knn"
+        },
+        {
+          "key": "schema_file",
+          "value": "training_schema.json"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "769ad66bee9a4446b6a43b52f4dfbc38"
+        }
+      ],
+      "run_link": "",
+      "creation_timestamp": 1794222549029,
+      "last_updated_timestamp": 1794222549029,
+      "run_id": "769ad66bee9a4446b6a43b52f4dfbc38",
+      "name": "movie-genre-knn",
+      "status": "READY",
+      "version": "39",
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/769ad66bee9a4446b6a43b52f4dfbc38/artifacts/model",
+      "current_stage": "None",
+      "description": ""
+    },
+    {
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "key": "model_type",
+          "value": "knn"
+        },
+        {
+          "key": "schema_file",
+          "value": "training_schema.json"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "c987416e27d046aeaceaa4a3702ba62b"
+        }
+      ],
+      "run_link": "",
+      "description": "",
+      "creation_timestamp": 1794218741362,
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/c987416e27d046aeaceaa4a3702ba62b/artifacts/model",
+      "run_id": "c987416e27d046aeaceaa4a3702ba62b",
+      "name": "movie-genre-knn",
+      "version": "38",
+      "status": "READY",
+      "last_updated_timestamp": 1794218741362,
+      "current_stage": "None"
+    },
+    {
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "key": "model_type",
+          "value": "knn"
+        },
+        {
+          "value": "training_schema.json",
+          "key": "schema_file"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "973ecfe9605048508b1f8ce1a6acf3ea"
+        }
+      ],
+      "run_link": "",
+      "name": "movie-genre-knn",
+      "creation_timestamp": 1794213643859,
+      "last_updated_timestamp": 1794213643859,
+      "description": "",
+      "run_id": "973ecfe9605048508b1f8ce1a6acf3ea",
+      "status": "READY",
+      "version": "37",
+      "current_stage": "None",
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/973ecfe9605048508b1f8ce1a6acf3ea/artifacts/model"
+    },
+    {
+      "status": "READY",
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "key": "model_type",
+          "value": "knn"
+        },
+        {
+          "key": "schema_file",
+          "value": "training_schema.json"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "2f6b8e8c1dc0469aa546cf14252c328b"
+        }
+      ],
+      "run_link": "",
+      "name": "movie-genre-knn",
+      "version": "36",
+      "creation_timestamp": 1794127245195,
+      "last_updated_timestamp": 1794127245195,
+      "current_stage": "None",
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/2f6b8e8c1dc0469aa546cf14252c328b/artifacts/model",
+      "description": "",
+      "run_id": "2f6b8e8c1dc0469aa546cf14252c328b"
+    },
+    {
+      "status": "READY",
+      "name": "movie-genre-knn",
+      "version": "35",
+      "run_link": "",
+      "last_updated_timestamp": 1794040849958,
+      "current_stage": "None",
+      "run_id": "abdaecf086ac483f9f6849e6c19d3bca",
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "value": "knn",
+          "key": "model_type"
+        },
+        {
+          "key": "schema_file",
+          "value": "training_schema.json"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "abdaecf086ac483f9f6849e6c19d3bca"
+        }
+      ],
+      "creation_timestamp": 1794040849958,
+      "description": "",
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/abdaecf086ac483f9f6849e6c19d3bca/artifacts/model"
+    },
+    {
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "key": "model_type",
+          "value": "knn"
+        },
+        {
+          "key": "schema_file",
+          "value": "training_schema.json"
+        },
+        {
+          "value": "d52ba287ccde43509a3268c2f81b13cc",
+          "key": "source_training_run_id"
+        }
+      ],
+      "last_updated_timestamp": 1794040679027,
+      "description": "",
+      "name": "movie-genre-knn",
+      "run_link": "",
+      "version": "34",
+      "current_stage": "None",
+      "run_id": "d52ba287ccde43509a3268c2f81b13cc",
+      "creation_timestamp": 1794040679027,
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/d52ba287ccde43509a3268c2f81b13cc/artifacts/model",
+      "status": "READY"
+    },
+    {
+      "name": "movie-genre-knn",
+      "version": "33",
+      "last_updated_timestamp": 1794040412509,
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "value": "knn",
+          "key": "model_type"
+        },
+        {
+          "key": "schema_file",
+          "value": "training_schema.json"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "bd1491e2da9b4489a5afb43a534867ed"
+        }
+      ],
+      "run_link": "",
+      "creation_timestamp": 1794040412509,
+      "run_id": "bd1491e2da9b4489a5afb43a534867ed",
+      "status": "READY",
+      "current_stage": "None",
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/bd1491e2da9b4489a5afb43a534867ed/artifacts/model",
+      "description": ""
+    },
+    {
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/3bf3a6e09e3847efb52d02ef42e3dc84/artifacts/model",
+      "status": "READY",
+      "run_id": "3bf3a6e09e3847efb52d02ef42e3dc84",
+      "name": "movie-genre-knn",
+      "last_updated_timestamp": 1794037740430,
+      "description": "",
+      "version": "32",
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "key": "model_type",
+          "value": "knn"
+        },
+        {
+          "value": "training_schema.json",
+          "key": "schema_file"
+        },
+        {
+          "value": "3bf3a6e09e3847efb52d02ef42e3dc84",
+          "key": "source_training_run_id"
+        }
+      ],
+      "run_link": "",
+      "creation_timestamp": 1794037740430,
+      "current_stage": "None"
+    },
+    {
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/42cd4ae8654c4b819d84c5d4876ad0ce/artifacts/model",
+      "status": "READY",
+      "run_link": "",
+      "description": "",
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "key": "model_type",
+          "value": "knn"
+        },
+        {
+          "key": "schema_file",
+          "value": "training_schema.json"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "42cd4ae8654c4b819d84c5d4876ad0ce"
+        }
+      ],
+      "current_stage": "None",
+      "version": "31",
+      "creation_timestamp": 1794037672195,
+      "last_updated_timestamp": 1794037672195,
+      "run_id": "42cd4ae8654c4b819d84c5d4876ad0ce",
+      "name": "movie-genre-knn"
+    },
+    {
+      "creation_timestamp": 1794037534273,
+      "current_stage": "None",
+      "name": "movie-genre-knn",
+      "last_updated_timestamp": 1794037534273,
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/445c6b011f474c4e90a9705ac579d7cd/artifacts/model",
+      "run_id": "445c6b011f474c4e90a9705ac579d7cd",
+      "run_link": "",
+      "description": "",
+      "status": "READY",
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "key": "model_type",
+          "value": "knn"
+        },
+        {
+          "key": "schema_file",
+          "value": "training_schema.json"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "445c6b011f474c4e90a9705ac579d7cd"
+        }
+      ],
+      "version": "30"
+    },
+    {
+      "name": "movie-genre-knn",
+      "creation_timestamp": 1793983769579,
+      "current_stage": "None",
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/64436691b29e45de9fc03f3b8c6963e5/artifacts/model",
+      "run_link": "",
+      "version": "29",
+      "last_updated_timestamp": 1793983769579,
+      "description": "",
+      "run_id": "64436691b29e45de9fc03f3b8c6963e5",
+      "status": "READY",
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "key": "model_type",
+          "value": "knn"
+        },
+        {
+          "value": "training_schema.json",
+          "key": "schema_file"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "64436691b29e45de9fc03f3b8c6963e5"
+        }
+      ]
+    },
+    {
+      "status": "READY",
+      "run_link": "",
+      "name": "movie-genre-knn",
+      "last_updated_timestamp": 1793982930280,
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/3e47ec37e051439eb025f41ea73c4a97/artifacts/model",
+      "run_id": "3e47ec37e051439eb025f41ea73c4a97",
+      "creation_timestamp": 1793982930280,
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "key": "model_type",
+          "value": "knn"
+        },
+        {
+          "key": "schema_file",
+          "value": "training_schema.json"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "3e47ec37e051439eb025f41ea73c4a97"
+        }
+      ],
+      "description": "",
+      "version": "28",
+      "current_stage": "None"
+    },
+    {
+      "name": "movie-genre-knn",
+      "current_stage": "None",
+      "description": "",
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/e1bb476abc0b41f9971d196a2c65a1a5/artifacts/model",
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "key": "model_type",
+          "value": "knn"
+        },
+        {
+          "key": "schema_file",
+          "value": "training_schema.json"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "e1bb476abc0b41f9971d196a2c65a1a5"
+        }
+      ],
+      "creation_timestamp": 1793982154183,
+      "status": "READY",
+      "run_link": "",
+      "version": "27",
+      "run_id": "e1bb476abc0b41f9971d196a2c65a1a5",
+      "last_updated_timestamp": 1793982154183
+    },
+    {
+      "description": "",
+      "run_id": "56e6cabc65a64109a3cd45bf5b38cb10",
+      "version": "26",
+      "current_stage": "None",
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/56e6cabc65a64109a3cd45bf5b38cb10/artifacts/model",
+      "run_link": "",
+      "creation_timestamp": 1793981662658,
+      "status": "READY",
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "key": "model_type",
+          "value": "knn"
+        },
+        {
+          "key": "schema_file",
+          "value": "training_schema.json"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "56e6cabc65a64109a3cd45bf5b38cb10"
+        }
+      ],
+      "name": "movie-genre-knn",
+      "last_updated_timestamp": 1793981662658
+    },
+    {
+      "description": "",
+      "run_id": "a4cd491bc8b641a2aac394fe6140cbba",
+      "version": "25",
+      "creation_timestamp": 1793977670307,
+      "last_updated_timestamp": 1793977670307,
+      "tags": [
+        {
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]",
+          "key": "genres"
+        },
+        {
+          "value": "none",
+          "key": "input_normalization"
+        },
+        {
+          "key": "model_type",
+          "value": "knn"
+        },
+        {
+          "key": "schema_file",
+          "value": "training_schema.json"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "a4cd491bc8b641a2aac394fe6140cbba"
+        }
+      ],
+      "run_link": "",
+      "current_stage": "None",
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/a4cd491bc8b641a2aac394fe6140cbba/artifacts/model",
+      "status": "READY",
+      "name": "movie-genre-knn"
+    },
+    {
+      "current_stage": "None",
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "key": "model_type",
+          "value": "knn"
+        },
+        {
+          "key": "schema_file",
+          "value": "training_schema.json"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "80775916791845f183ba5437fe69e541"
+        }
+      ],
+      "run_link": "",
+      "creation_timestamp": 1793976686291,
+      "description": "",
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/80775916791845f183ba5437fe69e541/artifacts/model",
+      "version": "24",
+      "last_updated_timestamp": 1793976686291,
+      "run_id": "80775916791845f183ba5437fe69e541",
+      "status": "READY",
+      "name": "movie-genre-knn"
+    },
+    {
+      "version": "23",
+      "last_updated_timestamp": 1793975653354,
+      "description": "",
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/282d2feb64fb4f63882b670c1202cb77/artifacts/model",
+      "name": "movie-genre-knn",
+      "status": "READY",
+      "run_link": "",
+      "run_id": "282d2feb64fb4f63882b670c1202cb77",
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "key": "model_type",
+          "value": "knn"
+        },
+        {
+          "key": "schema_file",
+          "value": "training_schema.json"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "282d2feb64fb4f63882b670c1202cb77"
+        }
+      ],
+      "creation_timestamp": 1793975653354,
+      "current_stage": "None"
+    },
+    {
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "key": "model_type",
+          "value": "knn"
+        },
+        {
+          "key": "schema_file",
+          "value": "training_schema.json"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "7a054ebd34a5488ca37fc171fc077f62"
+        }
+      ],
+      "version": "22",
+      "creation_timestamp": 1793973794395,
+      "run_id": "7a054ebd34a5488ca37fc171fc077f62",
+      "status": "READY",
+      "run_link": "",
+      "description": "",
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/7a054ebd34a5488ca37fc171fc077f62/artifacts/model",
+      "current_stage": "None",
+      "name": "movie-genre-knn",
+      "last_updated_timestamp": 1793973794395
+    },
+    {
+      "status": "READY",
+      "version": "21",
+      "last_updated_timestamp": 1793967759375,
+      "creation_timestamp": 1793967759375,
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "key": "model_type",
+          "value": "knn"
+        },
+        {
+          "key": "schema_file",
+          "value": "training_schema.json"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "99102b353ea74f98b1764fbd63ee3840"
+        }
+      ],
+      "description": "",
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/99102b353ea74f98b1764fbd63ee3840/artifacts/model",
+      "run_link": "",
+      "name": "movie-genre-knn",
+      "current_stage": "None",
+      "run_id": "99102b353ea74f98b1764fbd63ee3840"
+    },
+    {
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/02d7aca05f394ac2887f92d0177793fa/artifacts/model",
+      "status": "READY",
+      "creation_timestamp": 1793958454433,
+      "run_id": "02d7aca05f394ac2887f92d0177793fa",
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "key": "model_type",
+          "value": "knn"
+        },
+        {
+          "key": "schema_file",
+          "value": "training_schema.json"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "02d7aca05f394ac2887f92d0177793fa"
+        }
+      ],
+      "name": "movie-genre-knn",
+      "version": "20",
+      "run_link": "",
+      "last_updated_timestamp": 1793958454433,
+      "current_stage": "None",
+      "description": ""
+    },
+    {
+      "creation_timestamp": 1793950283345,
+      "description": "",
+      "run_link": "",
+      "run_id": "4a0920ca582345618b2735bbb43eaebe",
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "key": "model_type",
+          "value": "knn"
+        },
+        {
+          "value": "training_schema.json",
+          "key": "schema_file"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "4a0920ca582345618b2735bbb43eaebe"
+        }
+      ],
+      "version": "19",
+      "last_updated_timestamp": 1793950283345,
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/4a0920ca582345618b2735bbb43eaebe/artifacts/model",
+      "name": "movie-genre-knn",
+      "current_stage": "None",
+      "status": "READY"
+    },
+    {
+      "name": "movie-genre-knn",
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/88a89c23943842849b2e667c599a470b/artifacts/model",
+      "run_id": "88a89c23943842849b2e667c599a470b",
+      "creation_timestamp": 1793880822918,
+      "current_stage": "None",
+      "status": "READY",
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "key": "model_type",
+          "value": "knn"
+        },
+        {
+          "key": "schema_file",
+          "value": "training_schema.json"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "88a89c23943842849b2e667c599a470b"
+        }
+      ],
+      "description": "",
+      "version": "17",
+      "last_updated_timestamp": 1793880822918,
+      "run_link": ""
+    },
+    {
+      "description": "",
+      "version": "16",
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "value": "knn",
+          "key": "model_type"
+        },
+        {
+          "key": "schema_file",
+          "value": "training_schema.json"
+        },
+        {
+          "value": "2d0c52e82d8b4ba5abc14511e78091a0",
+          "key": "source_training_run_id"
+        }
+      ],
+      "current_stage": "None",
+      "status": "READY",
+      "name": "movie-genre-knn",
+      "creation_timestamp": 1793880085032,
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/2d0c52e82d8b4ba5abc14511e78091a0/artifacts/model",
+      "run_id": "2d0c52e82d8b4ba5abc14511e78091a0",
+      "run_link": "",
+      "last_updated_timestamp": 1793880085032
+    },
+    {
+      "creation_timestamp": 1793879237934,
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/ee3f5796bd044576bcc580cde305c753/artifacts/model",
+      "last_updated_timestamp": 1793879237934,
+      "description": "",
+      "run_id": "ee3f5796bd044576bcc580cde305c753",
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "key": "model_type",
+          "value": "knn"
+        },
+        {
+          "key": "schema_file",
+          "value": "training_schema.json"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "ee3f5796bd044576bcc580cde305c753"
+        }
+      ],
+      "run_link": "",
+      "current_stage": "None",
+      "status": "READY",
+      "name": "movie-genre-knn",
+      "version": "15"
+    },
+    {
+      "run_link": "",
+      "current_stage": "None",
+      "status": "READY",
+      "description": "",
+      "run_id": "83078ffbedc14fa69e6ba61d1435fbb0",
+      "name": "movie-genre-knn",
+      "version": "14",
+      "last_updated_timestamp": 1793878178708,
+      "creation_timestamp": 1793878178708,
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/83078ffbedc14fa69e6ba61d1435fbb0/artifacts/model",
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "value": "none",
+          "key": "input_normalization"
+        },
+        {
+          "key": "model_type",
+          "value": "knn"
+        },
+        {
+          "key": "schema_file",
+          "value": "training_schema.json"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "83078ffbedc14fa69e6ba61d1435fbb0"
+        }
+      ]
+    },
+    {
+      "status": "READY",
+      "name": "movie-genre-knn",
+      "current_stage": "None",
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/149abf892544466bb7e9c5b941168d17/artifacts/model",
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "key": "model_type",
+          "value": "knn"
+        },
+        {
+          "key": "schema_file",
+          "value": "training_schema.json"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "149abf892544466bb7e9c5b941168d17"
+        }
+      ],
+      "run_link": "",
+      "version": "13",
+      "description": "",
+      "run_id": "149abf892544466bb7e9c5b941168d17",
+      "creation_timestamp": 1793827957118,
+      "last_updated_timestamp": 1793827957118
+    },
+    {
+      "current_stage": "None",
+      "status": "READY",
+      "run_link": "",
+      "name": "movie-genre-knn",
+      "description": "",
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/76e6fb672c1a4c7ea519b0cad5dde585/artifacts/model",
+      "version": "12",
+      "creation_timestamp": 1793825637127,
+      "run_id": "76e6fb672c1a4c7ea519b0cad5dde585",
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "key": "model_type",
+          "value": "knn"
+        },
+        {
+          "key": "schema_file",
+          "value": "training_schema.json"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "76e6fb672c1a4c7ea519b0cad5dde585"
+        }
+      ],
+      "last_updated_timestamp": 1793825637127
+    },
+    {
+      "run_link": "",
+      "creation_timestamp": 1793808153018,
+      "description": "",
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/53665d3584494b8e9619759030058bed/artifacts/model",
+      "run_id": "53665d3584494b8e9619759030058bed",
+      "name": "movie-genre-knn",
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "key": "model_type",
+          "value": "knn"
+        },
+        {
+          "key": "schema_file",
+          "value": "training_schema.json"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "53665d3584494b8e9619759030058bed"
+        }
+      ],
+      "version": "11",
+      "last_updated_timestamp": 1793808153018,
+      "current_stage": "None",
+      "status": "READY"
+    },
+    {
+      "run_link": "",
+      "current_stage": "None",
+      "description": "",
+      "run_id": "1d154625d636466689d649fa74aa7436",
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "key": "model_type",
+          "value": "knn"
+        },
+        {
+          "key": "schema_file",
+          "value": "training_schema.json"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "1d154625d636466689d649fa74aa7436"
+        }
+      ],
+      "name": "movie-genre-knn",
+      "version": "10",
+      "last_updated_timestamp": 1793807307063,
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/1d154625d636466689d649fa74aa7436/artifacts/model",
+      "status": "READY",
+      "creation_timestamp": 1793807307063
+    },
+    {
+      "run_id": "831897e136f24441a34f3b43705bb042",
+      "name": "movie-genre-knn",
+      "creation_timestamp": 1793706708393,
+      "version": "9",
+      "current_stage": "None",
+      "description": "",
+      "status": "READY",
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "key": "model_type",
+          "value": "knn"
+        },
+        {
+          "key": "schema_file",
+          "value": "training_schema.json"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "831897e136f24441a34f3b43705bb042"
+        }
+      ],
+      "run_link": "",
+      "last_updated_timestamp": 1793706708393,
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/831897e136f24441a34f3b43705bb042/artifacts/model"
+    },
+    {
+      "last_updated_timestamp": 1793704140583,
+      "current_stage": "None",
+      "status": "READY",
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "value": "none",
+          "key": "input_normalization"
+        },
+        {
+          "value": "knn",
+          "key": "model_type"
+        },
+        {
+          "key": "schema_file",
+          "value": "training_schema.json"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "28baac0e467a4605bcc28df1f6f4e3a5"
+        }
+      ],
+      "run_link": "",
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/28baac0e467a4605bcc28df1f6f4e3a5/artifacts/model",
+      "description": "",
+      "version": "8",
+      "creation_timestamp": 1793704140583,
+      "run_id": "28baac0e467a4605bcc28df1f6f4e3a5",
+      "name": "movie-genre-knn"
+    },
+    {
+      "version": "7",
+      "creation_timestamp": 1793703197052,
+      "current_stage": "None",
+      "last_updated_timestamp": 1793703197052,
+      "run_id": "d99daaf3191e41d291c8bc2ca62ade49",
+      "name": "movie-genre-knn",
+      "description": "",
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/d99daaf3191e41d291c8bc2ca62ade49/artifacts/model",
+      "status": "READY",
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "value": "knn",
+          "key": "model_type"
+        },
+        {
+          "value": "training_schema.json",
+          "key": "schema_file"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "d99daaf3191e41d291c8bc2ca62ade49"
+        }
+      ],
+      "run_link": ""
+    },
+    {
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "key": "model_type",
+          "value": "knn"
+        },
+        {
+          "key": "schema_file",
+          "value": "training_schema.json"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "6d1bf5aca9a840e1b94811cb42c1b44c"
+        }
+      ],
+      "version": "6",
+      "last_updated_timestamp": 1793702695725,
+      "current_stage": "None",
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/6d1bf5aca9a840e1b94811cb42c1b44c/artifacts/model",
+      "status": "READY",
+      "run_id": "6d1bf5aca9a840e1b94811cb42c1b44c",
+      "name": "movie-genre-knn",
+      "description": "",
+      "run_link": "",
+      "creation_timestamp": 1793702695725
+    },
+    {
+      "name": "movie-genre-knn",
+      "current_stage": "None",
+      "description": "",
+      "last_updated_timestamp": 1793702395938,
+      "status": "READY",
+      "tags": [
+        {
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]",
+          "key": "genres"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "key": "model_type",
+          "value": "knn"
+        },
+        {
+          "key": "schema_file",
+          "value": "training_schema.json"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "c1b3be99d22c498691ba830f6f905bf1"
+        }
+      ],
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/c1b3be99d22c498691ba830f6f905bf1/artifacts/model",
+      "run_link": "",
+      "version": "5",
+      "creation_timestamp": 1793702395938,
+      "run_id": "c1b3be99d22c498691ba830f6f905bf1"
+    },
+    {
+      "last_updated_timestamp": 1793702006211,
+      "description": "",
+      "version": "4",
+      "creation_timestamp": 1793702006211,
+      "current_stage": "None",
+      "status": "READY",
+      "name": "movie-genre-knn",
+      "run_id": "952382f3d1a84ca3ba05f23b2bffaace",
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "key": "model_type",
+          "value": "knn"
+        },
+        {
+          "key": "schema_file",
+          "value": "training_schema.json"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "952382f3d1a84ca3ba05f23b2bffaace"
+        }
+      ],
+      "run_link": "",
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/952382f3d1a84ca3ba05f23b2bffaace/artifacts/model"
+    },
+    {
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "key": "model_type",
+          "value": "knn"
+        },
+        {
+          "key": "schema_file",
+          "value": "training_schema.json"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "450c68febaa3420a9d02615d7338a32c"
+        }
+      ],
+      "run_link": "",
+      "version": "3",
+      "last_updated_timestamp": 1793616414530,
+      "name": "movie-genre-knn",
+      "description": "",
+      "run_id": "450c68febaa3420a9d02615d7338a32c",
+      "creation_timestamp": 1793616414530,
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/450c68febaa3420a9d02615d7338a32c/artifacts/model",
+      "current_stage": "None",
+      "status": "READY"
+    },
+    {
+      "status": "READY",
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "key": "model_type",
+          "value": "knn"
+        },
+        {
+          "key": "schema_file",
+          "value": "training_schema.json"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "7d9f26c983964cfdac9a7e2e7001a1f7"
+        }
+      ],
+      "name": "movie-genre-knn",
+      "creation_timestamp": 1793616352571,
+      "last_updated_timestamp": 1793616352571,
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/7d9f26c983964cfdac9a7e2e7001a1f7/artifacts/model",
+      "run_link": "",
+      "current_stage": "None",
+      "description": "",
+      "run_id": "7d9f26c983964cfdac9a7e2e7001a1f7",
+      "version": "2"
+    },
+    {
+      "status": "READY",
+      "last_updated_timestamp": 1793614374546,
+      "current_stage": "None",
+      "version": "1",
+      "creation_timestamp": 1793614374546,
+      "description": "",
+      "run_id": "f9e369774b754f51a9e6ae383226fe89",
+      "tags": [
+        {
+          "key": "genres",
+          "value": "[\"(no genres listed)\", \"Action\", \"Adventure\", \"Animation\", \"Children\", \"Comedy\", \"Crime\", \"Documentary\", \"Drama\", \"Fantasy\", \"Film-Noir\", \"Horror\", \"IMAX\", \"Musical\", \"Mystery\", \"Romance\", \"Sci-Fi\", \"Thriller\", \"War\", \"Western\"]"
+        },
+        {
+          "key": "input_normalization",
+          "value": "none"
+        },
+        {
+          "key": "model_type",
+          "value": "knn"
+        },
+        {
+          "key": "schema_file",
+          "value": "training_schema.json"
+        },
+        {
+          "key": "source_training_run_id",
+          "value": "f9e369774b754f51a9e6ae383226fe89"
+        }
+      ],
+      "run_link": "",
+      "name": "movie-genre-knn",
+      "source": "mlflow-artifacts:/07fcabef6ff34a2888f1a1d3de31f817/f9e369774b754f51a9e6ae383226fe89/artifacts/model"
+    }
+  ]
+}
