@@ -86,7 +86,7 @@ services:
       <<: *airflow-environment
       # Only the execution service needs these credentials. The training
       # operator passes them privately to its child container at runtime.
-      MLFLOW_TRACKING_URI: ${MLFLOW_TRACKING_URI:-https://dagshub.com/rosneru/sep26_bmlops_movie_reco.mlflow}
+      MLFLOW_TRACKING_URI: ${MLFLOW_TRACKING_URI:-https://dagshub.com/abulhawa/sep26_bmlops_movie_reco.mlflow}
       MLFLOW_TRACKING_USERNAME: ${MLFLOW_TRACKING_USERNAME:-}
       MLFLOW_TRACKING_PASSWORD: ${DAGSHUB_TOKEN:-}
       # The preparation operator passes these privately to its child container.

@@ -1,3 +1,7 @@
+# Independent personal copy
+
+This repository preserves the Liora team project from [rosneru/sep26_bmlops_movie_reco](https://github.com/rosneru/sep26_bmlops_movie_reco), including the original Git history, commit authors, and MIT license. Original repositories are read-only references. See [PRESERVATION.md](PRESERVATION.md) for migration details.
+
 # About
 
 Prediction now loads the latest registered MLflow model at startup. Follow the
@@ -18,7 +22,7 @@ uv sync
 
 ## Getting started with the data
 
-The data and pipeline outputs are not stored in Git. They are versioned with [DVC](https://dvc.org) and stored on [DagsHub](https://dagshub.com/rosneru/sep26_bmlops_movie_reco).
+The data and pipeline outputs are not stored in Git. They are versioned with [DVC](https://dvc.org) and stored on [DagsHub](https://dagshub.com/abulhawa/sep26_bmlops_movie_reco).
 
 To simulate data that arrives over time, DagsHub only holds the data that has "arrived" so far (the rating parts `1..split.current_part`, see section 4). The complete raw data and all rating parts are the local data source and are never pushed.
 
@@ -29,7 +33,7 @@ The arrived data is in two places on DagsHub:
 
 ### 1. Get access to DagsHub (once)
 
-1. Create a DagsHub account and ask `rosneru` to add you as a collaborator with *Write* access.
+1. Use the owner account `abulhawa` on DagsHub. This independent copy uses its own data storage and MLflow registry.
 2. Create a personal token under *DagsHub → User Settings → Tokens*.
 3. Store the token locally. It goes to `.dvc/config.local`, which is ignored by Git:
 
@@ -177,7 +181,7 @@ The API resolves `PREDICT_MODEL_VERSION` at startup. Use an alias such as `@live
 
 ## MLflow on DagsHub
 
-Training and prediction use the shared [DagsHub MLflow dashboard](https://dagshub.com/rosneru/sep26_bmlops_movie_reco.mlflow).
+Training and prediction use the shared [DagsHub MLflow dashboard](https://dagshub.com/abulhawa/sep26_bmlops_movie_reco.mlflow).
 Models, artifacts, runs, and registry versions live there; a local MLflow server
 is not needed for normal use.
 

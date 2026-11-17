@@ -130,7 +130,7 @@ There is currently no quality threshold for registration, and registration does 
 model packaging directory is cleaned up, and `--rm` removes the job container.
 MLflow records and model artifacts are stored on DagsHub.
 
-Open [DagsHub MLflow](https://dagshub.com/rosneru/sep26_bmlops_movie_reco.mlflow). Copy the run ID and the version number from
+Open [DagsHub MLflow](https://dagshub.com/abulhawa/sep26_bmlops_movie_reco.mlflow). Copy the run ID and the version number from
 the printed registry URI for validation:
 
 ```bash
@@ -176,7 +176,7 @@ consistency, not recommendation quality.
 
 ## MLflow storage and dashboard
 
-Normal training and prediction use [DagsHub MLflow](https://dagshub.com/rosneru/sep26_bmlops_movie_reco.mlflow).
+Normal training and prediction use [DagsHub MLflow](https://dagshub.com/abulhawa/sep26_bmlops_movie_reco.mlflow).
 Runs, parameters, metrics, model artifacts, and registered versions are stored
 there, rather than in a local Docker volume. No local MLflow service is started.
 
