@@ -1,5 +1,5 @@
 [project]
-name = "sep26-bmlops-movie-reco"
+name = "movie-recommender-mlops"
 version = "0.1.0"
 description = "Movie recommendation project from Liora September 2026 MLOps training"
 readme = "README.md"

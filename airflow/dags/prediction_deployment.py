@@ -13,7 +13,7 @@ import requests
 from docker.types import Mount
 
 logger = logging.getLogger(__name__)
-PROJECT = 'movie-reco'
+PROJECT = 'movie-recommender-mlops'
 REPLICAS = 3
 
 

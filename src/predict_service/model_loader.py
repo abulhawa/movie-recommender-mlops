@@ -19,7 +19,7 @@ def load_registered_model():
     mlflow.set_tracking_uri(
         os.getenv(
             'MLFLOW_TRACKING_URI',
-            'https://dagshub.com/abulhawa/sep26_bmlops_movie_reco.mlflow',
+            'https://dagshub.com/abulhawa/movie-recommender-mlops.mlflow',
         )
     )
     mlflow.set_registry_uri(mlflow.get_tracking_uri())

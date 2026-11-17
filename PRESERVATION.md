@@ -13,8 +13,8 @@ Created 17 November 2026 for the owner `abulhawa`.
 
 ## Owned destinations
 
-- GitHub: https://github.com/abulhawa/sep26_bmlops_movie_reco
-- DagsHub: https://dagshub.com/abulhawa/sep26_bmlops_movie_reco
+- GitHub: https://github.com/abulhawa/movie-recommender-mlops
+- DagsHub: https://dagshub.com/abulhawa/movie-recommender-mlops
 - Both private, independent repositories; owner has administrator access.
 - GitHub Actions disabled during preservation; no services, training or deployment started.
 - Runtime defaults in this copy use the owner's DagsHub endpoints. Historical branches retain historical settings and must be adapted before execution.
@@ -32,7 +32,7 @@ Source snapshot: one experiment, 73 runs, one registered model with 66 available
 
 ## Local copies
 
-- Working copy: `/home/ali/liora/sep26_bmlops_movie_reco_personal`.
+- Working copy: `/home/ali/liora/movie-recommender-mlops`.
 - Snapshot, Git bundle, migration checkpoints and downloaded data/artifacts: `/home/ali/liora/personal-movie-reco-backup`.
 - Credentials remain in ignored local files, never in the archive metadata.
 

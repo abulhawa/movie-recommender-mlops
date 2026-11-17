@@ -47,7 +47,7 @@ requirements.
 Expected log on success, exit code 0:
 
 ```text
-Preparing rating parts 1..2 from bucket sep26_bmlops_movie_reco
+Preparing rating parts 1..2 from bucket movie-recommender-mlops
 Data preparation passed: parts=1..2, ratings=..., users=..., movies=..., genres=...
 ```
 

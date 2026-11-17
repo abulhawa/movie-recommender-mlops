@@ -1,4 +1,4 @@
-name: movie-reco
+name: movie-recommender-mlops
 
 include:
   - ./compose.airflow.yml
@@ -14,7 +14,7 @@ x-api-healthcheck: &api-healthcheck
   start_interval: 1s
 
 services:
-  data_collection:
+  data-collection:
     build:
       context: .
       dockerfile: src/data_collection_service/Dockerfile
@@ -39,7 +39,7 @@ services:
       AUTH_SECRET_KEY: ${AUTH_SECRET_KEY:?Set AUTH_SECRET_KEY in the root .env file or your shell}
 
   # One-off feature preparation; run explicitly before training.
-  data_preparation:
+  data-preparation:
     image: movie-reco-data-preparation:local
     profiles: [preparation]
     build:
@@ -66,7 +66,7 @@ services:
         MODEL_TYPE: ${MODEL_TYPE:-knn}
     environment:
       MODEL_TYPE: ${MODEL_TYPE:-knn}
-      MLFLOW_TRACKING_URI: ${MLFLOW_TRACKING_URI:-https://dagshub.com/abulhawa/sep26_bmlops_movie_reco.mlflow}
+      MLFLOW_TRACKING_URI: ${MLFLOW_TRACKING_URI:-https://dagshub.com/abulhawa/movie-recommender-mlops.mlflow}
       MLFLOW_TRACKING_USERNAME: ${MLFLOW_TRACKING_USERNAME:-}
       MLFLOW_TRACKING_PASSWORD: ${DAGSHUB_TOKEN:-}
     volumes:
@@ -80,7 +80,7 @@ services:
       args:
         PREDICT_MODEL_TYPE: ${PREDICT_MODEL_TYPE:-knn}
     environment:
-      MLFLOW_TRACKING_URI: ${MLFLOW_TRACKING_URI:-https://dagshub.com/abulhawa/sep26_bmlops_movie_reco.mlflow}
+      MLFLOW_TRACKING_URI: ${MLFLOW_TRACKING_URI:-https://dagshub.com/abulhawa/movie-recommender-mlops.mlflow}
       MLFLOW_TRACKING_USERNAME: ${MLFLOW_TRACKING_USERNAME:-}
       MLFLOW_TRACKING_PASSWORD: ${DAGSHUB_TOKEN:-}
       PREDICT_MODEL_TYPE: ${PREDICT_MODEL_TYPE:-knn}

@@ -22,7 +22,7 @@ uv sync
 
 ## Getting started with the data
 
-The data and pipeline outputs are not stored in Git. They are versioned with [DVC](https://dvc.org) and stored on [DagsHub](https://dagshub.com/abulhawa/sep26_bmlops_movie_reco).
+The data and pipeline outputs are not stored in Git. They are versioned with [DVC](https://dvc.org) and stored on [DagsHub](https://dagshub.com/abulhawa/movie-recommender-mlops).
 
 To simulate data that arrives over time, DagsHub only holds the data that has "arrived" so far (the rating parts `1..split.current_part`, see section 4). The complete raw data and all rating parts are the local data source and are never pushed.
 
@@ -181,7 +181,7 @@ The API resolves `PREDICT_MODEL_VERSION` at startup. Use an alias such as `@live
 
 ## MLflow on DagsHub
 
-Training and prediction use the shared [DagsHub MLflow dashboard](https://dagshub.com/abulhawa/sep26_bmlops_movie_reco.mlflow).
+Training and prediction use the shared [DagsHub MLflow dashboard](https://dagshub.com/abulhawa/movie-recommender-mlops.mlflow).
 Models, artifacts, runs, and registry versions live there; a local MLflow server
 is not needed for normal use.
 
