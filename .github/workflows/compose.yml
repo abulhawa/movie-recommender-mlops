@@ -4,7 +4,7 @@ on:
   pull_request:
     branches: [main]
   push:
-    branches: [main, feature/compose-ci]
+    branches: [main]
   workflow_dispatch:
 
 # Stop an older run when the same PR or branch gets a new commit.
@@ -23,7 +23,7 @@ jobs:
 
     env:
       COMPOSE_FILE: docker-compose.yml:docker-compose.test.yml
-      COMPOSE_PROJECT_NAME: movie-reco-ci
+      COMPOSE_PROJECT_NAME: movie-recommender-ci
       PREDICT_MODEL_TYPE: knn
       PREDICT_MODEL_NAME: movie-genre-knn
       PREDICT_MODEL_VERSION: latest
@@ -52,7 +52,7 @@ jobs:
             --user "$(id -u):$(id -g)" \
             --mount type=bind,source="$GITHUB_WORKSPACE",target=/workspace \
             --workdir /workspace \
-            python:3.10-slim \
+            python:3.12-slim \
             python tests/fixtures/generate_inference_data.py
 
       - name: Set up Docker Buildx
@@ -69,7 +69,7 @@ jobs:
         with:
           source: .
           files: ${{ runner.temp }}/compose-bake.json
-          targets: train,mlflow,predict,data_collection
+          targets: train,mlflow,predict,data-collection
           load: true
           set: |
             train.cache-from=type=gha,scope=compose-train
@@ -78,8 +78,8 @@ jobs:
             mlflow.cache-to=type=gha,scope=compose-mlflow,mode=max
             predict.cache-from=type=gha,scope=compose-predict
             predict.cache-to=type=gha,scope=compose-predict,mode=max
-            data_collection.cache-from=type=gha,scope=compose-data-collection
-            data_collection.cache-to=type=gha,scope=compose-data-collection,mode=max
+            data-collection.cache-from=type=gha,scope=compose-data-collection
+            data-collection.cache-to=type=gha,scope=compose-data-collection,mode=max
 
       - name: Register disposable KNN model
         run: docker compose run --rm train
