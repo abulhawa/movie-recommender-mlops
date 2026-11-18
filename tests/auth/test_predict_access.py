@@ -43,8 +43,13 @@ def predict_client(tmp_path, monkeypatch):
     try:
         yield TestClient(module.app)
     finally:
-        # The next test imports predict.py again, which registers the counter again
-        REGISTRY.unregister(module.PREDICTION_REQUESTS)
+        # Each import registers all three application collectors.
+        for collector in (
+            module.PREDICTION_REQUESTS,
+            module.PREDICTION_HANDLER_REQUESTS,
+            module.PREDICTION_REQUEST_DURATION,
+        ):
+            REGISTRY.unregister(collector)
         sys.modules.pop('predict_service.predict', None)
 
 

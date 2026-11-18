@@ -20,6 +20,18 @@ The project package dependencies are managed with `uv`, so please ensure to [hav
 uv sync
 ```
 
+Use Python 3.12 or newer; `.python-version` pins the local environment to
+3.12.14. Application Docker images also use Python 3.12; Airflow uses its own
+Python 3.13 runtime. After installing development dependencies, run the offline suite:
+
+```bash
+uv run --offline --frozen pytest -q
+```
+
+The default suite uses mocks and a temporary SQLite MLflow registry. Scripts
+under `tests/mlflow/` are separate manual examples that require a local MLflow
+server; they are not collected by the default test command.
+
 ## Getting started with the data
 
 The data and pipeline outputs are not stored in Git. They are versioned with [DVC](https://dvc.org) and stored on [DagsHub](https://dagshub.com/abulhawa/movie-recommender-mlops).

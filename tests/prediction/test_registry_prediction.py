@@ -17,6 +17,7 @@ import mlflow
 import numpy as np
 import pandas as pd
 from mlflow.exceptions import MlflowException
+from prometheus_client import REGISTRY
 
 SOURCE_ROOT = Path(__file__).resolve().parents[2] / 'src'
 sys.path.append(str(SOURCE_ROOT))
@@ -167,7 +168,15 @@ class RegistryPredictionTests(unittest.TestCase):
         )
         with patch.dict(os.environ, {'USER_MATRIX_PATH': str(user_file)}):
             sys.modules.pop('predict_service.predict', None)
-            api = importlib.import_module('predict_service.predict').app
+            module = importlib.import_module('predict_service.predict')
+            api = module.app
+            for collector in (
+                module.PREDICTION_REQUESTS,
+                module.PREDICTION_HANDLER_REQUESTS,
+                module.PREDICTION_REQUEST_DURATION,
+            ):
+                self.addCleanup(REGISTRY.unregister, collector)
+            self.addCleanup(sys.modules.pop, 'predict_service.predict', None)
 
         async def request(path, body, authorized=True):
             messages = []
