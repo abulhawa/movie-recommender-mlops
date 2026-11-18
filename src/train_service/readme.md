@@ -287,3 +287,11 @@ The `training_pipeline` DAG passes that exact version to prediction deployment
 through XCom. No credentials or model binary are included in XCom. Rebuild the
 training image after this script changes; an old image without the final result
 line is deliberately rejected by the deployment pipeline.
+
+## Interaction-trained alternatives
+
+For user/movie ID embeddings, historical rated-movie context, BPR ranking loss,
+and an implicit ALS baseline, use the [interaction retrieval guide](../../docs/INTERACTION_RETRIEVAL.md).
+This runs `src.train_service.train_retrieval`, with its own registry names and
+unseen-item top-K serving bundle. `MODEL_TYPE=two_tower` in the legacy Compose
+workflow still selects the earlier genre-cosine experiment described above.

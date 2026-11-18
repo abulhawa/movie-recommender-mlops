@@ -21,6 +21,7 @@ See [preservation details and historical gaps](PRESERVATION.md).
 | Understand model/data rollback and legacy migration | [Versioned serving bundles](docs/VERSIONED_SERVING_DATA.md) |
 | Understand the components and code | [Architecture and code map](docs/ARCHITECTURE.md) |
 | Prepare data, train, and deploy with Airflow | [Airflow guide](airflow/README.md) |
+| Train ALS and the interaction-based hybrid two-tower | [Interaction retrieval](docs/INTERACTION_RETRIEVAL.md) |
 | Evaluate future recommendations and inspect development results | [Offline evaluation](docs/RECOMMENDATION_EVALUATION.md) |
 | Read model behavior and evaluation limitations | [Training guide](src/train_service/readme.md) |
 | Verify prediction, model versions, and rollback | [Prediction guide](src/predict_service/README.md) |

@@ -96,7 +96,9 @@ replicas must restart or be recreated.
 
 KNN training does not compute held-out recommendation quality. A separate
 [offline temporal evaluator](RECOMMENDATION_EVALUATION.md) reconstructs its
-historical profiles/index and compares future interactions with popularity. Two-tower metrics measure
+historical profiles/index and compares future interactions with popularity.
+The [interaction retrieval research path](INTERACTION_RETRIEVAL.md) adds rating-trained
+ALS and a hybrid two-tower with a separate frozen-vector artifact contract. Two-tower metrics measure
 approximation of genre-similarity pseudo-labels; splitting by users does not turn
 those labels into future-preference ground truth. There is no Recall@K/NDCG
 quality gate in the deployment path. See the [training limitations](../src/train_service/readme.md#evaluation-limitations).
