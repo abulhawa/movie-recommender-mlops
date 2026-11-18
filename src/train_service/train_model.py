@@ -11,6 +11,7 @@ from src.train_service.models import implementation
 
 
 def main():
+    """Train and register one bundle; failures propagate to the calling job."""
     for name, value in {
         'MLFLOW_TRACKING_URI': config.MLFLOW_TRACKING_URI,
         'MLFLOW_EXPERIMENT_NAME': config.MLFLOW_EXPERIMENT_NAME,
@@ -19,6 +20,9 @@ def main():
         if not isinstance(value, str) or not value.strip():
             raise ValueError(f'{name} cannot be empty')
 
+    # models/__init__.py selects the implementation from config.MODEL_TYPE.
+    # Both implementations expose the same hooks, but use different training data
+    # and metrics; an MLflow run alone does not imply quality was evaluated.
     settings = implementation.resolve_settings(config)
 
     mlflow.set_tracking_uri(config.MLFLOW_TRACKING_URI)

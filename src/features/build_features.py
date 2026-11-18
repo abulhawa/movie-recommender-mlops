@@ -1,3 +1,5 @@
+"""Turn movie genres and cumulative ratings into aligned movie/user feature CSVs."""
+
 import logging
 import os
 
@@ -45,7 +47,7 @@ def read_movies(movies_csv, data_dir=RAW_DATA_DIR) -> pd.DataFrame:
     Returns
     -------
     pd.DataFrame
-        The movies DataFrame. Its columns are binary and represent the movie genres.
+        Movie IDs and titles followed by binary genre indicator columns.
     """
     # Read the CSV file
     df = pd.read_csv(os.path.join(data_dir, movies_csv))
@@ -59,6 +61,13 @@ def read_movies(movies_csv, data_dir=RAW_DATA_DIR) -> pd.DataFrame:
 
 
 def create_user_matrix(ratings, movies):
+    """Average genre indicators across each user's matched rating rows.
+
+    A value of 0.4 means that 40% of those rows concern movies in that genre;
+    it does not describe how much the user liked it. Repeated rows count again.
+    The inner join drops ratings absent from the movie catalog, and users with
+    no matching ratings have no output profile. The index is userId.
+    """
     # Only keep which user rated which movie and the genres of each movie.
     # Note: "rating" and "timestamp" are not used by the user matrix.
     # Dropping them (and storing the genres as uint8) before the merge keeps

@@ -9,7 +9,7 @@ Run the commands below from the repository root.
 ## Prerequisites
 
 1. The local rating parts: `uv run dvc repro split_data` (see the root README).
-2. A DagsHub token (see the root README, section 1). Create `.env` if it does not exist yet, and set `DAGSHUB_TOKEN` there:
+2. A DagsHub token (see the [restore guide](../../docs/RESTORE_AND_RUN.md#2-restore-credentials-before-starting-docker)). Create `.env` if it does not exist yet, and set `DAGSHUB_TOKEN` there:
 
    ```bash
    cp .env.example .env
@@ -44,7 +44,7 @@ Simulates the arriving data: every Tuesday at 09:00 Europe/Berlin, it calls `POS
 - A run that uploads a part updates the Airflow asset `rating_parts`. Skipped and failed runs do not, so an unpaused `training_pipeline` in the same Airflow environment is triggered by a successful upload.
 - No retries: if an upload succeeded but its response was lost, a retry would upload one more part.
 
-**Only one team member should unpause this DAG.** The bucket is shared, so every unpaused copy uploads a part per week and the simulation advances faster than intended. New DAGs are paused by default.
+**Use one active ingestion scheduler per bucket.** Multiple unpaused copies can each upload a part and advance the simulation faster than intended. This personal copy uses its own bucket; it must not write to the original team bucket. New DAGs are paused by default.
 
 Prerequisites:
 

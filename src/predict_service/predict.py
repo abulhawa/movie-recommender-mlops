@@ -1,3 +1,5 @@
+"""Serve recommendations from a startup snapshot of the model and user profiles."""
+
 import os
 from pathlib import Path
 from time import perf_counter
@@ -16,6 +18,8 @@ USER_MATRIX_PATH = Path(__file__).resolve().parents[2] / 'data' / 'processed' / 
 N_RECOMMENDATIONS = 10
 CANDIDATE_COUNT = 20
 
+# Loading at import makes invalid model/profile configuration fail startup.
+# Neither snapshot refreshes automatically when upstream files or aliases change.
 recommender = load_registered_model()
 user_matrix = pd.read_csv(
     Path(os.getenv('USER_MATRIX_PATH', USER_MATRIX_PATH)), index_col='userId'
@@ -77,6 +81,11 @@ class PredictRequest(BaseModel):
 # prediction endpoint
 @app.post('/predict', dependencies=[Depends(require_predict_access)])
 def predict(request: PredictRequest):
+    """Retrieve candidates for known users, then sample ten distinct catalog entries.
+
+    No interaction history is loaded here, so already-rated movies are not
+    filtered. Unknown users cannot be served until a profile is prepared.
+    """
     PREDICTION_HANDLER_REQUESTS.inc()
     unknown_ids = [i for i in request.user_ids if i not in user_matrix.index]
     if unknown_ids:
@@ -123,6 +132,7 @@ def metrics():
 
 @app.middleware('http')
 async def count_prediction_requests(request: Request, call_next):
+    """Count final HTTP outcomes, including requests rejected before the handler."""
     if request.method != 'POST' or request.url.path != '/predict':
         return await call_next(request)
 

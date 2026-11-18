@@ -66,6 +66,9 @@ def ingest_next_part():
     logger.info('Ingest result: %s', result)
 
     # A skipped task emits no asset event, so consumers are not triggered
+    # The function returns only after a successful upload response. Airflow emits
+    # the outlet event when the task succeeds; returning up_to_date as success
+    # would otherwise cause unnecessary downstream training.
     if result['status'] != 'ingested':
         raise AirflowSkipException(result.get('detail') or result['status'])
     return result

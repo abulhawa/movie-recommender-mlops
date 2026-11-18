@@ -7,6 +7,11 @@ from src.config import MISSING_GENRE, MOVIE_MATRIX_PATH, USER_MATRIX_PATH
 
 
 def inspect_matrix(frame, id_column, *, binary=False):
+    """Return numeric features and row issue masks without dropping any rows.
+
+    User averages may lie anywhere in [0, 1]; movie genre indicators must be
+    binary. Unparseable values become NaN so callers can reject or filter them.
+    """
     if id_column not in frame.columns:
         raise ValueError(f'Missing {id_column}')
     columns = [name for name in frame.columns if name != id_column]
@@ -32,6 +37,7 @@ def inspect_matrix(frame, id_column, *, binary=False):
 
 
 def validate_matrix(frame, id_column, *, binary=False):
+    """Reject any invalid row or duplicate ID; return features without the ID."""
     features, issues = inspect_matrix(frame, id_column, binary=binary)
     errors = [name for name, mask in issues.items() if mask.any()]
     if errors:

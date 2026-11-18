@@ -1,3 +1,5 @@
+"""Copy cumulative local rating parts to storage without replacing stored objects."""
+
 import os
 from pathlib import Path
 from typing import Literal
@@ -73,6 +75,7 @@ def read_requested_up_to_from_params_file():
 def get_requested_up_to_from_argument_or_file(
     requested_up_to_arg: int | None,
 ) -> int:
+    """Prefer an explicit target; turn invalid fallback configuration into HTTP 500."""
     if requested_up_to_arg is not None:
         return requested_up_to_arg
 
@@ -101,6 +104,12 @@ def get_requested_up_to_from_argument_or_file(
 def ingest_up_to(
     requested_up_to_arg: int | None, next_part: bool = False
 ) -> IngestResponse:
+    """Ensure parts 1..target exist, retaining successful uploads if a later one fails.
+
+    next_part advances from the highest stored number, but still checks all
+    earlier parts. Existence checks make sequential retries safe; they are
+    not a lock against concurrent writers.
+    """
     # With next_part, the target follows from the bucket content (see below)
     requested_up_to = (
         None

@@ -1,5 +1,9 @@
 # User authentication service
 
+API credentials are distinct from DagsHub, Airflow, and Grafana credentials.
+For restoring private settings and custom users, see the
+[restore guide](../../docs/RESTORE_AND_RUN.md#2-restore-credentials-before-starting-docker).
+
 Protects the endpoints of the project's APIs. Every request must say who sends it (authentication), and the sender's role decides which endpoints they may call (authorization).
 
 It is not a separate API, but a module (`auth.py`) that the other services import. It uses the OAuth2 password flow: a user logs in once at `POST /token` and gets a signed, expiring access token (a JWT), which is then sent with every request.

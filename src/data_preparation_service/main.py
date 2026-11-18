@@ -65,6 +65,8 @@ def prepare(input_dir, part_numbers):
         ignore_index=True,
     )
     movies = read_movies(MOVIES_KEY, input_dir)
+    # Ratings update user profiles; the movie catalog supplies the genre schema
+    # and all movie rows independently of which movies have been rated.
     users = create_user_matrix(ratings, movies).reset_index()
     movies = movies.drop(columns=['title'])
 
@@ -106,6 +108,7 @@ def prepare(input_dir, part_numbers):
 
 
 def run(up_to=None):
+    """Download a cumulative input set into temporary storage and prepare outputs."""
     client = BucketStorageClient.from_env()
     part_numbers = select_part_numbers(client.read_stored_part_numbers(), up_to)
     logger.info(

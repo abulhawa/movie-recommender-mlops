@@ -1,5 +1,9 @@
 # Data preparation service
 
+For a fresh checkout, complete the [restore guide](../../docs/RESTORE_AND_RUN.md)
+first. This job changes local feature files; it does not update DVC hashes or
+upload the new matrices to DVC automatically.
+
 One-off container that builds and validates the genre feature matrices from the
 data in the DagsHub storage bucket. It reuses `features/build_features.py`
 functions, the `train_service/check_data.py` checks and the bucket client of the

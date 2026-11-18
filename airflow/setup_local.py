@@ -23,6 +23,9 @@ def main():
         drive = root.drive.rstrip(':').lower()
         relative = '/'.join(root.parts[1:])
         docker_project_dir = f'/run/desktop/mnt/host/{drive}/{relative}'
+    # These are first-install candidates, not a credential rotation mechanism.
+    # Existing database/secret values and nonempty machine paths are preserved.
+    # The socket group below is a default, not detected from Docker permissions.
     candidates = {
         'AIRFLOW_FERNET_KEY': base64.urlsafe_b64encode(
             secrets.token_bytes(32)

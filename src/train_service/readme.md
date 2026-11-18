@@ -1,5 +1,9 @@
 # Training model selection
 
+For first-time configuration, use the [restore guide](../../docs/RESTORE_AND_RUN.md).
+The [architecture map](../../docs/ARCHITECTURE.md#model-training-and-loading)
+links the preparation, training, export, and loading modules.
+
 KNN is the default. Run these commands from the repository root in WSL Bash.
 The build selects the dependencies and stores the matching MODEL_TYPE in the image.
 
@@ -13,8 +17,8 @@ docker compose run --rm train
 Compose passes only explicitly listed environment variables to each service.
 Training receives MODEL_TYPE and MLFLOW_TRACKING_URI. The same MODEL_TYPE selects
 the image tag and build dependencies. It selects a training candidate, not the
-model served by prediction. Prediction still uses the existing KNN artifact;
-future integration should select its registered model and version independently.
+model served by prediction. Serving has its own `PREDICT_MODEL_TYPE`, `PREDICT_MODEL_NAME`, and
+`PREDICT_MODEL_VERSION` settings; training alone does not change them.
 The Airflow `training_pipeline` DAG now runs feature preparation followed by KNN
 training and MLflow registration. See `airflow/README.md` for PowerShell setup
 and dashboard verification. Its final task deploys and verifies the exact registered
@@ -51,11 +55,14 @@ A PyTorch Two-Tower model that approximates genre similarity between users and m
 
 ## Architecture and training
 
+`G` is the number of genre columns in the input matrices, recorded in the
+exported schema; it is not a hard-coded feature count.
+
 Each tower has independent weights:
 
 ```text
-User genres  -> Linear(19, 64) -> ReLU -> Linear(64, 32) -> L2 normalization
-Movie genres -> Linear(19, 64) -> ReLU -> Linear(64, 32) -> L2 normalization
+User genres  -> Linear(G, 64) -> ReLU -> Linear(64, 32) -> L2 normalization
+Movie genres -> Linear(G, 64) -> ReLU -> Linear(64, 32) -> L2 normalization
 
 Prediction = dot(user embedding, movie embedding)
 Target     = cosine(user genre vector, movie genre vector)
@@ -84,7 +91,9 @@ Shared dependencies are declared in `src/train_service/requirements.txt`;
 The training image does not copy the root `pyproject.toml` or `uv.lock`.
 The same service requirements are explicitly included in the exported MLflow model.
 Direct dependency versions are pinned; indirect dependency versions are not fully locked.
-The MLflow client and server are pinned to 3.17.2, and training uses CPU-only PyTorch.
+The MLflow client and disposable local test server are pinned to 3.17.2; the
+hosted DagsHub server is managed separately. Two-tower training uses CPU-only
+PyTorch, while the default KNN image excludes it.
 
 Build the images:
 

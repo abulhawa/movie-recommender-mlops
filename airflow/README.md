@@ -1,5 +1,10 @@
 # Local Airflow infrastructure
 
+New machine or deleted checkout? Follow the [restore guide](../docs/RESTORE_AND_RUN.md)
+first. The [architecture map](../docs/ARCHITECTURE.md#orchestration-and-deployment)
+explains the scheduler, sibling containers, and registry handoff. This guide
+contains the detailed manual execution and recovery procedures.
+
 ## Quick start and current startup behavior
 
 Airflow database initialization is now automatic: Compose waits for PostgreSQL
@@ -28,7 +33,7 @@ The main `docker-compose.yml` includes `compose.airflow.yml`, which uses a local
 PostgreSQL 16. The API server provides the dashboard, the scheduler coordinates
 work with LocalExecutor, and the DAG processor parses files in `airflow/dags`.
 There is no Redis or separate Celery worker. A manual infrastructure smoke-test DAG is included; the training pipeline prepares data, registers KNN and deploys/verifies its exact version.
-The `data_ingestion` DAG uploads the next rating part to the DagsHub bucket every Tuesday at 09:00 Europe/Berlin; only one team member should unpause it (see `src/data_collection_service/README.md`).
+The `data_ingestion` DAG uploads the next rating part to the DagsHub bucket every Tuesday at 09:00 Europe/Berlin; only one scheduler environment should advance the personal bucket (see `src/data_collection_service/README.md`).
 
 ## Local settings
 
@@ -85,7 +90,7 @@ initialize an empty volume. Changing `.env` does not update existing accounts.
 
 ## Start and verify the dashboard infrastructure
 
-Initialize the database first, then run:
+With local settings prepared, run (database initialization is automatic):
 
 ```powershell
 docker compose up -d --build --wait airflow-api-server airflow-scheduler airflow-dag-processor
@@ -96,7 +101,7 @@ Open http://localhost:8081 and log in with the credentials described above. The 
 http://localhost:8081/api/v2/monitor/health; inspect its component statuses as
 well as the HTTP response. Scheduler and DAG processor healthchecks validate
 heartbeats in the metadata database. Task/service logs persist in the named
-`movie-reco_airflow_logs` volume mounted at `/opt/airflow/logs`.
+`movie-recommender-mlops_airflow_logs` volume mounted at `/opt/airflow/logs`.
 
 Stop just these services:
 

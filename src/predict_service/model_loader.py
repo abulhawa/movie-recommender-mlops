@@ -10,6 +10,11 @@ import pandas as pd
 
 
 def load_registered_model():
+    """Load a registry bundle and validate its type, schema and catalog alignment.
+
+    latest means the highest registered version, not a quality-approved version.
+    Resolution happens once; running replicas need a restart to change models.
+    """
     model_type = os.getenv('PREDICT_MODEL_TYPE', 'knn').strip().lower()
     if model_type not in {'knn', 'two_tower'}:
         raise ValueError('PREDICT_MODEL_TYPE must be knn or two_tower')
@@ -109,6 +114,7 @@ def load_registered_model():
 
 
 class ServingModel:
+    """Hold one loaded estimator with its position-aligned serving catalog."""
     def __init__(self, model_type, model, genres, movie_ids, movie_embeddings, uri):
         self.model_type = model_type
         self.model = model
@@ -118,6 +124,7 @@ class ServingModel:
         self.uri = uri
 
     def candidates(self, users, count):
+        """Return catalog row positions in model genre order, not external movie IDs."""
         features = users.loc[:, self.genres]
         values = features.to_numpy(dtype=np.float32)
         if not np.isfinite(values).all():

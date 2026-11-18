@@ -1,3 +1,5 @@
+"""Small S3-compatible adapter; callers decide which files may be overwritten."""
+
 import os
 import re
 from pathlib import Path

@@ -1,5 +1,10 @@
 # Monitoring service
 
+See the [restore guide](../../docs/RESTORE_AND_RUN.md) before a first startup, and
+the [architecture map](../../docs/ARCHITECTURE.md#monitoring-and-tests) for how
+metrics connect to serving. These dashboards show operational behavior, not
+recommendation quality or data drift.
+
 Prometheus scrapes itself and each prediction replica every 15 seconds. Grafana
 automatically loads the Prometheus data source and the **Movie Recommendation
 API Monitoring** dashboard from the repository.

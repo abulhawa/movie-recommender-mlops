@@ -1,3 +1,5 @@
+"""Prepare normalized user splits for the two-tower model, not the KNN fit."""
+
 import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
@@ -65,6 +67,7 @@ def clean_and_normalize(ids, features, genre_columns):
 
     keep = np.any(values != 0, axis=1)
     removed = int((~keep).sum())
+    # Apply the same row mask to IDs and features so catalog positions stay aligned.
     ids = ids.loc[keep].reset_index(drop=True)
     values = values[keep]
     if len(values) == 0:
@@ -75,7 +78,11 @@ def clean_and_normalize(ids, features, genre_columns):
 
 
 def split_users(user_ids, user_values):
-    """Split users using the ratios defined in config.py."""
+    """Split whole user profiles, not ratings or chronological interactions.
+
+    Held-out users test genre-similarity approximation; their input profiles
+    were already built upstream from the available ratings.
+    """
     ratios = [TRAIN_RATIO, VAL_RATIO, TEST_RATIO]
 
     if not all(np.isfinite(ratio) and 0 < ratio < 1 for ratio in ratios):

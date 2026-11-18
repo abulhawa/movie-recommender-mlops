@@ -1,8 +1,9 @@
 # Prediction from the MLflow registry
 
-Prediction connects to the shared DagsHub MLflow server and resolves the newest
-registered version at startup, then downloads that
-numeric version and its matching catalog. It does not train or fall back to model.pkl.
+Prediction connects to the personal DagsHub MLflow server and resolves its
+configured version selector at startup, then downloads that numeric version and
+its matching catalog. The default `latest` selects the newest registered version;
+a number pins a version and `@alias` resolves the selected alias. It does not train or fall back to model.pkl.
 Latest means newest registered, not best evaluated. An empty registry requires an
 initial training run before prediction can start. Set MLFLOW_TRACKING_USERNAME
 and DAGSHUB_TOKEN in the root .env; Compose forwards them to the MLflow client.
@@ -78,7 +79,7 @@ in-memory model. No live reload or offline cache fallback is implemented.
 
 The prediction images use service-specific pinned requirements matching training's
 NumPy, pandas, scikit-learn and MLflow client versions. Both clients use
-mlflow-skinny; only the disposable test server needs full MLflow. PyTorch is installed only in the
+mlflow-skinny; the disposable test server and local SQLite-based developer tests use full MLflow. PyTorch is installed only in the
 two-tower image. Root uv.lock is not the prediction image dependency source.
 
 ## Validation
@@ -90,12 +91,13 @@ SQLite database. They do not need server/database dependencies installed locally
 Run tests in a fresh test project (the final command deletes only its test volumes):
 
 ```bash
-docker compose -p movie-reco-test -f docker-compose.yml -f docker-compose.test.yml up -d --build --wait mlflow
-docker compose -p movie-reco-test -f docker-compose.yml -f docker-compose.test.yml run --rm --no-deps --build --entrypoint python \
+docker compose -p movie-recommender-mlops-test -f docker-compose.yml -f docker-compose.test.yml up -d --build --wait mlflow
+docker compose -p movie-recommender-mlops-test -f docker-compose.yml -f docker-compose.test.yml run --rm --no-deps --build --entrypoint python \
   -e MLFLOW_TEST_TRACKING_URI=http://mlflow:5000 \
-  -v "$PWD/tests:/app/tests:ro" predict \
-  -m unittest discover -s /app/tests/prediction -v
-docker compose -p movie-reco-test -f docker-compose.yml -f docker-compose.test.yml down -v
+  -e PYTHONPATH=/app/src -e PYTHONDONTWRITEBYTECODE=1 -w /workspace \
+  -v "$PWD:/workspace:ro" predict \
+  -m unittest discover -s tests/prediction -v
+docker compose -p movie-recommender-mlops-test -f docker-compose.yml -f docker-compose.test.yml down -v
 ```
 
 Use PREDICT_MODEL_TYPE=two_tower for optional PyTorch coverage. Synthetic tests

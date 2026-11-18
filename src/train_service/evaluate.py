@@ -17,7 +17,12 @@ def evaluate(
     batch_size=BATCH_SIZE,
     pairs_per_user=EVAL_PAIRS_PER_USER,
 ):
-    """Evaluate fixed sampled pairs against genre cosine targets."""
+    """Score sampled user/movie pairs against input-derived cosine targets.
+
+    A fixed seed repeats the sample for the same inputs and settings. Movies
+    are drawn with replacement: this is regression evaluation, not a ranking
+    test on held-out interactions. The model remains in evaluation mode.
+    """
     model.eval()
 
     generator = torch.Generator().manual_seed(seed)
@@ -66,6 +71,8 @@ def evaluate(
         squared_error += errors.square().sum().item()
         absolute_error += errors.abs().sum().item()
 
+        # The baseline computes the target directly, so near-zero error is
+        # expected. It is a reference for approximation, not evidence of demand.
         baseline_predictions = F.cosine_similarity(
             batch_users,
             batch_movies,

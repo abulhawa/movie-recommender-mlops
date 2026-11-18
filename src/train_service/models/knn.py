@@ -26,6 +26,7 @@ def resolve_settings(config):
 
 
 def load_data(directory):
+    """Load only the movie catalog; ratings and user profiles do not fit this model."""
     movie_matrix = pd.read_csv(Path(directory) / 'movie_matrix.csv')
 
     if 'movieId' not in movie_matrix.columns:
@@ -34,6 +35,8 @@ def load_data(directory):
     if movie_matrix.empty:
         raise ValueError('Movie matrix is empty')
 
+    # Keep CSV row order: sklearn returns row positions, not movie IDs. The
+    # exported schema must preserve this mapping and the genre column order.
     movie_ids = movie_matrix['movieId']
     movie_features = movie_matrix.drop(columns=['movieId'])
     genres = movie_features.columns.tolist()
@@ -87,6 +90,10 @@ def run_tags():
 
 
 def train_model(movie_matrix, *, n_neighbors=20, algorithm='ball_tree'):
+    """Index raw genre vectors for Euclidean retrieval; no target labels are fit.
+
+    Movies sharing the same genre indicators are indistinguishable here.
+    """
     features = movie_matrix.drop(columns=['movieId'])
 
     return NearestNeighbors(
@@ -97,6 +104,7 @@ def train_model(movie_matrix, *, n_neighbors=20, algorithm='ball_tree'):
 
 
 def train(data, settings, on_epoch=None):
+    """Fit the index; the shared epoch hook is unused and no metrics are evaluated."""
     if len(data['movie_ids']) < settings['n_neighbors']:
         raise ValueError('Not enough movies for requested neighbors')
 

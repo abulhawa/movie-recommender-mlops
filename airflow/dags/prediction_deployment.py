@@ -13,6 +13,8 @@ import requests
 from docker.types import Mount
 
 logger = logging.getLogger(__name__)
+# Compose labels and the deployment command must select the same personal
+# project. The checkout path or an image tag does not determine that identity.
 PROJECT = 'movie-recommender-mlops'
 REPLICAS = 3
 
@@ -53,6 +55,7 @@ def _login(url, username, password):
 
 
 def _smoke(url, headers, model, user_id, timeout=120):
+    """Check serving identity and response structure, not ranking quality."""
     deadline = time.monotonic() + timeout
     while time.monotonic() < deadline:
         try:
@@ -312,6 +315,8 @@ def deploy_prediction(training_result):
                     old_version,
                     old_version,
                 )
+            # Test new model artifacts against the image already serving traffic.
+            # This path deploys a model version, not a replacement application image.
             candidate_image = next(iter(old_images))
 
         else:
@@ -379,6 +384,8 @@ def deploy_prediction(training_result):
             != previous_alias_version
         ):
             raise RuntimeError('The serving alias changed during candidate preflight')
+        # Capture whether promotion was acknowledged. Recovery also reads the
+        # alias because a registry write can succeed despite a lost HTTP response.
         rollout_started = False
         try:
             _registry_alias('POST', name, alias, version)

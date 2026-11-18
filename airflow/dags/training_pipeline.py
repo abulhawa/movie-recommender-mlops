@@ -16,6 +16,8 @@ from rating_assets import RATING_PARTS
 
 # These are daemon-side paths. /opt/airflow is the scheduler's filesystem and
 # cannot be used as a bind source for a sibling container on Docker Desktop.
+# Sibling task containers are created by the host daemon, so their mounts must
+# use host paths even though this code is running inside the scheduler.
 project = PurePosixPath(os.environ['AIRFLOW_DOCKER_PROJECT_DIR'])
 
 
@@ -100,8 +102,12 @@ with DAG(
     dagrun_timeout=timedelta(minutes=75),
     tags=['data-preparation', 'knn', 'training', 'movie-recommender'],
 ) as dag:
+    # Ingestion and training import the same Asset object. An upload event queues
+    # this DAG only when it is unpaused; manual triggers bypass the event wait.
     prepare_features = BucketPreparationOperator(
         task_id='prepare_features',
+        # The run/attempt suffix distinguishes executions without Docker's
+        # random names; punctuation in normal Airflow run IDs is normalized.
         container_name=(
             'movie-recommender-mlops-prepare-features-'
             "{{ run_id | replace(':', '-') | replace('+', '-') | replace('~', '-') }}"
@@ -131,6 +137,8 @@ with DAG(
 
     train_knn = MLflowTrainingOperator(
         task_id='train_knn',
+        # The run/attempt suffix distinguishes executions without Docker's
+        # random names; punctuation in normal Airflow run IDs is normalized.
         container_name=(
             'movie-recommender-mlops-train-knn-'
             "{{ run_id | replace(':', '-') | replace('+', '-') | replace('~', '-') }}"
@@ -168,4 +176,7 @@ with DAG(
         execution_timeout=timedelta(minutes=20),
     )
 
+    # Default all_success dependencies stop downstream work after a failure.
+    # Registration and deployment are separate: train_knn returns the exact
+    # registered version rather than asking deployment to guess the latest one.
     prepare_features >> train_knn >> deploy_predict

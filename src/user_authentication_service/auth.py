@@ -83,6 +83,8 @@ def get_current_user(token: str = Depends(oauth2_scheme)) -> dict:
     if user is None:
         AUTH_EVENTS.labels('token_rejected').inc()
         raise CREDENTIALS_ERROR
+    # This identity is an API login account. It is unrelated to the numeric
+    # MovieLens user_ids in a prediction request.
     return {'username': username, 'role': user['role']}
 
 
