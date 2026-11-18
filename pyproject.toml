@@ -34,7 +34,7 @@ extraPaths = ["src"]
 [tool.pytest.ini_options]
 pythonpath = [".", "src"]
 # Server-backed scripts under tests/mlflow are manual integration examples.
-testpaths = ["tests/auth", "tests/data_collection", "tests/prediction", "tests/setup", "tests/serving_data"]
+testpaths = ["tests/auth", "tests/data_collection", "tests/prediction", "tests/setup", "tests/serving_data", "tests/evaluation"]
 
 [tool.ruff.format]
 quote-style = "single"

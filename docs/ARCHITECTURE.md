@@ -94,7 +94,9 @@ Prediction resolves a version/alias once at startup
 and retains it in memory. Moving an alias does not hot-swap a running process;
 replicas must restart or be recreated.
 
-KNN has no held-out recommendation-quality score here. Two-tower metrics measure
+KNN training does not compute held-out recommendation quality. A separate
+[offline temporal evaluator](RECOMMENDATION_EVALUATION.md) reconstructs its
+historical profiles/index and compares future interactions with popularity. Two-tower metrics measure
 approximation of genre-similarity pseudo-labels; splitting by users does not turn
 those labels into future-preference ground truth. There is no Recall@K/NDCG
 quality gate in the deployment path. See the [training limitations](../src/train_service/readme.md#evaluation-limitations).

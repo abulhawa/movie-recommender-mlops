@@ -33,3 +33,6 @@ wheels/
 
 # Obsolete intermediate training datasets; preparation now runs in memory
 /data/processed/two_tower/
+
+# Generated offline evaluation evidence (share an explicitly reviewed summary).
+/reports/recommendation_evaluation/

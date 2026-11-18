@@ -21,6 +21,7 @@ See [preservation details and historical gaps](PRESERVATION.md).
 | Understand model/data rollback and legacy migration | [Versioned serving bundles](docs/VERSIONED_SERVING_DATA.md) |
 | Understand the components and code | [Architecture and code map](docs/ARCHITECTURE.md) |
 | Prepare data, train, and deploy with Airflow | [Airflow guide](airflow/README.md) |
+| Evaluate future recommendations and inspect development results | [Offline evaluation](docs/RECOMMENDATION_EVALUATION.md) |
 | Read model behavior and evaluation limitations | [Training guide](src/train_service/readme.md) |
 | Verify prediction, model versions, and rollback | [Prediction guide](src/predict_service/README.md) |
 | Demonstrate requests and dashboards | [Monitoring guide](src/monitoring_service/README.md) |
@@ -52,7 +53,9 @@ Airflow training/deployment DAG is specifically for KNN.
 
 Deployment checks validate authentication, the selected model version, and the
 shape of a prediction response. They do not measure recommendation ranking
-quality. There is no quality threshold that blocks model registration. Current
+quality. A separate [temporal backtest](docs/RECOMMENDATION_EVALUATION.md) now
+measures held-out recommendations against popularity; it does not score an already
+leaked live model. There is no quality threshold that blocks model registration. Current
 monitoring records requests, latency, authentication results, and availability;
 data-drift detection and alert rules are not implemented in this copy.
 

@@ -61,3 +61,13 @@ stop-project:
 # Train the MODEL_TYPE selected in .env (default: knn), rebuilding as needed.
 train: .env
 	docker compose run --rm --build train
+
+# Offline historical evaluation: these inputs are raw/split ratings, not serving CSVs.
+EVALUATION_RATINGS_DIR ?= data/interim/ratings_parts
+EVALUATION_MOVIES_CSV ?= data/raw/movies.csv
+EVALUATION_OUTPUT ?= reports/recommendation_evaluation/development
+.PHONY: evaluate-recommendations
+evaluate-recommendations:
+	uv run --offline --frozen python -m src.evaluation.recommendations \
+	  --ratings-dir "$(EVALUATION_RATINGS_DIR)" --movies-csv "$(EVALUATION_MOVIES_CSV)" \
+	  --output "$(EVALUATION_OUTPUT)"

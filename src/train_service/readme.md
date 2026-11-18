@@ -256,8 +256,10 @@ user interactions. RMSE and MAE measure approximation error only. The direct cos
 baseline calculates the target itself, so its error is approximately zero by
 construction; it is a sanity check rather than a competitor to beat.
 
-Held-out user splits do not establish recommendation ranking quality. Recall@K,
-NDCG@K and evaluation against held-out interactions are not implemented. The current
+Held-out user splits do not establish recommendation ranking quality. A separate [offline evaluator](../../docs/RECOMMENDATION_EVALUATION.md) now
+reports Recall@K/NDCG@K against future interactions for a reconstructed KNN and
+popularity baseline. It is not part of this two-tower pseudo-label evaluation or
+automated model registration/deployment. The current
 workflow demonstrates training, experiment tracking, model storage and registration;
 it does not establish real-world recommendation quality.
 
