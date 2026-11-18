@@ -1,5 +1,7 @@
 # Interaction-trained retrieval: ALS and hybrid two-tower
 
+See the [measured development results and MLflow runs](INTERACTION_RETRIEVAL_RESULT.md).
+
 The main research candidate is a hybrid collaborative/content-aware two-tower.
 Implicit ALS is the competitive collaborative baseline. The deployed genre KNN
 and its existing Airflow, registry names and rollback workflow remain unchanged.
