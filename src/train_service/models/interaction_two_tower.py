@@ -19,7 +19,7 @@ class InteractionTwoTower(nn.Module):
         if dimension < 1 or hidden < 1 or temperature <= 0:
             raise ValueError('Invalid tower dimensions/temperature')
         self.temperature = temperature
-        self.user_ids = nn.Embedding(n_users, dimension)
+        self.user_ids = nn.Embedding(n_users, dimension, sparse=True)
         self.movie_ids = nn.Embedding(len(movie_features) + 1, dimension, padding_idx=0)
         self.register_buffer(
             'features',
@@ -91,7 +91,16 @@ def fit(
     rng = np.random.default_rng(seed)
     model = InteractionTwoTower(len(data.user_ids), data.features, dimension, hidden)
     optimizer = torch.optim.AdamW(
-        model.parameters(), lr=learning_rate, weight_decay=weight_decay
+        [
+            parameter
+            for name, parameter in model.named_parameters()
+            if name != 'user_ids.weight'
+        ],
+        lr=learning_rate,
+        weight_decay=weight_decay,
+    )
+    user_optimizer = torch.optim.SparseAdam(
+        model.user_ids.parameters(), lr=learning_rate
     )
     valid_users = [
         u
@@ -139,9 +148,14 @@ def fit(
             ).mean()
             if not torch.isfinite(loss):
                 raise ValueError('Nonfinite BPR loss')
+            # Sparse user-ID updates avoid touching the entire user table per batch.
+            # Apply L2 only to sampled user embeddings; dense towers use AdamW decay.
+            loss = loss + weight_decay * model.user_ids(users).square().mean()
             optimizer.zero_grad()
+            user_optimizer.zero_grad()
             loss.backward()
             optimizer.step()
+            user_optimizer.step()
             total += loss.item() * len(positions)
         losses.append(total / len(order))
         print(

@@ -29,7 +29,9 @@ Training compares positive and negative movie scores using BPR:
 
 `softplus(-(user · positive - user · negative) / temperature)`.
 
-Temperature is 0.1, AdamW learning rate is 0.001, weight decay is 0.0001,
+Temperature is 0.1. Dense tower/movie parameters use AdamW at learning rate
+0.001 with weight decay 0.0001. User IDs use SparseAdam at learning rate 0.001
+with sampled-user L2 penalty 0.0001, avoiding full-table updates per batch,
 and the hidden layer has 64 units. Ratings >=4 supply positives; their loss
 weight is `(rating - 3) / 2`. No synthetic genre-cosine targets are used.
 

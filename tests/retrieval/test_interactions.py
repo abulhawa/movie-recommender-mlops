@@ -118,6 +118,7 @@ def test_bpr_learns_observed_preferences_and_is_reproducible(dataset):
     np.testing.assert_array_equal(i, i2)
     assert (u[0] @ i[0]) > (u[0] @ i[1])
     assert model.user_ids.weight.grad is not None
+    assert model.user_ids.weight.grad.is_sparse
     assert model.movie_ids.weight.grad is not None
 
 
