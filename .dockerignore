@@ -11,3 +11,6 @@
 data/raw
 data/interim
 notebooks
+
+# Local experiment reports and frozen retrieval artifacts are not image inputs.
+reports/recommendation_evaluation
