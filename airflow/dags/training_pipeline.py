@@ -82,6 +82,8 @@ class MLflowTrainingOperator(DockerOperator):
             result.get('model_name') != 'movie-genre-knn'
             or not str(result.get('model_version', '')).isdecimal()
             or not result.get('run_id')
+            or not isinstance(result.get('data_fingerprint'), str)
+            or type(result.get('sample_user_id')) is not int
         ):
             raise AirflowException('Invalid training result; deployment blocked')
         return result
@@ -165,7 +167,11 @@ with DAG(
         # Retrying after partial registration could create another model version.
         retries=0,
         execution_timeout=timedelta(minutes=30),
-        labels={'project': 'movie-recommender-mlops', 'managed_by': 'airflow', 'job': 'train_knn'},
+        labels={
+            'project': 'movie-recommender-mlops',
+            'managed_by': 'airflow',
+            'job': 'train_knn',
+        },
     )
 
     deploy_predict = PythonOperator(

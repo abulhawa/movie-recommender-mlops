@@ -11,7 +11,7 @@ FROM base AS two_tower
 RUN pip install --no-cache-dir -r requirements-two-tower.txt
 
 FROM ${MODEL_TYPE} AS training
-COPY src/__init__.py src/config.py src/
+COPY src/__init__.py src/config.py src/serving_data.py src/
 COPY src/train_service/ src/train_service/
 
 ARG MODEL_TYPE=knn

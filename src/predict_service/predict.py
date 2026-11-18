@@ -14,15 +14,23 @@ from predict_service.model_loader import load_registered_model
 from user_authentication_service.auth import require_predict_access
 from user_authentication_service.auth import router as auth_router
 
-USER_MATRIX_PATH = Path(__file__).resolve().parents[2] / 'data' / 'processed' / 'user_matrix.csv'
+USER_MATRIX_PATH = (
+    Path(__file__).resolve().parents[2] / 'data' / 'processed' / 'user_matrix.csv'
+)
 N_RECOMMENDATIONS = 10
 CANDIDATE_COUNT = 20
 
 # Loading at import makes invalid model/profile configuration fail startup.
 # Neither snapshot refreshes automatically when upstream files or aliases change.
 recommender = load_registered_model()
+# New bundles own their profiles. The host CSV is only a compatibility path for
+# old model versions, whose historical data cannot be reconstructed automatically.
+bundled_profiles = getattr(recommender, 'user_matrix_path', None)
+if bundled_profiles is not None and os.getenv('USER_MATRIX_PATH'):
+    raise ValueError('USER_MATRIX_PATH cannot override versioned serving data')
 user_matrix = pd.read_csv(
-    Path(os.getenv('USER_MATRIX_PATH', USER_MATRIX_PATH)), index_col='userId'
+    bundled_profiles or Path(os.getenv('USER_MATRIX_PATH', USER_MATRIX_PATH)),
+    index_col='userId',
 )
 if user_matrix.index.has_duplicates or user_matrix.index.isna().any():
     raise ValueError('User matrix has missing or duplicate IDs')
@@ -119,7 +127,13 @@ def predict(request: PredictRequest):
 @app.get('/model', dependencies=[Depends(require_predict_access)])
 def model_info():
     """Report the immutable registry selection loaded by this replica."""
-    return {'model_uri': recommender.uri, 'model_type': recommender.model_type}
+    info = {'model_uri': recommender.uri, 'model_type': recommender.model_type}
+    if getattr(recommender, 'data_fingerprint', None):
+        info.update(
+            data_fingerprint=recommender.data_fingerprint,
+            sample_user_id=int(user_matrix.index[0]),
+        )
+    return info
 
 
 @app.get('/metrics', include_in_schema=False)

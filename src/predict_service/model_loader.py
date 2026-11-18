@@ -8,6 +8,8 @@ import mlflow
 import numpy as np
 import pandas as pd
 
+from serving_data import validate_snapshot
+
 
 def load_registered_model():
     """Load a registry bundle and validate its type, schema and catalog alignment.
@@ -54,7 +56,9 @@ def load_registered_model():
     elif version.startswith('@') and version[1:].strip():
         selected = mlflow.MlflowClient().get_model_version_by_alias(name, version[1:])
         if selected.status != 'READY':
-            raise ValueError(f'Alias {version} for {name} does not point to a READY model')
+            raise ValueError(
+                f'Alias {version} for {name} does not point to a READY model'
+            )
         version = str(selected.version)
     elif not version.isascii() or not version.isdecimal() or int(version) < 1:
         raise ValueError(
@@ -68,6 +72,13 @@ def load_registered_model():
             'Model lacks training_schema.json; retrain with the serving-bundle exporter'
         )
     schema = json.loads(schema_path.read_text())
+    data_fingerprint = schema.get('serving_data_fingerprint')
+    user_matrix_path = None
+    if 'serving_data_fingerprint' in schema:
+        if not isinstance(data_fingerprint, str) or len(data_fingerprint) != 64:
+            raise ValueError('Invalid serving-data fingerprint in model schema')
+        validate_snapshot(directory / 'serving_data', data_fingerprint)
+        user_matrix_path = directory / 'serving_data' / 'user_matrix.csv'
     genres = schema['genres']
     ids = np.asarray(schema['movie_ids'])
     if not genres or len(set(genres)) != len(genres):
@@ -110,18 +121,41 @@ def load_registered_model():
             movie_embeddings = model.encode_movies(
                 torch.from_numpy(movies.astype(np.float32))
             )
-    return ServingModel(model_type, model, genres, ids, movie_embeddings, uri)
+    return ServingModel(
+        model_type,
+        model,
+        genres,
+        ids,
+        movie_embeddings,
+        uri,
+        user_matrix_path=user_matrix_path,
+        data_fingerprint=data_fingerprint,
+    )
 
 
 class ServingModel:
     """Hold one loaded estimator with its position-aligned serving catalog."""
-    def __init__(self, model_type, model, genres, movie_ids, movie_embeddings, uri):
+
+    def __init__(
+        self,
+        model_type,
+        model,
+        genres,
+        movie_ids,
+        movie_embeddings,
+        uri,
+        *,
+        user_matrix_path=None,
+        data_fingerprint=None,
+    ):
         self.model_type = model_type
         self.model = model
         self.genres = genres
         self.movie_ids = movie_ids
         self.movie_embeddings = movie_embeddings
         self.uri = uri
+        self.user_matrix_path = user_matrix_path
+        self.data_fingerprint = data_fingerprint
 
     def candidates(self, users, count):
         """Return catalog row positions in model genre order, not external movie IDs."""

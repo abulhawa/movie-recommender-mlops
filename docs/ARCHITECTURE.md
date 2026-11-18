@@ -84,7 +84,13 @@ selects serving. The Airflow training DAG explicitly chooses KNN.
 A registered bundle includes the estimator and the catalog/schema needed to map
 its returned row positions back to actual movie IDs. Reordering features or
 using mismatched IDs can silently change recommendations, so loading checks the
-bundle's expected schema. Prediction resolves a version/alias once at startup
+bundle's expected schema. New training runs snapshot both processed CSVs before fitting and upload them
+inside the model artifact with SHA-256 checksums. The loader validates that
+snapshot and reads the bundled profiles. Legacy versions still use host profiles
+for standalone serving; managed rollout rejects them until migrated. See
+[versioned serving data](VERSIONED_SERVING_DATA.md).
+
+Prediction resolves a version/alias once at startup
 and retains it in memory. Moving an alias does not hot-swap a running process;
 replicas must restart or be recreated.
 
@@ -122,7 +128,7 @@ execution. Avoid network calls or credential resolution while parsing DAGs.
 
 | File | Responsibility |
 |---|---|
-| `airflow/setup_local.py` | Fill missing local Airflow keys/passwords and a daemon-visible project path |
+| `airflow/setup_local.py` | Fill missing defaults/secrets, detect socket group, validate paths/settings; `--check` is read-only |
 | `airflow/dags/data_ingestion.py` | Weekly/manual upload and successful `rating_parts` event |
 | `airflow/dags/rating_assets.py` | Shared event identity linking the ingestion producer and training consumer |
 | `airflow/dags/training_pipeline.py` | Preparation → KNN training → deployment, with one active run/task |
@@ -141,8 +147,10 @@ checks each replica plus the public routing path.
 
 Rollback is best-effort for handled errors. For an existing deployment it uses
 the version actually served before rollout, which may differ from a manually
-moved alias. It does not roll back historical processed CSVs and cannot guarantee
-recovery after host loss or forced task termination. The replicas can be briefly
+moved alias. Host CSVs are not rewritten by rollback: newly bundled model versions instead
+reload their own historical profiles. A legacy baseline without a snapshot is
+rejected before promotion. Recovery is still not guaranteed after host loss or
+forced task termination. The replicas can be briefly
 unavailable during restart. See the [detailed recovery flow](../airflow/README.md#exact-version-prediction-deployment).
 
 ## Docker names and lifecycle

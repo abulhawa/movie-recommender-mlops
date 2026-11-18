@@ -18,6 +18,7 @@ See [preservation details and historical gaps](PRESERVATION.md).
 | Goal | Guide |
 |---|---|
 | Restore a clone on a new machine | [Restore and operate the project](docs/RESTORE_AND_RUN.md) |
+| Understand model/data rollback and legacy migration | [Versioned serving bundles](docs/VERSIONED_SERVING_DATA.md) |
 | Understand the components and code | [Architecture and code map](docs/ARCHITECTURE.md) |
 | Prepare data, train, and deploy with Airflow | [Airflow guide](airflow/README.md) |
 | Read model behavior and evaluation limitations | [Training guide](src/train_service/readme.md) |
@@ -40,6 +41,10 @@ flowchart LR
     Serve --> Metrics[Prometheus and Grafana]
 ```
 
+New registered bundles carry their matching processed data and checksums, so
+rolling back a bundled model also restores its user profiles. Older models need
+a [one-time transition](docs/VERSIONED_SERVING_DATA.md#existing-models-need-a-one-time-transition) before managed rollout.
+
 The default KNN retrieves neighbors of a user's averaged genre profile. The
 profile uses which movies a user rated, not the numeric rating values. A separate
 optional two-tower model learns cosine-similarity pseudo-labels. The automated
@@ -57,6 +62,14 @@ A clone contains the code and configuration templates. It does **not** contain
 private credentials, datasets, trained artifacts, or Docker volumes. Follow the
 [restore guide](docs/RESTORE_AND_RUN.md) before the first startup. It covers the
 password-manager backup, machine-specific settings, DVC access, and model access.
+
+Check local settings without printing values or changing files:
+
+```bash
+uv run python airflow/setup_local.py --check
+# Also check the serving alias/KNN requirements before deployment:
+uv run python airflow/setup_local.py --check --deployment
+```
 
 Once those prerequisites are satisfied:
 

@@ -37,26 +37,31 @@ saved in shell history. Both `.env` and `.dvc/config.local` must remain ignored.
 |---|---|
 | `DAGSHUB_TOKEN`, `MLFLOW_TRACKING_USERNAME` | Your current personal DagsHub token and username |
 | `DAGSHUB_S3_ENDPOINT_URL`, `DAGSHUB_BUCKET`, `MLFLOW_TRACKING_URI` | Personal defaults in `.env.example`; keep them pointing to `abulhawa/movie-recommender-mlops` |
-| `GRAFANA_ADMIN_*` | Choose values for a new installation, or retain those belonging to existing Grafana data |
+| `GRAFANA_ADMIN_*` | Restore existing values or let the helper generate a missing password |
 | `AIRFLOW_FERNET_KEY`, `AIRFLOW_JWT_SECRET`, `AIRFLOW_POSTGRES_PASSWORD`, `AIRFLOW_ADMIN_*` | Restore existing values, or generate missing values using the helper below |
-| `AUTH_SECRET_KEY` | Restore the shared API signing key, or generate a new one for a new installation |
+| `AUTH_SECRET_KEY` | Restore the shared API signing key; the helper generates it only when missing |
 | `DATA_COLLECTION_*` | An existing API admin account; needed for the ingestion DAG |
 | `PREDICT_SMOKE_*` | An existing prediction account; needed for the deployment task |
 | `MODEL_TYPE`, `PREDICT_MODEL_TYPE` | Keep `knn` for the automated training/deployment demo |
 | `PREDICT_MODEL_NAME` | May be empty; defaults to the model name for the selected type |
 | `PREDICT_MODEL_VERSION` | `latest` or a numeric version for standalone serving; an alias such as `@live` for Airflow deployment |
 
-Generate only missing Airflow settings:
+Fill missing public defaults/local secrets and validate the configuration:
 
 ```bash
 uv run python airflow/setup_local.py
 ```
 
-This helper preserves nonempty values. It does not validate the DagsHub token,
-generate Grafana/API settings, update an existing database password, or detect
-the Docker socket's group automatically. Use a password manager's generator for
-new secrets, or generate the API key locally with Python's `secrets.token_hex(32)`.
-Keep the resulting value private.
+The helper preserves nonempty secrets and selectors, fills public example defaults,
+and generates missing Airflow settings, the API signing key and Grafana password.
+It repairs the Docker group when the socket is accessible. It exits nonzero with
+variable names/guidance if private account settings or machine paths still need
+attention. It never prints values, contacts APIs, starts containers, or changes an
+initialized database password. API account passwords must match existing users.
+
+Use `uv run python airflow/setup_local.py --check` for read-only validation. Add
+`--deployment` to require KNN and an explicit serving alias. Ordinary setup accepts
+standalone `latest`/numeric selectors and either supported model type.
 
 ### Machine-specific settings
 
@@ -71,9 +76,9 @@ On Linux/WSL, read the socket group with:
 stat -c '%g' /var/run/docker.sock
 ```
 
-Set `AIRFLOW_DOCKER_GID` to that number in `.env`. Do not assume `0` or reuse a
-number from a different machine. Group access is applied when the scheduler
-container is created.
+Setup detects this number and updates a stale value when possible. If detection
+is unavailable, set `AIRFLOW_DOCKER_GID` manually. Do not assume `0` or reuse a
+number from a different machine. Group access applies when the scheduler is created.
 
 If reusing existing volumes, preserve their PostgreSQL credentials and Airflow
 Fernet key. Editing `.env` does not change an initialized database's account
@@ -103,9 +108,9 @@ uv run dvc pull
 
 A status listing differences can still mean authentication succeeded; 401/403
 means the credentials or permissions need checking. `dvc pull` uses the selected
-Git revision's tracked outputs. Current startup needs
-`data/processed/user_matrix.csv`; the trained model is downloaded separately from
-MLflow by the prediction service. DVC access alone does not prove registry access.
+Git revision's tracked outputs. Training and legacy serving need restored processed matrices. New bundled models
+download their user profiles with the model instead of using the host CSV. DVC
+access alone does not prove registry access. See [versioned bundles](VERSIONED_SERVING_DATA.md).
 
 The normal DVC pipeline marks raw data and chronological source splits
 `cache: false`, so do not expect an ordinary pull to recreate those local source
@@ -127,8 +132,8 @@ processed matrices.
 
 ### Show an existing model
 
-Ensure the selected registry version/alias exists and matches the processed genre
-schema. Startup resolves that selector once; it does not keep polling the registry.
+Ensure the selected registry version/alias exists. New bundles validate and use
+their own profiles; legacy models require compatible host matrices. Startup resolves that selector once; it does not keep polling the registry.
 Keep ingestion and training DAGs paused if no new versions should be created.
 
 ```bash

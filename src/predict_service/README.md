@@ -40,9 +40,12 @@ curl -H "Authorization: Bearer $TOKEN" -H 'Content-Type: application/json' \
   -d '{"user_ids":[21525],"seed":42}' http://localhost:8000/predict
 ```
 
-Use an ID from your actual user_matrix.csv. The processed data directory is mounted
-read-only, and only user_matrix.csv is consumed by prediction. Movie IDs and genre
+For new bundles, use a profile from that version's saved user matrix; `/model`
+provides a valid `sample_user_id` and `data_fingerprint`. New versions load profiles
+from their model artifact and reject an explicit `USER_MATRIX_PATH` override.
+Legacy models still read the mounted host user_matrix.csv. Movie IDs and genre
 order come from the selected model's training_schema.json, not today's movie CSV.
+See [versioned data and legacy migration](../../docs/VERSIONED_SERVING_DATA.md).
 Extra user columns are ignored; required genres are reordered to the model schema.
 Missing genres, invalid data, or unavailable/incompatible models fail clearly.
 

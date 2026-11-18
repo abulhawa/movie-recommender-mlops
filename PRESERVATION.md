@@ -33,7 +33,7 @@ Source snapshot: one experiment, 73 runs, one registered model with 66 available
 ## Local copies
 
 - Working copy: `/home/ali/liora/movie-recommender-mlops`.
-- Snapshot, Git bundle, migration checkpoints and downloaded data/artifacts: `/home/ali/liora/personal-movie-reco-backup`.
+- Snapshot, Git bundle, migration checkpoints and downloaded data/artifacts: `/home/ali/liora-archive-2026-11-18/personal-movie-reco-backup`.
 - Credentials remain in ignored local files, never in the archive metadata.
 
 ## Verification

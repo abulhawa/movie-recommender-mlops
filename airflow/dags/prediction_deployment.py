@@ -1,6 +1,5 @@
 """Prediction rollout helpers, called at task execution (not during DAG parsing)."""
 
-import csv
 import logging
 import os
 import subprocess
@@ -257,9 +256,23 @@ def deploy_prediction(training_result):
     mask_secret(password)
     mask_secret(secret)
     mask_secret(os.environ['MLFLOW_TRACKING_PASSWORD'])
-    with (root / 'data/processed/user_matrix.csv').open() as stream:
-        user_id = int(next(csv.DictReader(stream))['userId'])
-    expected = {'model_uri': f'models:/{name}/{version}', 'model_type': 'knn'}
+    data_fingerprint = training_result.get('data_fingerprint')
+    user_id = training_result.get('sample_user_id')
+    if (
+        not isinstance(data_fingerprint, str)
+        or len(data_fingerprint) != 64
+        or any(c not in '0123456789abcdef' for c in data_fingerprint)
+        or type(user_id) is not int
+    ):
+        raise ValueError(
+            'Training result lacks a versioned serving-data snapshot; rebuild train first'
+        )
+    expected = {
+        'model_uri': f'models:/{name}/{version}',
+        'model_type': 'knn',
+        'data_fingerprint': data_fingerprint,
+        'sample_user_id': user_id,
+    }
 
     with closing(docker.from_env()) as client:
         existing = _replicas(client)
@@ -290,6 +303,17 @@ def deploy_prediction(training_result):
             ):
                 raise RuntimeError(
                     'Previous replicas must serve one consistent KNN version'
+                )
+            # A legacy replica may hold profiles that have already been replaced
+            # on the host. Refuse to claim rollback safety without its own bundle.
+            rollback_user_id = baseline[0].get('sample_user_id')
+            if (
+                not baseline[0].get('data_fingerprint')
+                or type(rollback_user_id) is not int
+            ):
+                raise RuntimeError(
+                    'Existing model lacks versioned serving data; migrate the '
+                    'legacy deployment before managed rollout'
                 )
             old_name, old_version = (
                 baseline[0]['model_uri'].removeprefix('models:/').rsplit('/', 1)
@@ -334,7 +358,9 @@ def deploy_prediction(training_result):
                 'GET', name, alias, allow_missing=True
             )
             network = f'{PROJECT}_default'
-            candidate_image = client.images.get('movie-recommender-mlops-predict:knn').id
+            candidate_image = client.images.get(
+                'movie-recommender-mlops-predict:knn'
+            ).id
 
         # Prove that the candidate loads and predicts before touching live replicas.
         environment = {
@@ -442,11 +468,17 @@ def deploy_prediction(training_result):
                         _url(replica, network),
                         headers,
                         baseline[0],
-                        user_id,
+                        rollback_user_id,
                         timeout=30,
                     )
                 _reload_nginx(client)
-                _smoke('http://nginx:80', headers, baseline[0], user_id, timeout=30)
+                _smoke(
+                    'http://nginx:80',
+                    headers,
+                    baseline[0],
+                    rollback_user_id,
+                    timeout=30,
+                )
             except Exception as rollback_error:
                 raise RuntimeError(
                     'Rollout AND rollback failed; inspect predict/nginx immediately'

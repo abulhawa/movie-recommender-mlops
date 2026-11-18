@@ -18,6 +18,7 @@ RUN pip install --no-cache-dir -r requirements-two-tower.txt
 # Select knn (default) or two_tower as the parent of the final image.
 # BuildKit skips the stage this image does not depend on.
 FROM ${PREDICT_MODEL_TYPE} AS runtime
+COPY src/serving_data.py src/
 COPY src/predict_service/predict.py src/predict_service/model_loader.py src/predict_service/
 COPY src/user_authentication_service/ src/user_authentication_service/
 

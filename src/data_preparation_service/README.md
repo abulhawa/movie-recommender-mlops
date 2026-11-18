@@ -26,7 +26,9 @@ Outputs, replaced only after both matrices pass validation:
 
 Each file replacement is atomic, but the pair is not a transaction: do not run
 preparation jobs concurrently or start training during a preparation run. The
-prediction service reads the user features at startup only.
+prediction service reads its profiles at startup only. New trained bundles use
+their own saved profiles; preparation does not change an already running model
+or the data inside an older registered bundle.
 
 ## Prerequisites
 

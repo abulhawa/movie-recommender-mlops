@@ -41,12 +41,16 @@ Compose reads `.env` in the repository root, including the existing required
 DagsHub and Grafana variables. The database user and name both default to
 `airflow` and can be overridden in `.env`.
 
-Run the setup helper to fill in missing encryption and signing keys, dashboard
-credentials, and a hexadecimal PostgreSQL password in the root `.env` file.
-Git ignores this file. The helper preserves existing nonempty values.
+Run the setup helper to fill missing public defaults and local secrets, detect
+the Docker socket group, and validate the full-demo configuration. Existing
+nonempty secrets and model selectors are preserved; a stale group is repaired
+when the socket is accessible. Missing private account settings cause a clear
+nonzero exit listing variable names, never values. `--check` validates without
+writing; `--check --deployment` also requires KNN and an explicit serving alias.
 
 ```powershell
 python airflow/setup_local.py
+python airflow/setup_local.py --check --deployment
 ```
 
 This setup uses FAB Auth Manager. Configure dashboard credentials only in `.env`:
@@ -310,6 +314,12 @@ The training task timeout is 30 minutes; deployment is limited to 20 minutes, an
 
 ## Exact-version prediction deployment
 
+New training bundles include matching user/movie CSV snapshots and checksums.
+The training result and `/model` now carry a `data_fingerprint` and
+`sample_user_id`. Rollout checks verify that identity; rollback uses the previous
+snapshot's sample user rather than a possibly new user. Existing legacy serving
+baselines are rejected before promotion. See [migration and verification](../docs/VERSIONED_SERVING_DATA.md).
+
 `train_model.py` prints `TRAINING_RESULT_JSON=...` as its last stdout line after
 the MLflow run closes. `MLflowTrainingOperator` validates this record and returns
 only model name, numeric version and training Run ID through XCom. It never uses
@@ -406,7 +416,10 @@ is a functional serving check, not a recommendation-quality evaluation.
 The rollout restarts the replicas and may briefly interrupt requests; this is
 not a zero-downtime deployment. Automatic rollback is attempted for handled task
 errors, not guaranteed after a host crash or forced task termination. It restores
-the previously served model version. Historical processed CSVs are outside rollback. Do not edit `.env`, change
+the previously served model version and its bundled profiles. The shared host
+CSVs are not rewritten. Legacy models lacking a data snapshot cannot be safe
+managed rollback targets; follow the [one-time transition](../docs/VERSIONED_SERVING_DATA.md#existing-models-need-a-one-time-transition)
+before the first managed rollout with this feature. Do not edit `.env`, change
 models, scale predict, or run another Compose/DVC preparation while this DAG is
 running. Retain the previous local image and registered model for rollback.
 

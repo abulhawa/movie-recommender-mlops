@@ -262,6 +262,21 @@ workflow demonstrates training, experiment tracking, model storage and registrat
 it does not establish real-world recommendation quality.
 
 
+## Versioned serving data
+
+The generic entrypoint snapshots both processed CSVs before calling the selected
+implementation. Training loads that private snapshot and the same files are
+uploaded inside `model/serving_data/` with checksums before registration. The
+schema and registry tags record the combined data fingerprint. This packages the
+exact user profiles that later serve the model; it does not change either model's
+learning algorithm or add recommendation-quality evaluation.
+
+Each version stores another copy of the processed CSVs, so consider storage usage
+when retaining many versions. Do not edit the source pair concurrently with
+snapshot capture. See [the serving-data guide](../../docs/VERSIONED_SERVING_DATA.md)
+for how new bundles restore profiles during rollback and why old versions need a
+one-time transition.
+
 ## Airflow training result handoff
 
 After successful MLflow run completion, the final stdout line is
