@@ -235,3 +235,39 @@ def test_non_ascii_version_is_rejected_before_model_loading(tmp_path):
         'PREDICT_MODEL_VERSION' in error
         for error in setup.validate_settings(values, tmp_path, '321')
     )
+
+
+def test_ci_workflow_setup_succeeds_from_a_fresh_checkout(tmp_path):
+    """Execute the real workflow setup command with only disposable job settings."""
+    import os
+    import shutil
+    import subprocess
+
+    import yaml
+
+    root = Path(__file__).resolve().parents[2]
+    workflow = yaml.safe_load((root / '.github/workflows/compose.yml').read_text())
+    job = workflow['jobs']['compose']
+    step = next(
+        item for item in job['steps'] if item['name'] == 'Prepare Airflow configuration'
+    )
+    (tmp_path / 'airflow').mkdir()
+    shutil.copyfile(
+        root / 'airflow/setup_local.py', tmp_path / 'airflow/setup_local.py'
+    )
+    shutil.copyfile(root / '.env.example', tmp_path / '.env.example')
+    result = subprocess.run(
+        ['bash', '-eu', '-c', step['run']],
+        cwd=tmp_path,
+        env={**os.environ, **{key: str(value) for key, value in job['env'].items()}},
+        text=True,
+        capture_output=True,
+    )
+    assert result.returncode == 0, result.stdout + result.stderr
+    values = setup.read_settings((tmp_path / '.env').read_text())
+    assert values['MLFLOW_TRACKING_URI'] == 'http://mlflow:5000'
+    assert values['DAGSHUB_TOKEN'] == 'ci-dummy-token'
+    assert values['DATA_COLLECTION_PASSWORD'] == 'admin123'
+    assert values['PREDICT_SMOKE_PASSWORD'] == 'alice123'
+    assert values['AIRFLOW_DOCKER_PROJECT_DIR'] == tmp_path.as_posix()
+    assert values['AUTH_SECRET_KEY'] not in result.stdout

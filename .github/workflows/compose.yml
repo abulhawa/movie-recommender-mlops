@@ -24,6 +24,7 @@ jobs:
     env:
       COMPOSE_FILE: docker-compose.yml:docker-compose.test.yml
       COMPOSE_PROJECT_NAME: movie-recommender-ci
+      MODEL_TYPE: knn
       PREDICT_MODEL_TYPE: knn
       PREDICT_MODEL_NAME: movie-genre-knn
       PREDICT_MODEL_VERSION: latest
@@ -34,6 +35,10 @@ jobs:
       DAGSHUB_S3_ENDPOINT_URL: https://example.invalid
       DAGSHUB_BUCKET: ci-dummy-bucket
       DAGSHUB_TOKEN: ci-dummy-token
+      MLFLOW_TRACKING_URI: http://mlflow:5000
+      MLFLOW_TRACKING_USERNAME: ci-local
+      DATA_COLLECTION_PASSWORD: admin123
+      PREDICT_SMOKE_PASSWORD: alice123
       AUTH_SECRET_KEY: ci-dummy-secret
       AIRFLOW_POSTGRES_PASSWORD: ci-airflow-postgres
     steps:
@@ -41,7 +46,27 @@ jobs:
         uses: actions/checkout@v7
 
       - name: Prepare Airflow configuration
-        run: python3 airflow/setup_local.py
+        run: |
+          # setup_local validates the file, not the process environment. Seed only
+          # disposable CI settings; never require hosted-service credentials here.
+          python3 - <<'PY'
+          import os
+          from pathlib import Path
+
+          keys = (
+              "MODEL_TYPE", "PREDICT_MODEL_TYPE", "PREDICT_MODEL_NAME",
+              "PREDICT_MODEL_VERSION", "GRAFANA_ADMIN_USER", "GRAFANA_ADMIN_PASSWORD",
+              "DAGSHUB_S3_ENDPOINT_URL", "DAGSHUB_BUCKET", "DAGSHUB_TOKEN",
+              "MLFLOW_TRACKING_URI", "MLFLOW_TRACKING_USERNAME",
+              "DATA_COLLECTION_PASSWORD", "PREDICT_SMOKE_PASSWORD",
+              "AUTH_SECRET_KEY", "AIRFLOW_POSTGRES_PASSWORD",
+          )
+          Path(".env").write_text(
+              "".join(f"{key}={os.environ[key]}\n" for key in keys), encoding="utf-8"
+          )
+          Path(".env").chmod(0o600)
+          PY
+          python3 airflow/setup_local.py
 
       - name: Validate Compose configuration
         run: docker compose config --quiet
