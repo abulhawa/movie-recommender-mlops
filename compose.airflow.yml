@@ -1,5 +1,5 @@
 x-airflow-common: &airflow-common
-  image: movie-reco-airflow:local
+  image: movie-recommender-mlops-airflow:local
   build:
     context: .
     dockerfile: airflow/Dockerfile

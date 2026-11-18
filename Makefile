@@ -14,7 +14,7 @@ token = $$(curl -s -X POST localhost:$(1)/token -d 'username=$(2)&password=$(3)'
 # just for testing/debugging
 #	uv run uvicorn data_collection_service.main:api --app-dir src --port 8001 --reload --env-file .env
 run-dcs: .env src/data_collection_service/Dockerfile
-	docker run --env-file .env -p 8001:8001 movie-reco-data-collection
+	docker compose run --rm --service-ports data-collection
 
 # Test the data collection service
 # Requests the data up to part 2
@@ -45,7 +45,7 @@ run-api:
 	uv run uvicorn predict_service.predict:app --app-dir src --reload
 
 run-api-container:
-	docker run --rm -p 8000:8000 movie-reco-api
+	docker compose run --rm --no-deps -p 8000:8000 predict
 
 test-api:
 	curl -X POST 'localhost:8000/predict' -H "Authorization: Bearer $(call token,8000,alice,alice123)" \

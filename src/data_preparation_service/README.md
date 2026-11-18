@@ -36,8 +36,8 @@ prediction service reads the user features at startup only.
 From the repository root:
 
 ```bash
-docker compose run --rm --build data_preparation             # all parts in the bucket
-docker compose run --rm data_preparation --up-to 2           # only the parts 1..2
+docker compose run --rm --build data-preparation             # all parts in the bucket
+docker compose run --rm data-preparation --up-to 2           # only the parts 1..2
 ```
 
 The service is in the `preparation` profile, so `docker compose up` does not

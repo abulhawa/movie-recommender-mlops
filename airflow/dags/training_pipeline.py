@@ -98,11 +98,16 @@ with DAG(
     max_active_runs=1,
     max_active_tasks=1,
     dagrun_timeout=timedelta(minutes=75),
-    tags=['data-preparation', 'knn', 'training', 'movie-reco'],
+    tags=['data-preparation', 'knn', 'training', 'movie-recommender'],
 ) as dag:
     prepare_features = BucketPreparationOperator(
         task_id='prepare_features',
-        image='movie-reco-data-preparation:local',
+        container_name=(
+            'movie-recommender-mlops-prepare-features-'
+            "{{ run_id | replace(':', '-') | replace('+', '-') | replace('~', '-') }}"
+            '-try-{{ ti.try_number }}'
+        ),
+        image='movie-recommender-mlops-data-preparation:local',
         docker_url='unix://var/run/docker.sock',
         api_version='auto',
         force_pull=False,
@@ -118,7 +123,7 @@ with DAG(
         retries=0,
         execution_timeout=timedelta(minutes=10),
         labels={
-            'project': 'movie-reco',
+            'project': 'movie-recommender-mlops',
             'managed_by': 'airflow',
             'job': 'data_preparation',
         },
@@ -126,7 +131,12 @@ with DAG(
 
     train_knn = MLflowTrainingOperator(
         task_id='train_knn',
-        image='movie-reco-train:knn',
+        container_name=(
+            'movie-recommender-mlops-train-knn-'
+            "{{ run_id | replace(':', '-') | replace('+', '-') | replace('~', '-') }}"
+            '-try-{{ ti.try_number }}'
+        ),
+        image='movie-recommender-mlops-train:knn',
         docker_url='unix://var/run/docker.sock',
         api_version='auto',
         force_pull=False,
@@ -147,7 +157,7 @@ with DAG(
         # Retrying after partial registration could create another model version.
         retries=0,
         execution_timeout=timedelta(minutes=30),
-        labels={'project': 'movie-reco', 'managed_by': 'airflow', 'job': 'train_knn'},
+        labels={'project': 'movie-recommender-mlops', 'managed_by': 'airflow', 'job': 'train_knn'},
     )
 
     deploy_predict = PythonOperator(

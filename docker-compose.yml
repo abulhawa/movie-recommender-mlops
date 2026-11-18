@@ -40,7 +40,7 @@ services:
 
   # One-off feature preparation; run explicitly before training.
   data-preparation:
-    image: movie-reco-data-preparation:local
+    image: movie-recommender-mlops-data-preparation:local
     profiles: [preparation]
     build:
       context: .
@@ -57,7 +57,7 @@ services:
 
   # One-off job, invoked explicitly; normal compose up does not train a model.
   train:
-    image: movie-reco-train:${MODEL_TYPE:-knn}
+    image: movie-recommender-mlops-train:${MODEL_TYPE:-knn}
     profiles: [training]
     build:
       context: .
@@ -73,7 +73,7 @@ services:
       - ./data/processed:/app/data/processed:ro
 
   predict:
-    image: movie-reco-predict:${PREDICT_MODEL_TYPE:-knn}
+    image: movie-recommender-mlops-predict:${PREDICT_MODEL_TYPE:-knn}
     build:
       context: .
       dockerfile: src/predict_service/Dockerfile

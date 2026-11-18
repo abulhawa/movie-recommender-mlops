@@ -40,7 +40,7 @@ With `{"next_part": true}` only the part after the highest one in the bucket is 
 Simulates the arriving data: every Tuesday at 09:00 Europe/Berlin, it calls `POST /ingest` with `{"next_part": true}`. After 8 runs (8 weeks) all parts are uploaded; later runs are skipped (`up_to_date`).
 
 - `catchup=False`: if the system starts after 09:00 on a Tuesday, the missed run starts right away. After a longer downtime only the latest missed Tuesday runs, so at most one part is uploaded per start. On the very first unpause no missed run is made; trigger the DAG manually if needed.
-- Start `data_collection` before Airflow. The missed run starts as soon as the scheduler is up and fails without retry if the service is not reachable.
+- Start `data-collection` before Airflow. The missed run starts as soon as the scheduler is up and fails without retry if the service is not reachable.
 - A run that uploads a part updates the Airflow asset `rating_parts`. Skipped and failed runs do not, so an unpaused `training_pipeline` in the same Airflow environment is triggered by a successful upload.
 - No retries: if an upload succeeded but its response was lost, a retry would upload one more part.
 
@@ -58,7 +58,7 @@ Prerequisites:
 2. Start the service and recreate the scheduler:
 
    ```bash
-   docker compose up -d --build data_collection
+   docker compose up -d --build data-collection
    docker compose up -d --wait airflow-scheduler
    ```
 

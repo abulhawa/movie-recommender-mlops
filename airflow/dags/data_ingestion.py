@@ -19,7 +19,7 @@ from rating_assets import RATING_PARTS
 logger = logging.getLogger(__name__)
 
 # Compose service name; the scheduler is in the same Compose network.
-DATA_COLLECTION_URL = 'http://data_collection:8001'
+DATA_COLLECTION_URL = 'http://data-collection:8001'
 
 
 def ingest_next_part():
@@ -42,7 +42,7 @@ def ingest_next_part():
     except requests.ConnectionError as error:
         raise AirflowException(
             f'Data collection service not reachable at {DATA_COLLECTION_URL}. '
-            'Start it with: docker compose up -d data_collection'
+            'Start it with: docker compose up -d data-collection'
         ) from error
     if not login.ok:
         raise AirflowException(
@@ -83,7 +83,7 @@ with DAG(
     ),
     catchup=False,
     max_active_runs=1,
-    tags=['data-collection', 'movie-reco'],
+    tags=['data-collection', 'movie-recommender-mlops'],
 ) as dag:
     PythonOperator(
         task_id='ingest_next_part',

@@ -167,7 +167,7 @@ Run these commands from the repository root. Stop any local Uvicorn process firs
 
    ```bash
    docker compose config --quiet
-   docker compose build data_preparation train predict
+   docker compose build data-preparation train predict
    docker compose up -d --build --wait airflow-api-server airflow-scheduler airflow-dag-processor
    docker compose up -d prometheus grafana
    ```

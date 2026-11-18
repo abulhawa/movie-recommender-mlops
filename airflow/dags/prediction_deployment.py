@@ -329,7 +329,7 @@ def deploy_prediction(training_result):
                 'GET', name, alias, allow_missing=True
             )
             network = f'{PROJECT}_default'
-            candidate_image = client.images.get('movie-reco-predict:knn').id
+            candidate_image = client.images.get('movie-recommender-mlops-predict:knn').id
 
         # Prove that the candidate loads and predicts before touching live replicas.
         environment = {

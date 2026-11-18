@@ -78,7 +78,7 @@ docker compose run --rm airflow-init db check-migrations --migration-wait-timeou
 
 The database hostname inside Docker is `airflow-postgres`, port 5432; no database
 port is published to Windows. Compose creates a database volume for each project.
-The default project uses `movie-reco-airflow-postgres-data`. Ordinary
+The default project uses `movie-recommender-mlops-airflow-postgres-data`. Ordinary
 `docker compose down` preserves the database. Avoid `docker compose down -v`
 when you want to keep it. PostgreSQL user, password, and database settings
 initialize an empty volume. Changing `.env` does not update existing accounts.
@@ -184,10 +184,12 @@ docker compose restart airflow-dag-processor
 
 DAG: `airflow/dags/training_pipeline.py`, shown as `training_pipeline` in the UI.
 It has three sequential tasks: `prepare_features -> train_knn -> deploy_predict`. The first uses
-DockerOperator with `movie-reco-data-preparation:local`. The second uses a small
-DockerOperator subclass with `movie-reco-train:knn`; it resolves MLflow credentials
+DockerOperator with `movie-recommender-mlops-data-preparation:local`. The second uses a small
+DockerOperator subclass with `movie-recommender-mlops-train:knn`; it resolves MLflow credentials
 only at task execution. Both create sibling containers through Docker Engine,
-not Docker Compose commands. Preparation downloads all rating parts stored in
+not Docker Compose commands. Container names include the personal project, task,
+run ID, and attempt number, so preparation and training jobs are identifiable
+in Docker Desktop. Preparation downloads all rating parts stored in
 the DagsHub bucket. No trigger parameter is required or used in this version.
 The DAG ID is `training_pipeline`, covering preparation, training and deployment.
 Historical runs under the old `data_preparation` ID remain in Airflow history;
@@ -204,7 +206,7 @@ control over the host Docker Engine; the API and DAG processor do not get it.
 ```powershell
 python airflow/setup_local.py
 docker compose config --quiet
-docker compose build data_preparation
+docker compose build data-preparation
 $env:MODEL_TYPE = "knn"
 docker compose build train airflow-scheduler
 $env:PREDICT_MODEL_TYPE = "knn"
@@ -261,7 +263,7 @@ The final task recreates the three prediction replicas with that exact version, 
 avoids trying to mount a temporary directory that exists only in the scheduler.
 
 If the DAG is not discovered, restart `airflow-dag-processor`. If an image is
-missing, run `docker compose build data_preparation`. For Docker socket permission
+missing, run `docker compose build data-preparation`. For Docker socket permission
 errors, verify `AIRFLOW_DOCKER_GID` and recreate the scheduler. For mount errors,
 verify the daemon-side path. Rebuild the preparation image after changes to its
 code, Dockerfile or requirements; the DockerOperator does not build it for you.
@@ -291,7 +293,7 @@ task environment. Docker administrators can still inspect container environment
 variables, so this mechanism does not hide secrets from Docker administrators.
 
 KNN is explicitly selected in this DAG regardless of the `.env` MODEL_TYPE used
-for standalone training. Always build `movie-reco-train:knn` before triggering.
+for standalone training. Always build `movie-recommender-mlops-train:knn` before triggering.
 The default `all_success` dependency prevents training after preparation failure.
 Missing credentials fail before creating the training container. HTTP 403 from
 MLflow means remote creation/registration is forbidden; check token validity and
@@ -328,7 +330,7 @@ is blocked even if a model version was registered remotely.
 
 Set `PREDICT_MODEL_VERSION=@latest-verified` in the root `.env` and recreate the
 scheduler. For a fresh registry, prepare the rating batches, build the local
-images with `docker compose build data_preparation train predict`, start Airflow,
+images with `docker compose build data-preparation train predict`, start Airflow,
 and trigger `training_pipeline`.
 The DAG assigns the alias after the first model passes preflight and starts
 prediction and nginx. If prediction is already running, configure its replicas
